@@ -37,6 +37,6 @@ createEpub pathToSingleMarkdown = do
     cover     = "epub/cover.png"
 
     -- Пути актуальны для Linux. Подразумевается, что данные шрифты уже установлены.
-    mainFont        = "$HOME/.fonts/PT_Sans/PT_Sans-Web-Regular.ttf"
+    mainFont        = "$HOME/.local/share/fonts/PTS55F.ttf"
     codeFontNormal  = "/usr/share/fonts/truetype/ubuntu-font-family/UbuntuMono-R.ttf"
     codeFontBold    = "/usr/share/fonts/truetype/ubuntu-font-family/UbuntuMono-B.ttf"
