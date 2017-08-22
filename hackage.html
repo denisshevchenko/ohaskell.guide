@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Hackage и библиотеки &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="hackage-и-библиотеки">Hackage и библиотеки</h1>
+<p>Ранее я уже упоминал о библиотеках, пришло время познакомиться с ними поближе, ведь в последующих главах мы будем использовать их постоянно.</p>
+<h2 id="библиотеки-большие-и-маленькие">Библиотеки большие и маленькие</h2>
+<p>За годы существования Haskell разработчики со всего мира создали множество библиотек. Библиотеки избавляют нас от необходимости вновь и вновь писать то, что уже написано до нас. Для любого живого языка программирования написано множество библиотек. В мире Haskell их, конечно, не такая туча, как для той же Java, но порядочно: стабильных есть не менее двух тысяч, многие из которых очень качественные и уже многократно испытаны в серьёзных проектах.</p>
+<p>С модулями — файлами, содержащими Haskell-код, — мы уже знакомы, они являются основным кирпичом любого Haskell-проекта. Библиотека, также являясь Haskell-проектом, тоже состоит из модулей (не важно, из одного или из сотен). Поэтому использование библиотеки сводится к использованию входящих в неё модулей. И мы уже неоднократно делали это в предыдущих главах.</p>
+<p>Вспомним пример из главы про ФВП:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Char</span>
+
+<span class="ot">toUpperCase ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+toUpperCase str <span class="fu">=</span> map toUpper str
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">.</span> toUpperCase <span class="fu">$</span> <span class="st">&quot;haskell.org&quot;</span></code></pre></div>
+<p>Функция <code>toUpper</code> определена в модуле <code>Data.Char</code>, который, в свою очередь, живёт в стандартной библиотеке. Библиотек есть множество, но стандартная лишь одна. Она содержит самые базовые, наиболее широко используемые инструменты. А прежде чем продолжить, зададимся важным вопросом: «Где живут все эти библиотеки?» Они живут в разных местах, но главное из них — Hackage.</p>
+<h2 id="hackage">Hackage</h2>
+<p>Hackage — это центральный репозиторий Haskell-библиотек, или, как принято у нас называть, пакетов (англ. package). Название репозитория происходит от слияния слов <code>Haskell</code> и <code>package</code>. Hackage существует с 2008 года и живёт <a href="http://hackage.haskell.org/">здесь</a>. Ранее упомянутая стандартная библиотека тоже живёт в Hackage и называется она <code>base</code>. Каждой библиотеке выделена своя страница.</p>
+<p>Каждый из Hackage-пакетов живёт по адресу, сформированному по неизменной схеме: <code>http://hackage.haskell.org/package/ИМЯПАКЕТА</code>. Так, дом стандартной библиотеки — <code>http://hackage.haskell.org/package/base</code>. Hackage — открытый репозиторий: любой разработчик может добавить туда свои пакеты.</p>
+<p>Стандартная библиотека включает в себя более сотни модулей, но есть среди них самый известный, носящий имя <code>Prelude</code>. Этот модуль по умолчанию всегда с нами: всё его содержимое автоматически импортируется во все модули нашего проекта. Например, уже известные нам <code>map</code> или операторы конкатенации списков живут в модуле <code>Prelude</code>, поэтому доступны нам всегда. Помимо них (и многих-многих десятков других функций) в <code>Prelude</code> располагаются функции для работы с вводом-выводом, такие как наши знакомые <code>putStrLn</code> и <code>print</code>.</p>
+<p>Hackage весьма большой, поэтому искать пакеты можно двумя способами. Первый — на <a href="http://hackage.haskell.org/packages/">единой странице всех пакетов</a>. Здесь перечислены все пакеты, а для нашего удобства они расположены по тематическим категориям.</p>
+<p>Второй способ — через специальный поисковик, коих существует два:</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.haskell.org/hoogle/">Hoogle</a></li>
+<li><a href="http://holumbus.fh-wedel.de/hayoo/hayoo.html">Hayoo!</a></li>
+</ol>
+<p>Эти поисковики скрупулёзно просматривают внутренности Hackage, и вы будете часто ими пользоваться. Лично я предпочитаю <a href="http://holumbus.fh-wedel.de/hayoo/hayoo.html">Hayoo!</a>. Пользуемся оным как обычным поисковиком: например, знаем мы имя функции, а в каком пакете/модуле она живёт — забыли. Вбиваем в поиск — получаем результаты.</p>
+<p>Чтобы воспользоваться пакетом в нашем проекте, нужно для начала включить его в наш проект. Для примера рассмотрим пакет <code>text</code>, предназначенный для работы с текстом. Он нам в любом случае понадобится, поэтому включим его в наш проект незамедлительно.</p>
+<p>Открываем сборочный файл проекта <code>real.cabal</code>, находим секцию <code>executable real-exe</code> и в поле <code>build-depends</code> через запятую дописываем имя пакета:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  build<span class="fu">-</span>depends<span class="fu">:</span>   base  <span class="co">-- Уже здесь!</span>
+                 , real
+                 , text  <span class="co">-- А это новый пакет.</span></code></pre></div>
+<p>Файл с расширением <code>.cabal</code> — это обязательный сборочный файл Haskell-проекта. Он содержит главные инструкции, касающиеся сборки проекта. С синтаксисом сборочного файла мы будем постепенно знакомиться в следующих главах.</p>
+<p>Как видите, пакет <code>base</code> уже тут. Включив пакет <code>text</code> в секцию <code>build-depends</code>, мы объявили тем самым, что наш проект отныне зависит от этого пакета. Теперь, находясь в корне проекта, выполняем уже знакомую нам команду:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">stack</span> build</code></pre></div>
+<p>Помните, когда мы впервые настраивали проект, я упомянул, что утилита <code>stack</code> умеет ещё и библиотеки устанавливать? Она увидит новую зависимость нашего проекта и установит как сам пакет <code>text</code>, так и все те пакеты, от которых, в свою очередь, зависит пакет <code>text</code>. После сборки мы можем импортировать модули из этого пакета в наши модули. И теперь пришла пора узнать, как это можно делать.</p>
+<h2 id="иерархия-в-имени">Иерархия в имени</h2>
+<p>Когда мы пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Char</span></code></pre></div>
+<p>в имени модуля отражена иерархия пакета. <code>Data.Char</code> означает, что внутри пакета <code>base</code> есть каталог <code>Data</code>, внутри которого живёт файл <code>Char.hs</code>, открыв который, мы увидим:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Data.Char</span>
+<span class="fu">...</span></code></pre></div>
+<p>Таким образом, точка в имени модуля отражает файловую иерархию внутри данного пакета. Можете воспринимать эту точку как слэш в Unix-пути. Есть пакеты со значительно более длинными именами, например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">GHC.IO.Encoding.UTF8</span></code></pre></div>
+<p>Соответственно, имена наших собственных модулей тоже отражают место, в котором они живут. Так, один из модулей в моём рабочем проекте носит название <code>Common.Performers.Click</code>. Это означает, что живёт этот модуль здесь: <code>src/Common/Performers/Click.hs</code>.</p>
+<h2 id="лицо">Лицо</h2>
+<p>Вернёмся к нашему примеру:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Char</span></code></pre></div>
+<p>Импорт модуля <code>Data.Char</code> делает доступным для нас всё то, что включено в интерфейс этого модуля. Откроем наш собственный модуль <code>Lib</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Lib</span>
+    ( someFunc
+    ) <span class="kw">where</span>
+
+<span class="ot">someFunc ::</span> <span class="dt">IO</span> ()
+someFunc <span class="fu">=</span> putStrLn <span class="st">&quot;someFunc&quot;</span></code></pre></div>
+<p>Имя функции <code>someFunc</code> упомянуто в интерфейсе модуля, а именно между круглыми скобками, следующими за именем модуля. Чуток переформатируем скобки:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Lib</span> (
+    someFunc
+) <span class="kw">where</span></code></pre></div>
+<p>В настоящий момент только функция <code>someFunc</code> доступна всем импортёрам данного модуля. Если же мы определим в этом модуле другую функцию <code>anotherFunc</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Lib</span> (
+    someFunc
+) <span class="kw">where</span>
+
+<span class="ot">someFunc ::</span> <span class="dt">IO</span> ()
+someFunc <span class="fu">=</span> putStrLn <span class="st">&quot;someFunc&quot;</span>
+
+<span class="ot">anotherFunc ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+anotherFunc s <span class="fu">=</span> s <span class="fu">++</span> <span class="st">&quot;!&quot;</span></code></pre></div>
+<p>она останется невидимой для внешнего мира, потому что её имя не упомянуто в интерфейсе модуля. И если в модуле <code>Main</code> мы напишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Main</span>
+
+<span class="kw">import </span><span class="dt">Lib</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">.</span> anotherFunc <span class="fu">$</span> <span class="st">&quot;Hi&quot;</span></code></pre></div>
+<p>компилятор справедливо ругнётся, мол, не знаю функцию <code>anotherFunc</code>. Если же мы добавим её в интерфейс модуля <code>Lib</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Lib</span> (
+    someFunc,
+    anotherFunc
+) <span class="kw">where</span></code></pre></div>
+<p>тогда функция <code>anotherFunc</code> тоже станет видимой всему миру. Интерфейс позволяет нам показывать окружающим лишь то, что мы хотим им показать, оставляя служебные внутренности нашего модуля тайной за семью печатями.</p>
+<h2 id="импортируем-по-разному">Импортируем по-разному</h2>
+<p>В реальных проектах мы импортируем множество модулей из различных пакетов. Иногда это является причиной конфликтов, с которыми приходится иметь дело.</p>
+<p>Вспомним функцию <code>putStrLn</code>: она существует не только в незримом модуле <code>Prelude</code>, но и в модуле <code>Data.Text.IO</code> из пакета <code>text</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Здесь тоже есть функция по имени putStrLn.</span>
+<span class="kw">import </span><span class="dt">Data.Text.IO</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">...</span>  <span class="co">-- И откуда эта функция?</span></code></pre></div>
+<p>При попытке скомпилировать такой код мы упрёмся в ошибку:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Ambiguous</span> occurrence ‘putStrLn’
+<span class="ex">It</span> could refer to either ‘Prelude.putStrLn’,
+                         <span class="ex">imported</span> from ‘Prelude’ ...
+                      <span class="ex">or</span> ‘Data.Text.IO.putStrLn’,
+                         <span class="ex">imported</span> from ‘Data.Text.IO’ ...</code></pre></div>
+<p>Нам необходимо как-то указать, какую из функций <code>putStrLn</code> мы имеем в виду. Это можно сделать несколькими способами.</p>
+<p>Можно указать принадлежность функции конкретному модулю. Из сообщения об ошибке уже видно, как это можно сделать:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Здесь тоже есть функция по имени putStrLn.</span>
+<span class="kw">import </span><span class="dt">Data.Text.IO</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> Data.Text.IO.putStrLn <span class="fu">...</span>  <span class="co">-- Сомнений нет!</span></code></pre></div>
+<p>Теперь уже сомнений не осталось: используемая нами <code>putStrLn</code> принадлежит модулю <code>Data.Text.IO</code>, поэтому коллизий нет.</p>
+<p>Впрочем, не кажется ли вам подобная форма слишком длинной? В упомянутом ранее стандартном модуле <code>GHC.IO.Encoding.UTF8</code> есть функция <code>mkUTF8</code>, и представьте себе:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">GHC.IO.Encoding.UTF8</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> enc <span class="fu">=</span> GHC.IO.Encoding.UTF8.mkUTF8 <span class="fu">...</span></code></pre></div>
+<p>Слишком длинно, нужно укоротить. Импортируем модуля под коротким именем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import    </span><span class="dt">Data.Text.IO</span>  <span class="kw">as</span>   <span class="dt">TIO</span>
+
+включить  этот модуль   как  это
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> TIO.putStrLn <span class="fu">...</span></code></pre></div>
+<p>Вот, так значительно лучше. Короткое имя может состоять даже из одной буквы, но как и полное имя модуля, оно обязательно должно начинаться с большой буквы, поэтому:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Text.IO</span> <span class="kw">as</span> tIO  <span class="co">-- Ошибка</span>
+<span class="kw">import </span><span class="dt">Data.Text.IO</span> <span class="kw">as</span> i    <span class="co">-- Тоже ошибка</span>
+<span class="kw">import </span><span class="dt">Data.Text.IO</span> <span class="kw">as</span> <span class="dt">I</span>    <span class="co">-- Порядок!</span></code></pre></div>
+<p>Иногда, для большего порядка, используют qualified-импорт:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import qualified</span> <span class="dt">Data.Text.IO</span> <span class="kw">as</span> <span class="dt">TIO</span></code></pre></div>
+<p>Ключевое слово <code>qualified</code> используется для «строгого» включения модуля: в этом случае мы обязаны указывать принадлежность к нему. Например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import qualified</span> <span class="dt">Data.Text</span> <span class="kw">as</span> <span class="dt">T</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> T.justifyLeft <span class="fu">...</span></code></pre></div>
+<p>Даже несмотря на то, что функция <code>justifyLeft</code> есть только в модуле <code>Data.Text</code> и никаких коллизий с <code>Prelude</code> нет, мы обязаны указать, что эта функция именно из <code>Data.Text</code>. В больших модулях qualified-импорт бывает полезен: с одной стороны, гарантированно не будет никаких конфликтов, с другой, мы сразу видим, откуда родом та или иная функция.</p>
+<p>Впрочем, некоторым Haskell-программистам любое указание принадлежности к модулю кажется избыточным. Поэтому они идут по другому пути: выборочное включение/выключение. Например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Char</span>
+<span class="kw">import </span><span class="dt">Data.Text</span> (pack)  <span class="co">-- Только её!</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span> map toUpper <span class="st">&quot;haskell.org&quot;</span></code></pre></div>
+<p>Мы подразумеваем стандартную функцию <code>map</code>, однако в модуле <code>Data.Text</code> тоже содержится функция по имени <code>map</code>. К счастью, никакой коллизии не будет, ведь мы импортировали не всё содержимое модуля <code>Data.Text</code>, а лишь одну его функцию <code>pack</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import       </span><span class="dt">Data.Text</span>  (pack)
+
+импортируем  отсюда      только
+                         это</code></pre></div>
+<p>Если же мы хотим импортировать две или более функции, перечисляем их через запятую:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Text</span> (pack, unpack)</code></pre></div>
+<p>Существует и прямо противоположный путь: вместо выборочного включения — выборочное выключение. Избежать коллизии между функциями <code>putStrLn</code> можно было бы и так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Text.IO</span> <span class="kw">hiding</span> (putStrLn)
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">...</span>  <span class="co">-- Сомнений нет: из Prelude.</span></code></pre></div>
+<p>Слово <code>hiding</code> позволяет скрывать кое-что из импортируемого модуля:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import       </span><span class="dt">Data.Text.IO</span>  <span class="kw">hiding</span> (putStrLn)
+
+импортируем  всё отсюда    кроме   этого</code></pre></div>
+<p>Можно и несколько функций скрыть:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Text.IO</span> <span class="kw">hiding</span> ( readFile
+                           , writeFile
+                           , appendFile
+                           )</code></pre></div>
+<p>При желании можно скрыть и из <code>Prelude</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Prelude</span> <span class="kw">hiding</span> (putStrLn)
+<span class="kw">import </span><span class="dt">Data.Text.IO</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">...</span>  <span class="co">-- Она точно из Data.Text.IO.</span></code></pre></div>
+<h2 id="оформление">Оформление</h2>
+<p>Общая рекомендация такова — оформляйте так, чтобы было легче читать. В реальном проекте в каждый из ваших модулей будет импортироваться довольно много всего. Вот кусочек из одного моего рабочего модуля:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import qualified</span> <span class="dt">Test.WebDriver.Commands</span>    <span class="kw">as</span> <span class="dt">WDC</span>
+<span class="kw">import           </span><span class="dt">Test.WebDriver.Exceptions</span>
+<span class="kw">import qualified</span> <span class="dt">Data.Text</span>                  <span class="kw">as</span> <span class="dt">T</span>
+<span class="kw">import           </span><span class="dt">Data.Maybe</span>                 (fromJust)
+<span class="kw">import           </span><span class="dt">Control.Monad.IO.Class</span>
+<span class="kw">import           </span><span class="dt">Control.Monad.Catch</span>
+<span class="kw">import           </span><span class="dt">Control.Monad</span>              (void)</code></pre></div>
+<p>Как полные, так и краткие имена модулей выровнены, такой код проще читать и изменять. Не все программисты согласятся с таким стилем, но попробуем убрать выравнивание:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import qualified</span> <span class="dt">Test.WebDriver.Commands</span> <span class="kw">as</span> <span class="dt">WDC</span>
+<span class="kw">import </span><span class="dt">Test.WebDriver.Exceptions</span>
+<span class="kw">import qualified</span> <span class="dt">Data.Text</span> <span class="kw">as</span> <span class="dt">T</span>
+<span class="kw">import </span><span class="dt">Data.Maybe</span> (fromJust)
+<span class="kw">import </span><span class="dt">Control.Monad.IO.Class</span>
+<span class="kw">import </span><span class="dt">Control.Monad.Catch</span>
+<span class="kw">import </span><span class="dt">Control.Monad</span> (void)</code></pre></div>
+<p>Теперь код выглядит скомканным, его труднее воспринимать. Впрочем, выбор за вами.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/hof.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/recursion.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Неизменность и чистота &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="неизменность-и-чистота">Неизменность и чистота</h1>
+<p>В предыдущей главе мы познакомились с функциями и выражениями, увидев близкую связь этих понятий. В этой главе мы познакомимся с функциями поближе, а также узнаем, что такое «чисто функциональный» язык и почему в нём нет места оператору присваивания.</p>
+<h2 id="объявляем-и-определяем">Объявляем и определяем</h2>
+<p>Применение функции нам уже знакомо, осталось узнать про объявление и определение, без них использовать функцию не получится. Помните функцию <code>square</code>, возводящую свой единственный аргумент в квадрат? Вот как выглядит её объявление и определение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">square ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+square v <span class="fu">=</span> v <span class="fu">*</span> v</code></pre></div>
+<p>Первая строка содержит объявление, вторая — определение. Объявление (англ. declaration) — это весть всему миру о том, что такая функция существует, вот её имя и вот типы, с которыми она работает. Определение (англ. definition) — это весть о том, что конкретно делает данная функция.</p>
+<p>Рассмотрим объявление:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">square ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span></code></pre></div>
+<p>Оно разделено двойным двоеточием на две части: слева указано имя функции, справа — типы, с которыми эта функция работает, а именно типы аргументов и тип вычисленного, итогового значения. Как вы узнали из предыдущей главы, все данные в Haskell-программе имеют конкретный тип, а поскольку функция работает с данными, её объявление содержит типы этих данных. Типы разделены стрелками. Схематично это выглядит так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">square ::</span> <span class="dt">Int</span>      <span class="ot">-&gt;</span> <span class="dt">Int</span>
+
+имя       тип         тип
+функции   аргумента   вычисленного
+                      значения</code></pre></div>
+<p>Такое объявление сообщает нам о том, что функция <code>square</code> принимает единственный аргумент типа <code>Int</code> и возвращает значение того же типа <code>Int</code>. Если же аргументов более одного, объявление просто вытягивается. Например, объявление функции <code>prod</code>, возвращающей произведение двух целочисленных аргументов, могло бы выглядеть так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">prod    ::</span> <span class="dt">Int</span>      <span class="ot">-&gt;</span> <span class="dt">Int</span>      <span class="ot">-&gt;</span> <span class="dt">Int</span>
+
+имя        тип         тип         тип
+функции    первого     второго     вычисленного
+           аргумента   аргумента   значения</code></pre></div>
+<p>Идею вы поняли: ищем крайнюю правую стрелку, и всё что левее от неё — то типы аргументов, а всё что правее — то тип вычисленного значения.</p>
+<p>Мы не можем работать с функцией, которая ничего не вычисляет. То есть аналога C-функции <code>void f(int i)</code> в Haskell быть не может, так как это противоречит математической природе. Однако мы можем работать с функцией, которая ничего не принимает, то есть с аналогом C-функции <code>int f(void)</code>. С такими функциями мы познакомимся в следующих главах.</p>
+<p>Теперь рассмотрим определение функции <code>square</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square v <span class="fu">=</span> v <span class="fu">*</span> v</code></pre></div>
+<p>Схема определения такова:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square   v          <span class="fu">=</span>    v <span class="fu">*</span> v
+
+имя      имя        это  выражение
+функции  аргумента</code></pre></div>
+<p>А функция <code>prod</code> определена так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">prod     x          y         <span class="fu">=</span>    x <span class="fu">*</span> y
+
+имя      имя        имя       это  выражение
+функции  первого    второго
+         аргумента  аргумента</code></pre></div>
+<p>Определение тоже разделено на две части: слева от знака равенства — имя функции и имена аргументов (имена, а не типы), разделённые пробелами, а справа — выражение, составляющее суть функции, её содержимое. Иногда эти части называют «головой» и «телом»:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square   v      <span class="fu">=</span>  v <span class="fu">*</span> v
+
+голова функции     тело функции
+(англ<span class="fu">.</span> head)       (англ<span class="fu">.</span> body)</code></pre></div>
+<p>Обратите внимание, речь здесь идёт именно о знаке равенства, а никак не об операторе присваивания. Мы ничего не присваиваем, мы лишь декларируем равенство левой и правой частей. Когда мы пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">prod x y <span class="fu">=</span> x <span class="fu">*</span> y</code></pre></div>
+<p>мы объявляем следующее: «Отныне выражение <code>prod x y</code> равно выражению <code>x * y</code>». Мы можем безопасно заменить выражение <code>prod 2 5</code> выражением <code>2 * 5</code>, а выражение <code>prod 120 500</code> — выражением <code>120 * 500</code>, и при этом работа программы гарантированно останется неизменной.</p>
+<p>Но откуда у меня такая уверенность? А вот откуда.</p>
+<h2 id="чисто-функциональный">Чисто функциональный</h2>
+<p>Haskell — чисто функциональный (англ. purely functional) язык. Чисто функциональным он называется потому, что центральное место в нём уделено чистой функции (англ. pure function). А чистой называется такая функция, которая предельно честна с нами: её выходное значение всецело определяется её аргументами и более ничем. Это и есть функция в математическом смысле. Вспомним функцию <code>prod</code>: когда на входе числа <code>10</code> и <code>20</code> — на выходе всегда будет <code>200</code>, и ничто не способно помешать этому. Функция <code>prod</code> является чистой, а потому характеризуется отсутствием побочных эффектов (англ. side effects): она не способна сделать ничего, кроме как вернуть произведение двух своих аргументов. Именно поэтому чистая функция предельно надёжна, ведь она не может преподнести нам никаких сюрпризов.</p>
+<p>Скажу больше: чистые функции не видят окружающий мир. Вообще. Они не могут вывести текст на консоль, их нельзя заставить обработать HTTP-запрос, они не умеют дружить с базой данных и прочесть файл они также неспособны. Они суть вещь в себе.</p>
+<p>А чтобы удивить вас ещё больше, открою ещё один секрет Haskell.</p>
+<h2 id="присваивание-не-не-слышал">«Присваивание? Не, не слышал…»</h2>
+<p>В мире Haskell нет места оператору присваивания. Впрочем, этот факт удивителен лишь на первый взгляд. Задумаемся: если каждая функция в конечном итоге представляет собою выражение, вычисляемое посредством применения каких-то других функций к каким-то другим аргументам, тогда нам просто не нужно ничего ничему присваивать.</p>
+<p>Вспомним, что присваивание (англ. assignment) пришло к нам из императивных языков. Императивное программирование (англ. imperative programming) — это направление в разработке, объединяющее несколько парадигм программирования, одной из которых является знаменитая объектно-ориентированная парадигма. В рамках этого направления программа воспринимается как набор инструкций, выполнение которых неразрывно связано с изменением состояния (англ. state) этой программы. Вот почему в императивных языках обязательно присутствует понятие «переменная» (англ. variable). А раз есть переменные — должен быть и оператор присваивания. Когда мы пишем:</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">coeff = <span class="fl">0.569</span>;</code></pre></div>
+<p>мы тем самым приказываем: «Возьми значение <code>0.569</code> и перезапиши им то значение, которое уже содержалось в переменной <code>coeff</code> до этого». И перезаписывать это значение мы можем множество раз, а следовательно, мы вынуждены внимательно отслеживать текущее состояние переменной <code>coeff</code>, равно как и состояния всех остальных переменных в нашем коде.</p>
+<p>Однако существует принципиально иной подход к разработке, а именно декларативное программирование (англ. declarative programming). Данное направление также включает в себя несколько парадигм, одной из которых является функциональная парадигма, нашедшая своё воплощение в Haskell. При этом подходе программа воспринимается уже не как набор инструкций, а как набор выражений. А поскольку выражения вычисляются путём применения функций к аргументам (то есть, по сути, к другим выражениям), там нет места ни переменным, ни оператору присваивания. Все данные в Haskell-программе, будучи созданными единожды, уже не могут быть изменены. Поэтому нам не нужен не только оператор присваивания, но и ключевое слово <code>const</code>. И когда в Haskell-коде мы пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">coeff <span class="fu">=</span> <span class="fl">0.569</span></code></pre></div>
+<p>мы просто объявляем: «Отныне значение <code>coeff</code> равно <code>0.569</code>, и так оно будет всегда». Вот почему в Haskell-коде символ <code>=</code> — это знак равенства в математическом смысле, и с присваиванием он не имеет ничего общего.</p>
+<p>Уверен, вы удивлены. Как же можно написать реальную программу на языке, в котором нельзя изменять данные? Какой прок от этих чистых функций, если они не способны ни файл прочесть, ни запрос по сети отправить? Оказывается, прок есть, и на Haskell можно написать очень даже реальную программу. За примером далеко ходить не буду: сама эта книга построена с помощью программы, написанной на Haskell, о чём я подробнее расскажу в следующих главах.</p>
+<p>А теперь, дабы не мучить вас вопросами без ответов, мы начнём ближе знакомиться с Китами Haskell, и детали большой головоломки постепенно сложатся в красивую картину.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>В процессе работы Haskell-программы в памяти создаётся великое множество различных данных, ведь мы постоянно строим новые данные на основе уже имеющихся. За их своевременное уничтожение отвечает сборщик мусора (англ. garbage collector, GC), встраиваемый в программы компилятором GHC.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/whales-n-turtle.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/if-n-return.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

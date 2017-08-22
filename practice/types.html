@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Немного о типах &lt;- О Haskell по-человечески, Практика
+        </title>
+        <link rel="icon" href="../static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="../static/css/default.css">
+        <script src="../static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="../">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="../practice/init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../practice/repos.html">
+                                Весёлые репозитории
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../practice/types.html">
+                                Немного о типах
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../practice/wip-forever.html">
+                                Работа продолжается!
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="немного-о-типах">Немного о типах</h1>
+<p>Как бы вы улучшили эти определения?</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">pdf ::</span> <span class="dt">String</span>
+pdf <span class="fu">=</span> <span class="st">&quot;--pdf&quot;</span>
+
+<span class="ot">pdfPrintable ::</span> <span class="dt">String</span>
+pdfPrintable <span class="fu">=</span> <span class="st">&quot;--pdf-printable&quot;</span>
+
+<span class="ot">epub ::</span> <span class="dt">String</span>
+epub <span class="fu">=</span> <span class="st">&quot;--epub&quot;</span>
+
+<span class="ot">html ::</span> <span class="dt">String</span>
+html <span class="fu">=</span> <span class="st">&quot;--html&quot;</span></code></pre></div>
+<p><div style="padding-top: 10px; padding-bottom: 10px;"><ul class="collapsible collapsible-accordion" data-collapsible="accordion"><li><div class="collapsible-header"><i class="fa fa-check-square-o" style="font-size: 21px; color: green;" aria-hidden="true"></i><span class="sans">Решение</span></div><div class="collapsible-body"><div class="solution-content"> Здесь напрашивается сокращение. Если подряд идут определения одного типа, мы можем написать так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">pdf, pdfPrintable, epub,<span class="ot"> html ::</span> <span class="dt">String</span>
+pdf          <span class="fu">=</span> <span class="st">&quot;--pdf&quot;</span>
+pdfPrintable <span class="fu">=</span> <span class="st">&quot;--pdf-printable&quot;</span>
+epub         <span class="fu">=</span> <span class="st">&quot;--epub&quot;</span>
+html         <span class="fu">=</span> <span class="st">&quot;--html&quot;</span></code></pre></div>
+<p>Сначала идёт эдакое единое объявление для всех строк, ведь они имеют тип <code>String</code>. А затем идут определения. Обратите внимание, что строковые литералы выровнены по левому краю. Опираясь на собственный опыт, я настаиваю на удобстве такого выравнивания. Попробуем иначе:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">pdf <span class="fu">=</span> <span class="st">&quot;--pdf&quot;</span>
+pdfPrintable <span class="fu">=</span> <span class="st">&quot;-pdf-printable&quot;</span>
+epub <span class="fu">=</span> <span class="st">&quot;--epub&quot;</span>
+html <span class="fu">=</span> <span class="st">&quot;--html&quot;</span></code></pre></div>
+<p>Вы заметили? Флаг <code>&quot;-pdf-printable&quot;</code> ошибочно написан с одним минусом в начале. При выравнивании заметить такое куда легче:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">pdf          <span class="fu">=</span> <span class="st">&quot;--pdf&quot;</span>
+pdfPrintable <span class="fu">=</span> <span class="st">&quot;-pdf-printable&quot;</span>
+epub         <span class="fu">=</span> <span class="st">&quot;--epub&quot;</span>
+html         <span class="fu">=</span> <span class="st">&quot;--html&quot;</span></code></pre></div>
+<p>Помните: код пишется для людей, а не для компьютеров. </div></div></li></ul></div></p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/practice/repos.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/practice/wip-forever.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

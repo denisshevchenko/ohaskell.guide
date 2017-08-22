@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Наши типы &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="наши-типы">Наши типы</h1>
+<p>Вот мы и добрались до Второго Кита Haskell — до <strong>Типов</strong>. Конечно, мы работали с типами почти с самого начала, но вам уже порядком надоели все эти <code>Int</code> и <code>String</code>, не правда ли? Пришла пора познакомиться с типами куда ближе.</p>
+<h2 id="знакомство">Знакомство</h2>
+<p>Удивительно, но в Haskell очень мало встроенных типов, то есть таких, о которых компилятор знает с самого начала. Есть <code>Int</code>, есть <code>Double</code>, <code>Char</code>, ну и ещё несколько. Все же остальные типы, даже носящие статус стандартных, не являются встроенными в язык. Вместо этого они определены в стандартной или иных библиотеках, причём определены точно так же, как мы будем определять и наши собственные типы. А поскольку без своих типов написать сколь-нибудь серьёзное приложение у нас не получится, тема эта достойна самого пристального взгляда.</p>
+<p>Определим тип <code>Transport</code> для двух известных протоколов транспортного уровня модели OSI:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Transport</span> <span class="fu">=</span> <span class="dt">TCP</span> <span class="fu">|</span> <span class="dt">UDP</span></code></pre></div>
+<p>Перед нами — очень простой, но уже наш собственный тип. Рассмотрим его внимательнее.</p>
+<p>Ключевое слово <code>data</code> — это начало определения типа. Далее следует название типа, в данном случае <code>Transport</code>. Имя любого типа обязано начинаться с большой буквы. Затем идёт знак равенства, после которого начинается фактическое описание типа, его «тело». В данном случае оно состоит из двух простейших конструкторов. Конструктор значения (англ. data constructor) — это то, что строит значение данного типа. Здесь у нас два конструктора, <code>TCP</code> и <code>UDP</code>, каждый из которых строит значение типа <code>Transport</code>. Имя конструктора тоже обязано начинаться с большой буквы. Иногда для краткости конструктор значения называют просто конструктором.</p>
+<p>Подобное определение легко читается:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span>  <span class="dt">Transport</span>  <span class="fu">=</span>    <span class="dt">TCP</span>  <span class="fu">|</span>    <span class="dt">UDP</span>
+
+тип   <span class="dt">Transport</span>  это  <span class="dt">TCP</span>  или  <span class="dt">UDP</span></code></pre></div>
+<p>Теперь мы можем использовать тип <code>Transport</code>, то есть создавать значения этого типа и что-то с ними делать. Например, в <code>let</code>-выражении:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> protocol <span class="fu">=</span> <span class="dt">TCP</span></code></pre></div>
+<p>Мы создали значение <code>protocol</code> типа <code>Transport</code>, использовав конструктор <code>TCP</code>. А можно и так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> protocol <span class="fu">=</span> <span class="dt">UDP</span></code></pre></div>
+<p>Хотя мы использовали разные конструкторы, тип значения <code>protocol</code> в обоих случаях один и тот же — <code>Transport</code>.</p>
+<p>Расширить подобный тип предельно просто. Добавим новый протокол SCTP (Stream Control Transmission Protocol):</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Transport</span> <span class="fu">=</span> <span class="dt">TCP</span> <span class="fu">|</span> <span class="dt">UDP</span> <span class="fu">|</span> <span class="dt">SCTP</span></code></pre></div>
+<p>Третий конструктор значения дал нам третий способ создать значение типа <code>Transport</code>.</p>
+<h2 id="значение-пустышка">Значение-пустышка</h2>
+<p>Задумаемся: говоря о значении типа <code>Transport</code> — о чём в действительности идёт речь? Казалось бы, значения-то фактического нет: ни числа никакого, ни строки — просто три конструктора. Так вот они и есть значения. Когда мы пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> protocol <span class="fu">=</span> <span class="dt">SCTP</span></code></pre></div>
+<p>мы создаём значение типа <code>Transport</code> с конкретным содержимым в виде <code>SCTP</code>. Конструктор — это и есть содержимое. Данный вид конструктора называется нульарным (англ. nullary). Тип <code>Transport</code> имеет три нульарных конструктора. И даже столь простой тип уже может быть полезен нам:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkProtocol ::</span> <span class="dt">Transport</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+checkProtocol transport <span class="fu">=</span> <span class="kw">case</span> transport <span class="kw">of</span>
+  <span class="dt">TCP</span>  <span class="ot">-&gt;</span> <span class="st">&quot;That's TCP protocol.&quot;</span>
+  <span class="dt">UDP</span>  <span class="ot">-&gt;</span> <span class="st">&quot;That's UDP protocol.&quot;</span>
+  <span class="dt">SCTP</span> <span class="ot">-&gt;</span> <span class="st">&quot;That's SCTP protocol.&quot;</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">.</span> checkProtocol <span class="fu">$</span> <span class="dt">TCP</span></code></pre></div>
+<p>В результате увидим:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">That</span><span class="st">'s TCP protocol.</span></code></pre></div>
+<p>Функция <code>checkProtocol</code> объявлена как принимающая аргумент типа <code>Transport</code>, а применяется она к значению, порождённому конструктором <code>TCP</code>. В данном случае конструкция <code>case-of</code> сравнивает аргумент с конструкторами. Именно поэтому нам не нужна функция <code>otherwise</code>, ведь никаким иным способом, кроме как с помощью трёх конструкторов, значение типа <code>Transport</code> создать невозможно, а значит, один из конструкторов гарантированно совпадёт.</p>
+<p>Тип, состоящий только из нульарных конструкторов, называют ещё перечислением (англ. enumeration). Конструкторов может быть сколько угодно, в том числе один-единственный (хотя польза от подобного типа была бы невелика). Вот ещё один известный пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Day</span> <span class="fu">=</span> <span class="dt">Sunday</span>
+         <span class="fu">|</span> <span class="dt">Monday</span>
+         <span class="fu">|</span> <span class="dt">Tuesday</span>
+         <span class="fu">|</span> <span class="dt">Wednesday</span>
+         <span class="fu">|</span> <span class="dt">Thursday</span>
+         <span class="fu">|</span> <span class="dt">Friday</span>
+         <span class="fu">|</span> <span class="dt">Saturday</span></code></pre></div>
+<p>Обратите внимание на форматирование, когда ментальные «ИЛИ» выровнены строго под знаком равенства. Такой стиль вы встретите во многих реальных Haskell-проектах.</p>
+<p>Значение типа <code>Day</code> отражено одним из семи конструкторов. Сделаем же с ними что-нибудь:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">WorkMode</span> <span class="fu">=</span> <span class="dt">FiveDays</span> <span class="fu">|</span> <span class="dt">SixDays</span>
+
+<span class="ot">workingDays ::</span> <span class="dt">WorkMode</span> <span class="ot">-&gt;</span> [<span class="dt">Day</span>]
+workingDays <span class="dt">FiveDays</span> <span class="fu">=</span> [ <span class="dt">Monday</span>
+                       , <span class="dt">Tuesday</span>
+                       , <span class="dt">Wednesday</span>
+                       , <span class="dt">Thursday</span>
+                       , <span class="dt">Friday</span>
+                       ]
+workingDays <span class="dt">SixDays</span> <span class="fu">=</span> [ <span class="dt">Monday</span>
+                      , <span class="dt">Tuesday</span>
+                      , <span class="dt">Wednesday</span>
+                      , <span class="dt">Thursday</span>
+                      , <span class="dt">Friday</span>
+                      , <span class="dt">Saturday</span>
+                      ]</code></pre></div>
+<p>Функция <code>workingDays</code> возвращает список типа <code>[Day]</code>, и в случае пятидневной рабочей недели, отражённой конструктором <code>FiveDays</code>, этот список сформирован пятью конструкторами, а в случае шестидневной — шестью конструкторами.</p>
+<p>Польза от типов, сформированных нульарными конструкторами, не очень велика, хотя встречаться с такими типами вы будете часто.</p>
+<p>Приоткрою секрет: новый тип можно определить не только с помощью ключевого слова <code>data</code>, но об этом узнаем в одной из следующих глав.</p>
+<p>А теперь мы можем познакомиться с типами куда более полезными.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/laziness.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/adt.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+dependencies:
+  cache_directories:
+    - "~/.stack"
+  pre:
+    - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 575159689BEFB442
+    - echo 'deb http://download.fpcomplete.com/ubuntu precise main'|sudo tee /etc/apt/sources.list.d/fpco.list
+    - sudo apt-get update && sudo apt-get install stack -y
+    - sudo rm /etc/alternatives/gcc
+    - sudo ln -s /usr/bin/gcc-4.8 /etc/alternatives/gcc
+  override:
+    - stack setup
+    - stack build
+
+test:
+  override:
+    - stack test

@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Выбор и образцы &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="выбор-и-образцы">Выбор и образцы</h1>
+<p>Эта глава откроет нам другие способы выбора, а также познакомит нас с образцами. Уверяю, вы влюбитесь в них!</p>
+<h2 id="не-только-из-двух">Не только из двух</h2>
+<p>Часто мы хотим выбирать не только из двух возможных вариантов. Вот как это можно сделать:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+analyzeGold standard <span class="fu">=</span>
+  <span class="kw">if</span> standard <span class="fu">==</span> <span class="dv">999</span>
+    <span class="kw">then</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+    <span class="kw">else</span> <span class="kw">if</span> standard <span class="fu">==</span> <span class="dv">750</span>
+           <span class="kw">then</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+           <span class="kw">else</span> <span class="kw">if</span> standard <span class="fu">==</span> <span class="dv">585</span>
+                  <span class="kw">then</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+                  <span class="kw">else</span> <span class="st">&quot;I don't know such a standard...&quot;</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (analyzeGold <span class="dv">999</span>)</code></pre></div>
+<p>Уверен, вы уже стираете плевок с экрана. Вложенная <code>if-then-else</code> конструкция не может понравиться никому, ведь она крайне неудобна в обращении. А уж если бы анализируемых проб золота было штук пять или семь, эта лестница стала бы поистине ужасной. К счастью, в Haskell можно написать по-другому:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+analyzeGold standard <span class="fu">=</span>
+  <span class="kw">if</span> <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">999</span> <span class="ot">-&gt;</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+     <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">750</span> <span class="ot">-&gt;</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+     <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">585</span> <span class="ot">-&gt;</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> <span class="st">&quot;I don't know such a standard...&quot;</span></code></pre></div>
+<p>Не правда ли, так красивее? Это — множественный <code>if</code>. Работает он по схеме:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">if</span> <span class="fu">|</span> <span class="dt">COND1</span> <span class="ot">-&gt;</span> <span class="dt">EXPR1</span>
+   <span class="fu">|</span> <span class="dt">COND2</span> <span class="ot">-&gt;</span> <span class="dt">EXPR2</span>
+   <span class="fu">|</span> <span class="fu">...</span>
+   <span class="fu">|</span> <span class="dt">CONDn</span> <span class="ot">-&gt;</span> <span class="dt">EXPRn</span>
+   <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> <span class="dt">COMMON_EXPR</span></code></pre></div>
+<p>где <code>COND1..n</code> — выражения, дающие ложь или истину, а <code>EXPR1..n</code> — соответствующие им результирующие выражения. Особая функция <code>otherwise</code> соответствует общему случаю, когда ни одно из логических выражений не дало <code>True</code>, и в этой ситуации результатом условной конструкции послужит выражение <code>COMMON_EXPR</code>.</p>
+<p>Не пренебрегайте <code>otherwise</code>! Если вы его не укажете и при этом примените функцию <code>analyzeGold</code> к значению, отличному от проверяемых:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+analyzeGold standard <span class="fu">=</span>
+  <span class="kw">if</span> <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">999</span> <span class="ot">-&gt;</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+     <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">750</span> <span class="ot">-&gt;</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+     <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">585</span> <span class="ot">-&gt;</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (analyzeGold <span class="dv">583</span>)  <span class="co">-- Ой...</span></code></pre></div>
+<p>компиляция завершится успешно, однако в момент запуска программы вас ожидает неприятный сюрприз в виде ошибки:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Non-exhaustive</span> guards in multi-way if</code></pre></div>
+<p>Проверка получилась неполной, вот и получите ошибку.</p>
+<p>Кстати, видите слово <code>guards</code> в сообщении об ошибке? Вертикальные черты перед логическими выражениями — это и есть охранники (англ. guard), неусыпно охраняющие наши условия. Потешное название выбрали. Чтобы читать их было легче, воспринимайте их как аналог слова «ИЛИ».</p>
+<p>А сейчас стоп. Вы ведь попробовали скомпилировать этот код, не так ли? А почему вы не ругаетесь? Ведь такой код не скомпилируется, так как не хватает одной маленькой, но важной детали. Вот как должен выглядеть модуль <code>Main</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">{-# LANGUAGE MultiWayIf #-}</span>  <span class="co">-- Что это??</span>
+
+<span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span>
+
+<span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+analyzeGold standard <span class="fu">=</span>
+  <span class="kw">if</span> <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">999</span> <span class="ot">-&gt;</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+     <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">750</span> <span class="ot">-&gt;</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+     <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">585</span> <span class="ot">-&gt;</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> <span class="st">&quot;I don't know such a standard...&quot;</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (analyzeGold <span class="dv">999</span>)</code></pre></div>
+<p>Вот теперь всё в порядке. Но что это за странный комментарий в первой строке модуля? Вроде бы оформлен как многострочный комментарий, но выглядит необычно. Перед нами — указание расширения языка Haskell.</p>
+<p>Стандарт <a href="https://www.haskell.org/onlinereport/haskell2010/">Haskell 2010</a> — это официальный стержень языка. Однако компилятор GHC, давно уж ставший компилятором по умолчанию при разработке на Haskell, обладает рядом особых возможностей. По умолчанию многие из этих возможностей выключены, а прагма <code>LANGUAGE</code> как раз для того и предназначена, чтобы их включать/активизировать. В данном случае мы включили расширение <code>MultiWayIf</code>. Именно это расширение позволяет нам использовать множественный <code>if</code>. Такого рода расширений существует очень много, и мы будем часто их использовать.</p>
+<p>Помните: расширение, включённое с помощью прагмы <code>LANGUAGE</code>, действует лишь в рамках текущего модуля. И если я прописал его только в модуле <code>app/Main.hs</code>, то на модуль <code>src/Lib.hs</code> механизм <code>MultiWayIf</code> не распространяется.</p>
+<h2 id="без-если">Без Если</h2>
+<p>Множественный <code>if</code> весьма удобен, но есть способ более красивый. Взгляните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+analyzeGold standard
+  <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">999</span> <span class="fu">=</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+  <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">750</span> <span class="fu">=</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+  <span class="fu">|</span> standard <span class="fu">==</span> <span class="dv">585</span> <span class="fu">=</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+  <span class="fu">|</span> otherwise <span class="fu">=</span> <span class="st">&quot;I don't know such a standard...&quot;</span></code></pre></div>
+<p>Ключевое слово <code>if</code> исчезло. Схема здесь такая:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">function arg  <span class="co">-- Нет знака равенства?</span>
+  <span class="fu">|</span> <span class="dt">COND1</span> <span class="fu">=</span> <span class="dt">EXPR1</span>
+  <span class="fu">|</span> <span class="dt">COND2</span> <span class="fu">=</span> <span class="dt">EXPR2</span>
+  <span class="fu">|</span> <span class="fu">...</span>
+  <span class="fu">|</span> <span class="dt">CONDn</span> <span class="fu">=</span> <span class="dt">EXPRn</span>
+  <span class="fu">|</span> otherwise <span class="fu">=</span> <span class="dt">COMMON_EXPR</span></code></pre></div>
+<p>Устройство почти такое же, но, помимо исчезновения ключевого слова <code>if</code>, мы теперь используем знаки равенства вместо стрелок. Именно поэтому исчез знакомый нам знак равенства после имени аргумента <code>arg</code>. В действительности он, конечно, никуда не исчез, он лишь перешёл в выражения. А чтобы это легче прочесть, напишем выражения в строчку:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">function arg  <span class="fu">|</span>    <span class="dt">COND1</span>     <span class="fu">=</span>      <span class="dt">EXPR1</span>     <span class="fu">|</span>    <span class="fu">...</span>
+
+эта           или            равна
+функция
+                                    этому
+                                    выражению
+
+                   в случае
+                   истинности
+                   этого
+                   выражения
+                                              или  и т<span class="fu">.</span>д<span class="fu">.</span></code></pre></div>
+<p>То есть перед нами уже не одно определение функции, а цепочка определений, потому нам и не нужно ключевое слово <code>if</code>. Но и эту цепочку определений можно упростить.</p>
+<h2 id="сравнение-с-образцом">Сравнение с образцом</h2>
+<p>Убрав слово <code>if</code>, мы и с нашими виртуальными «ИЛИ» можем расстаться. В этом случае останется лишь это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>  <span class="co">-- Одно объявление.</span>
+<span class="co">-- И множество определений...</span>
+analyzeGold <span class="dv">999</span> <span class="fu">=</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+analyzeGold <span class="dv">750</span> <span class="fu">=</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+analyzeGold <span class="dv">585</span> <span class="fu">=</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+analyzeGold _   <span class="fu">=</span> <span class="st">&quot;I don't know such a standard...&quot;</span></code></pre></div>
+<p>Мы просто перечислили определения функции <code>analyzeGold</code> одно за другим. На первый взгляд, возможность множества определений одной и той же функции удивляет, но если вспомнить, что применение функции суть выражение, тогда ничего удивительного. Вот как это читается:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">      analyzeGold  <span class="dv">999</span>          <span class="fu">=</span>      <span class="st">&quot;Wow! 999 standard!&quot;</span>
+
+если  эта функция  применяется  тогда  этому выражению
+                   к этому      она
+                   аргументу    равна
+
+      analyzeGold  <span class="dv">750</span>          <span class="fu">=</span>      <span class="st">&quot;Wow! 999 standard!&quot;</span>
+
+если  эта функция  применяется  тогда  другому выражению
+                   к другому    она
+                   аргументу    равна
+<span class="fu">...</span>
+       analyzeGold _ <span class="fu">=</span>      <span class="st">&quot;I don't know such a standard...&quot;</span>
+
+иначе  эта функция   равна  общему выражению</code></pre></div>
+<p>Когда функция <code>analyzeGold</code> применяется к конкретному аргументу, этот аргумент последовательно сравнивается с образцом (англ. pattern matching). Образца здесь три: <code>999</code>, <code>750</code> и <code>585</code>. И если раньше мы сравнивали аргумент с этими числовыми значениями явно, посредством функции <code>==</code>, теперь это происходит скрыто. Идея сравнения с образцом очень проста: что-то (в данном случае реальный аргумент) сопоставляется с образцом (или образцами) на предмет «подходит/не подходит». Если подходит — то есть сравнение с образцом даёт результат <code>True</code> — готово, используем соответствующее выражение. Если же не подходит — переходим к следующему образцу.</p>
+<p>Сравнение с образцом, называемое ещё «сопоставлением с образцом» используется в Haskell чрезвычайно широко. В русскоязычной литературе перевод словосочетания «pattern matching» не особо закрепился, вместо этого так и говорят «паттерн матчинг». Я поступлю так же.</p>
+<p>Но что это за символ подчёркивания такой, в последнем варианте определения? Вот этот:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">analyzeGold _ <span class="fu">=</span> <span class="st">&quot;I don't know such a standard...&quot;</span>
+            <span class="fu">^</span></code></pre></div>
+<p>С формальной точки зрения, это — универсальный образец, сравнение с которым всегда истинно (ещё говорят, что с ним матчится (англ. match) всё что угодно). А с неформальной — это символ, который можно прочесть как «мне всё равно». Мы как бы говорим: «В данном случае нас не интересует конкретное содержимое аргумента, нам всё равно, мы просто возвращаем строку <code>I don't know such a standard...</code>».</p>
+<p>Важно отметить, что сравнение аргумента с образцами происходит последовательно, сверху вниз. Поэтому если мы напишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">analyzeGold ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+analyzeGold _   <span class="fu">=</span> <span class="st">&quot;I don't know such a standard...&quot;</span>
+analyzeGold <span class="dv">999</span> <span class="fu">=</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+analyzeGold <span class="dv">750</span> <span class="fu">=</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+analyzeGold <span class="dv">585</span> <span class="fu">=</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span></code></pre></div>
+<p>наша функция будет всегда возвращать первое выражение, строку <code>I don't know such a standard...</code>, и это вполне ожидаемо: первая же проверка гарантированно даст нам <code>True</code>, ведь с образцом <code>_</code> совпадает всё что угодно. Таким образом, общий образец следует располагать в самом конце, чтобы мы попали на него лишь после того, как не сработали все остальные образцы.</p>
+<h2 id="case">case</h2>
+<p>Существует ещё один вид паттерн матчинга, с помощью конструкции <code>case-of</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">analyzeGold standard <span class="fu">=</span>
+  <span class="kw">case</span> standard <span class="kw">of</span>
+    <span class="dv">999</span> <span class="ot">-&gt;</span> <span class="st">&quot;Wow! 999 standard!&quot;</span>
+    <span class="dv">750</span> <span class="ot">-&gt;</span> <span class="st">&quot;Great! 750 standard.&quot;</span>
+    <span class="dv">585</span> <span class="ot">-&gt;</span> <span class="st">&quot;Not bad! 585 standard.&quot;</span>
+    _   <span class="ot">-&gt;</span> <span class="st">&quot;I don't know such a standard...&quot;</span></code></pre></div>
+<p>Запомните конструкцию <code>case-of</code>, мы встретимся с нею не раз. Работает она по модели:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">case</span> <span class="dt">EXPRESSION</span> <span class="kw">of</span>
+  <span class="dt">PATTERN1</span> <span class="ot">-&gt;</span> <span class="dt">EXPR1</span>
+  <span class="dt">PATTERN2</span> <span class="ot">-&gt;</span> <span class="dt">EXPR2</span>
+  <span class="fu">...</span>
+  <span class="dt">PATTERNn</span> <span class="ot">-&gt;</span> <span class="dt">EXPRn</span>
+  _        <span class="ot">-&gt;</span> <span class="dt">COMMON_EXPR</span></code></pre></div>
+<p>где <code>EXPRESSION</code> — анализируемое выражение, последовательно сравниваемое с образцами <code>PATTERN1..n</code>. Если ни одно не сработало — как обычно, упираемся в универсальный образец <code>_</code> и выдаём <code>COMMON_EXPR</code>.</p>
+<p>В последующих главах мы встретимся и с другими видами паттерн матчинга, ведь он используется не только для выбора.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/if-n-return.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/let-n-where.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

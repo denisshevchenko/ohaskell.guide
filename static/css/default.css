@@ -1,0 +1,381 @@
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400|PT+Serif:400,700,400italic|Ubuntu+Mono:400,400italic,700&subset=latin,cyrillic);
+body
+{
+  color            : #002b36;
+  font-size        : 17px;
+  font-family      : "PT Serif", serif;
+  background-color : #fdf6e3;
+  text-align       : justify;
+}
+
+h1
+{
+  color          : #586e75;
+  font-size      : 30px;
+  text-align     : center;
+  padding-top    : 40px;
+  padding-bottom : 35px;
+}
+
+h2
+{
+  color          : #586e75;
+  font-size      : 22px;
+  text-align     : left;
+  padding-top    : 30px;
+  padding-bottom : 20px;
+}
+
+h3
+{
+  color          : #586e75;
+  font-size      : 20px;
+  text-align     : left;
+  padding-top    : 15px;
+  padding-bottom : 10px;
+}
+
+
+p > code
+{
+  color            : #000000;
+  background-color : #eee8d5;
+  font-family      : "Ubuntu Mono", monospace;
+  font-size        : 100%;
+  border-radius    : 3px 3px 3px 3px;
+  border           : solid 1px #eee8d5;
+  padding-top      : 1px;
+  padding-bottom   : 1px;
+  padding-left     : 3px;
+  padding-right    : 3px;
+}
+
+
+span > code
+{
+  color            : #000000;
+  background-color : #eee8d5;
+  font-family      : "Ubuntu Mono", monospace;
+  font-size        : 100%;
+  border-radius    : 3px 3px 3px 3px;
+  border           : solid 1px #eee8d5;
+  padding-top      : 1px;
+  padding-bottom   : 1px;
+  padding-left     : 3px;
+  padding-right    : 3px;
+}
+
+
+li > code
+{
+  color            : #000000;
+  background-color : #eee8d5;
+  font-family      : "Ubuntu Mono", monospace;
+  font-size        : 100%;
+  border-radius    : 3px 3px 3px 3px;
+  border           : solid 1px #eee8d5;
+  padding-top      : 1px;
+  padding-bottom   : 1px;
+  padding-left     : 3px;
+  padding-right    : 3px;
+}
+
+a
+{
+  color : #268bd2;
+}
+
+a:hover
+{
+  text-decoration : none;
+}
+
+a:visited
+{
+  text-decoration : none;
+}
+
+a:active
+{
+  text-decoration : none;
+}
+
+p > a::after
+{
+  content      : "⇗";
+  padding-left : 2px;
+  font-size    : 14px;
+}
+
+ol > li > a::after
+{
+  content      : "⇗";
+  padding-left : 2px;
+  font-size    : 14px;
+}
+
+blockquote
+{
+  margin-left  : 0;
+  padding-left : 20px;
+  color        : #666666;
+  border-left  : solid 5px #ee6e73;
+}
+
+.cover-title
+{
+  color         : #586e75;
+  font-size     : 48px;
+  padding-top   : 15px;
+  margin-bottom : 30px;
+}
+
+.book-icon
+{
+  font-size : 130px;
+  opacity   : 0.5;
+  color     : #448aff;
+}
+
+.keyboard-icon
+{
+  font-size : 130px;
+  opacity   : 0.5;
+  color     : #ffa000;
+}
+
+.publish-version
+{
+  color          : #586e75;
+  font-size      : 18px;
+  padding-bottom : 40px;
+}
+
+.read-button
+{
+  padding-top    : 40px;
+  padding-bottom : 20px;
+}
+
+.practice-button
+{
+  padding-top    : 40px;
+  padding-bottom : 40px;
+}
+
+.sans
+{
+  font-family : "PT Sans", sans-serif;
+}
+
+.mono
+{
+  font-family : "Ubuntu Mono", monospace;
+}
+
+.get-button
+{
+  width : 148px;
+}
+
+.get-button-separator
+{
+  padding-bottom : 25px;
+}
+
+.smaller-text
+{
+  font-size : 100%;
+}
+
+
+.side-nav a
+{
+  text-align : left;
+  font-size  : 17px;
+}
+
+.side-nav li
+{
+  padding : 0 0 0 0;
+}
+
+nav
+{
+  opacity          : 0.9;
+  background-color : #2aa198;
+}
+
+nav .brand-logo
+{
+  font-size : 26px;
+}
+
+
+nav ul a
+{
+  font-size : 26px;
+}
+
+
+div#logo .navbar-brand
+{
+  font-size : 16px;
+}
+
+
+.navbar a
+{
+  border-bottom   : solid 0 #000000;
+  text-decoration : none;
+}
+
+
+.navbar-header a
+{
+  border-bottom   : solid 0 #000000;
+  text-decoration : none;
+}
+
+.navbar-default
+{
+  background-color : #ffffff;
+  border-color     : #e7e7e7;
+  opacity          : 0.91;
+}
+
+.navbar-default .navbar-nav > li > a:hover
+{
+  color : #222222;
+}
+
+.navbar-default .navbar-nav > li > a:focus
+{
+  color : #222222;
+}
+
+.author
+{
+  padding-left : 15px;
+}
+
+.chapter-arrow
+{
+  font-size : 21px;
+}
+
+
+.sourceCode code
+{
+  font-family : "Ubuntu Mono", monospace;
+}
+
+.donate
+{
+  padding-top : 50px;
+}
+
+.donate-button
+{
+  text-transform : none;
+  color          : #f17603;
+  font-size      : 18px;
+}
+
+.donate-area
+{
+  text-align : center;
+}
+
+.solution-content
+{
+  padding          : 20px 20px 20px 20px;
+  background-color : #fefbf3;
+}
+
+
+.collapsible-body p
+{
+  padding : 0px 0px 0px 0px;
+}
+
+pre.sourceCode
+{
+  color            : #000000;
+  background-color : #eee8d5;
+  font-family      : "Ubuntu Mono", monospace;
+  font-size        : 100%;
+  border-radius    : 3px 3px 3px 3px;
+  border           : solid 1px #eee8d5;
+  padding          : 7px 7px 7px 7px;
+  margin-top       : 18px;
+  margin-bottom    : 18px;
+}
+
+pre.sourceCode span.kw
+{
+  color       : #007020;
+  font-weight : bold;
+}
+
+pre.sourceCode span.dt
+{
+  color : #902000;
+}
+
+pre.sourceCode span.dv
+{
+  color : #40a070;
+}
+
+pre.sourceCode span.bn
+{
+  color : #40a070;
+}
+
+pre.sourceCode span.fl
+{
+  color : #40a070;
+}
+
+pre.sourceCode span.ch
+{
+  color : #4070a0;
+}
+
+pre.sourceCode span.st
+{
+  color : #4070a0;
+}
+
+pre.sourceCode span.co
+{
+  color      : #60a0b0;
+  font-style : italic;
+}
+
+pre.sourceCode span.ot
+{
+  color : #007020;
+}
+
+pre.sourceCode span.al
+{
+  color       : #ff0000;
+  font-weight : bold;
+}
+
+pre.sourceCode span.fu
+{
+  color : #06287e;
+}
+
+pre.sourceCode span.er
+{
+  color       : #ff0000;
+  font-weight : bold;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

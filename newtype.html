@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Новый тип &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="новый-тип">Новый тип</h1>
+<p>Помимо <code>data</code> существует ещё одно ключевое слово, предназначенное для определения нового типа. Оно так и называется — <code>newtype</code>. Эти слова похожи друг на друга «в одну сторону»: вы можете поставить <code>data</code> на место <code>newtype</code>, но не наоборот.</p>
+<h2 id="различия">Различия</h2>
+<p>Тип, определяемый с помощью слова <code>newtype</code>, обязан иметь один и только один конструктор значения. Мы можем написать так:  </p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span> <span class="dt">String</span></code></pre></div>
+<p>А вот так не можем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span> <span class="dt">String</span> <span class="fu">|</span> <span class="dt">Localhost</span></code></pre></div>
+<p>Компилятор заупрямится:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">A</span> newtype must have exactly one constructor,
+  <span class="ex">but</span> ‘IPAddress’ has two
+<span class="ex">In</span> the newtype declaration for ‘IPAddress’</code></pre></div>
+<p>Кроме того, в таком типе должно быть одно и лишь одно поле. То есть можно так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span> <span class="dt">String</span></code></pre></div>
+<p>Или же так, с меткой:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span> {<span class="ot"> value ::</span> <span class="dt">String</span> }</code></pre></div>
+<p>А вот два или более полей запихнуть не удастся:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">EndPoint</span> <span class="fu">=</span> <span class="dt">EndPoint</span> <span class="dt">String</span> <span class="dt">Int</span></code></pre></div>
+<p>Компилятор вновь обратит наше внимание на проблему:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">The</span> constructor of a newtype must have exactly one field
+  <span class="ex">but</span> ‘EndPoint’ has two
+<span class="ex">In</span> the definition of data constructor ‘EndPoint’
+<span class="ex">In</span> the newtype declaration for ‘EndPoint’</code></pre></div>
+<p>Более того, нульарный конструктор тоже не подойдёт:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">HardDay</span> <span class="fu">=</span> <span class="dt">Monday</span></code></pre></div>
+<p>И вновь ошибка:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">The</span> constructor of a newtype must have exactly one field
+  <span class="ex">but</span> ‘Monday’ has none</code></pre></div>
+<h2 id="зачем-он-нужен">Зачем он нужен?</h2>
+<p>В самом деле, зачем нам нужно такое хозяйство? Это нельзя, то нельзя. Какой смысл?</p>
+<p>Смысл в оптимизации. Обратите внимание на модель <code>newtype</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span>           <span class="dt">String</span>
+
+новый   название    конструктор  Поле
+тип                 значения</code></pre></div>
+<p>Фактически, <code>newtype</code> берёт одно-единственное значение некоторого существующего типа и всего лишь оборачивает его в свой конструктор. Именно поэтому тип, введённый с помощью <code>newtype</code>, не относится к АТД, и с точки зрения компилятора он является лишь переименованием типа (англ. type renaming). Это делает такой тип более простым и эффективным с точки зрения представления в памяти, нежели тип, определяемый с <code>data</code>.</p>
+<p>Когда мы пишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span> <span class="dt">String</span></code></pre></div>
+<p>мы говорим компилятору: «<code>IPAddress</code> — это абсолютно новый и самобытный тип, которого никогда не было ранее». А когда пишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IP</span> <span class="dt">String</span></code></pre></div>
+<p>мы говорим: «<code>IPAddress</code> — это всего лишь обёртка для значения уже существующего типа <code>String</code>».</p>
+<h2 id="type-vs-newtype">type vs newtype</h2>
+<p>Внимательный читатель спросит, в чём же фундаментальное отличие типов, вводимых с помощью <code>newtype</code>, от типов, вводимых с помощью <code>type</code>? Там синоним, тут — обёртка. Отличие вот в чём.</p>
+<p>Когда мы пишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">String</span> <span class="fu">=</span> [<span class="dt">Char</span>]</code></pre></div>
+<p>мы объявляем: «Тип <code>String</code> — это эквивалентная замена типу <code>[Char]</code>». И поэтому везде, где в коде стоит <code>[Char]</code>, мы можем поставить <code>String</code>, и везде, где стоит <code>String</code>, мы можем поставить <code>[Char]</code>. Например, если функция объявлена так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">replace ::</span> <span class="dt">String</span>
+        <span class="ot">-&gt;</span> <span class="dt">String</span>
+        <span class="ot">-&gt;</span> <span class="dt">String</span>
+        <span class="ot">-&gt;</span> <span class="dt">String</span></code></pre></div>
+<p>мы можем спокойно переписать объявление:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">replace ::</span> [<span class="dt">Char</span>]
+        <span class="ot">-&gt;</span> [<span class="dt">Char</span>]
+        <span class="ot">-&gt;</span> [<span class="dt">Char</span>]
+        <span class="ot">-&gt;</span> [<span class="dt">Char</span>]</code></pre></div>
+<p>и ничего не изменится.</p>
+<p>Когда же мы пишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">MyInt</span> <span class="fu">=</span> <span class="dt">MyInt</span> <span class="dt">Int</span></code></pre></div>
+<p>мы объявляем: «Тип <code>MyInt</code> — это новый тип, представление которого такое же, как у типа <code>Int</code>». Мы не можем просто взять и поставить <code>MyInt</code> на место <code>Int</code>, потому что эти типы равны лишь с точки зрения представления в памяти, с точки зрения системы типов они абсолютно различны.</p>
+<p>А зачем же нам нужно это? Для простоты и надёжности кода. Допустим, есть такая функция:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">getBuildsInfo ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">BuildsInfo</span>
+getBuildsInfo projectName limit <span class="fu">=</span> <span class="fu">...</span></code></pre></div>
+<p>Эта функция запрашивает у CI-сервиса (через REST API) информацию о сборках проекта. Из определения мы видим, что первым аргументом выступает имя проекта, а вторым — количество сборок. Однако в месте применения функции это может быть не столь очевидным:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> info <span class="fu">=</span> getBuildsInfo <span class="st">&quot;ohaskell.guide&quot;</span> <span class="dv">4</span></code></pre></div>
+<p>Что такое первая строка? Что такое второе число? Неясно, нужно глядеть в определение, ведь даже объявление не расскажет нам правду:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">getBuildsInfo ::</span> <span class="dt">String</span>  <span class="ot">-&gt;</span> <span class="dt">Int</span>    <span class="ot">-&gt;</span> <span class="dt">BuildsInfo</span>
+
+                 что за     что за
+                 строка<span class="fu">?</span>    число<span class="fu">?</span></code></pre></div>
+<p>Вот тут нам и помогают наши типы, ведь стандартные <code>String</code> и <code>Int</code> сами по себе не несут никакой полезной информации о своём содержимом. Конечно, мы могли бы обойтись и без типов, просто введя промежуточные выражения:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> project <span class="fu">=</span> <span class="st">&quot;ohaskell.guide&quot;</span>
+      limit   <span class="fu">=</span> <span class="dv">4</span>
+      info    <span class="fu">=</span> getBuildsInfo project limit</code></pre></div>
+<p>Однако программист может этого и не сделать, и тогда мы получим «магические значения», смысл которых нам неизвестен. Куда лучше ввести собственные типы:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">Project</span> <span class="fu">=</span> <span class="dt">Project</span> <span class="dt">String</span>
+<span class="kw">newtype</span> <span class="dt">Limit</span> <span class="fu">=</span> <span class="dt">Limit</span> <span class="dt">Int</span>
+
+<span class="ot">getBuildsInfo ::</span> <span class="dt">Project</span> <span class="ot">-&gt;</span> <span class="dt">Limit</span>  <span class="ot">-&gt;</span> <span class="dt">BuildsInfo</span>
+
+                 уже не     уже не
+                 просто     просто
+                 строка     число</code></pre></div>
+<p>Это заставит нас писать явно:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> info <span class="fu">=</span> getBuildsInfo (<span class="dt">Project</span> <span class="st">&quot;ohaskell.guide&quot;</span>)
+                           (<span class="dt">Limit</span> <span class="dv">4</span>)</code></pre></div>
+<p>Теперь, даже без промежуточных выражений, смысл строки и числа вполне очевиден. Это важный принцип в Haskell: безликие типы наподобие <code>String</code> или <code>Int</code> заменять на типы, имеющие конкретный смысл для нас.</p>
+<p>Кроме того, <code>newtype</code>-типы помогают нам не допускать глупых ошибок. Например, есть другая функция:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">getArtifacts ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> [<span class="dt">Project</span>]
+getArtifacts projectName limit offset <span class="fu">=</span> <span class="fu">...</span></code></pre></div>
+<p>Мало того, что перед нами вновь безликие <code>Int</code>, так их ещё и два. И вот какая нелепая ошибка может нас поджидать:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> project <span class="fu">=</span> <span class="st">&quot;ohaskell.guide&quot;</span>
+      limit   <span class="fu">=</span> <span class="dv">4</span>
+      offset  <span class="fu">=</span> <span class="dv">1</span>
+      info    <span class="fu">=</span> getArtifacts project offset limit</code></pre></div>
+<p>Заметили? Мы случайно перепутали аргументы местами, поставив <code>offset</code> на место <code>limit</code>. Работа функции при этом нарушится, однако компилятор останется нем как рыба, ведь с точки зрения системы типов ошибки не произошло: и там <code>Int</code>, и тут <code>Int</code>. Синонимы для <code>Int</code> также не помогли бы. Однако если у нас будут <code>newtype</code>-типы:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">Limit</span> <span class="fu">=</span> <span class="dt">Limit</span> <span class="dt">Int</span>
+<span class="kw">newtype</span> <span class="dt">Offset</span> <span class="fu">=</span> <span class="dt">Offset</span> <span class="dt">Int</span></code></pre></div>
+<p>тогда подобная ошибка не пройдёт незамеченной:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> project <span class="fu">=</span> <span class="st">&quot;ohaskell.guide&quot;</span>
+      limit   <span class="fu">=</span> <span class="dt">Limit</span> <span class="dv">4</span>
+      offset  <span class="fu">=</span> <span class="dt">Offset</span> <span class="dv">1</span>
+      info    <span class="fu">=</span> getArtifacts offset limit</code></pre></div>
+<p>Типы аргументов теперь разные, а значит, путаница между ними гарантированно прервёт компиляцию.</p>
+<p>Вот такие они, <code>newtype</code>-типы. В последующих главах мы увидим ещё большую мощь системы типов Haskell.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/adt-field-labels.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/type-constructor.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

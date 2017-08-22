@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Мир операторов &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="мир-операторов">Мир операторов</h1>
+<p>Оператор (англ. operator) — частный случай функции. В предыдущих главах мы уже познакомились с ними, осталось объяснить подробнее.</p>
+<p>Вспомним наше самое первое выражение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dv">1</span> <span class="fu">+</span> <span class="dv">2</span></code></pre></div>
+<p>Функция <code>+</code> записана в инфиксной (англ. infix) форме, то есть между своими аргументами. Такая запись выглядит естественнее, нежели обычная:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="fu">+</span>) <span class="dv">1</span> <span class="dv">2</span></code></pre></div>
+<p>Видите круглые скобки? Они говорят о том, что данная функция предназначена для инфиксной записи. Автор этой функции изначально рассчитывал на инфиксную форму использования <code>1 + 2</code>, а не на обычную <code>(+) 1 2</code>, именно поэтому имя функции в определении заключено в круглые скобки:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">(+) ::</span> <span class="fu">...</span></code></pre></div>
+<p>Функции, предназначенные для инфиксной формы применения, называют операторами.</p>
+<p>Если же имя функции не заключено в круглые скобки, подразумевается, что мы рассчитываем на обычную форму её применения. Однако и в этом случае можно применять её инфиксно, но имя должно заключаться в обратные одинарные кавычки (англ. backtick).</p>
+<p>Определим функцию <code>isEqualTo</code>, являющуюся аналогом оператора проверки на равенство для двух целочисленных значений:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">isEqualTo ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+isEqualTo x y <span class="fu">=</span> x <span class="fu">==</span> y</code></pre></div>
+<p>При обычной форме её применение выглядело бы так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="fu">...</span>
+  <span class="kw">if</span> isEqualTo code1 code2 <span class="kw">then</span> <span class="fu">...</span> <span class="kw">else</span> <span class="fu">...</span>
+  <span class="kw">where</span> code1 <span class="fu">=</span> <span class="dv">123</span>
+        code2 <span class="fu">=</span> <span class="dv">124</span>
+  <span class="fu">...</span></code></pre></div>
+<p>Но давайте перепишем в инфиксной форме:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="fu">...</span>
+  <span class="kw">if</span> code1 <span class="ot">`isEqualTo`</span> code2 <span class="kw">then</span> <span class="fu">...</span> <span class="kw">else</span> <span class="fu">...</span>
+  <span class="kw">where</span> code1 <span class="fu">=</span> <span class="dv">123</span>
+        code2 <span class="fu">=</span> <span class="dv">124</span>
+  <span class="fu">...</span></code></pre></div>
+<p>Гораздо лучше, ведь теперь код читается как обычный английский текст:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="fu">...</span>
+  <span class="kw">if</span> code1 <span class="ot">`isEqualTo`</span> code2 <span class="fu">...</span>
+  <span class="kw">if</span> code1 is equal to code2 <span class="fu">...</span>
+  <span class="fu">...</span></code></pre></div>
+<p>Строго говоря, название «оператор» весьма условно, мы можем его и не использовать. Говорить о функции сложения столь же корректно, как и об операторе сложения.</p>
+<h2 id="зачем-это-нужно">Зачем это нужно?</h2>
+<p>Почти все ASCII-символы (а также их всевозможные комбинации) можно использовать в качестве операторов в Haskell. Это даёт нам широкие возможности для реализации различных EDSL (англ. Embedded Domain Specific Language), своего рода «языков в языке». Вот пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">div <span class="fu">!</span> class_ <span class="st">&quot;nav-wrapper&quot;</span> <span class="fu">$</span>
+  a <span class="fu">!</span> class_ <span class="st">&quot;brand-logo sans&quot;</span> <span class="fu">!</span> href <span class="st">&quot;/&quot;</span> <span class="fu">$</span>
+    <span class="st">&quot;#ohaskell&quot;</span></code></pre></div>
+<p>Любой, кто знаком с веб-разработкой, мгновенно узнает в этом коде HTML. Это <a href="https://github.com/denisshevchenko/ohaskell.guide/blob/master/src/CreateHtmlTemplates.hs#L56">кусочек кода</a>, строящего HTML-шаблон для веб-варианта данной книги. То что вы видите — это совершенно легальный Haskell-код, в процессе работы которого генерируется реальный HTML: тег <code>&lt;div&gt;</code> с классом <code>nav-wrapper</code>, внутри которого лежит <code>&lt;a&gt;</code>-ссылка с двумя классами, корневым адресом и внутренним текстом <code>#ohaskell</code>.</p>
+<p>Идентификаторы <code>div</code>, <code>class_</code> и <code>href</code> — это имена функций, а символы <code>!</code> и <code>$</code> — это операторы, записанные в инфиксной форме. Самое главное, что для понимания этого кода нам абсолютно необязательно знать, где определены все эти функции/операторы и как они работают. Это важная мысль, которую я неоднократно буду повторять в последующих главах:</p>
+<blockquote>
+<p>Чтобы использовать функции, нам вовсе необязательно знать их внутренности.</p>
+</blockquote>
+<p>А про EDSL запомните, мы с ними ещё встретимся.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/let-n-where.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/list.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Пусть будет там, Где... &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="пусть-будет-там-где">Пусть будет там, Где…</h1>
+<p>В этой главе мы узнаем, как сделать наши функции более удобными и читабельными.</p>
+<h2 id="пусть">Пусть</h2>
+<p>В нижеследующих примерах мы вновь будем использовать расширение GHC <code>MultiWayIf</code>, не забудьте включить его. Рассмотрим следующую функцию:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span>  <span class="dv">40</span> <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> <span class="dv">120</span>
+     <span class="fu">|</span> timeInS <span class="fu">&gt;=</span> <span class="dv">40</span> <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> <span class="dv">8</span> <span class="fu">+</span> <span class="dv">120</span></code></pre></div>
+<p>Мы считаем время некоторого события, и если исходное время меньше <code>40</code> секунд — результирующее время увеличено на <code>120</code> секунд, в противном случае — ещё на <code>8</code> секунд сверх того. Перед нами классический пример «магических чисел» (англ. magic numbers), когда смысл конкретных значений скрыт за семью печатями. Что за <code>40</code>, и что за <code>8</code>? Во избежание этой проблемы можно ввести временные выражения, и тогда код станет совсем другим:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> threshold  <span class="fu">=</span> <span class="dv">40</span>
+      correction <span class="fu">=</span> <span class="dv">120</span>
+      delta      <span class="fu">=</span> <span class="dv">8</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span>  threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> timeInS <span class="fu">&gt;=</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction</code></pre></div>
+<p>Вот, совсем другое дело! Мы избавились от «магических чисел», введя поясняющие выражения <code>threshold</code>, <code>correction</code> и <code>delta</code>. Конструкция <code>let-in</code> вводит поясняющие выражения по схеме:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span> <span class="dt">DECLARATIONS</span> <span class="kw">in</span> <span class="dt">EXPRESSION</span></code></pre></div>
+<p>где <code>DECLARATIONS</code> — выражения, декларируемые нами, а <code>EXPRESSION</code> — выражение, в котором используется выражения из <code>DECLARATION</code>. Когда мы написали:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span> threshold <span class="fu">=</span> <span class="dv">40</span></code></pre></div>
+<p>мы объявили: «Отныне выражение <code>threshold</code> равно выражению <code>40</code>». Выглядит как присваивание, но мы-то уже знаем, что в Haskell его нет. Теперь выражение <code>threshold</code> может заменить собою число <code>40</code> внутри выражения, следующего за словом <code>in</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> threshold <span class="fu">=</span> <span class="dv">40</span>
+      <span class="fu">...</span>
+  <span class="kw">in</span> <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span>  threshold <span class="ot">-&gt;</span> <span class="fu">...</span>
+        <span class="fu">|</span> timeInS <span class="fu">&gt;=</span> threshold <span class="ot">-&gt;</span> <span class="fu">...</span></code></pre></div>
+<p>Эта конструкция легко читается:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span>    threshold  <span class="fu">=</span>      <span class="dv">40</span>       <span class="fu">...</span> <span class="kw">in</span> <span class="fu">...</span>
+
+пусть  это        будет  этому        в  том
+       выражение  равно  выражению       выражении</code></pre></div>
+<p>С помощью ключевого слова <code>let</code> можно ввести сколько угодно пояснительных/промежуточных выражений, что делает наш код понятнее, а во многих случаях ещё и короче.</p>
+<p>И кстати, мы ведь можем упростить условную конструкцию, воспользовавшись <code>otherwise</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> threshold  <span class="fu">=</span> <span class="dv">40</span>
+      correction <span class="fu">=</span> <span class="dv">120</span>
+      delta      <span class="fu">=</span> <span class="dv">8</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction</code></pre></div>
+<p>Важно помнить, что введённое конструкцией <code>let-in</code> выражение существует лишь в рамках выражения, следующего за словом <code>in</code>. Изменим функцию:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> threshold  <span class="fu">=</span> <span class="dv">40</span>
+      correction <span class="fu">=</span> <span class="dv">120</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span>
+        <span class="kw">let</span> delta     <span class="fu">=</span> <span class="dv">8</span> <span class="kw">in</span> timeInS
+                             <span class="fu">+</span> delta
+                             <span class="fu">+</span> correction
+
+            это              существует лишь в
+            выражение        рамках этого выражения</code></pre></div>
+<p>Мы сократили область видимости промежуточного выражения <code>delta</code>, сделав его видимым лишь в выражении <code>timeInS + delta + correction</code>.</p>
+<p>При желании <code>let</code>-выражения можно записывать и в строчку:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="fu">...</span>
+  <span class="kw">let</span> threshold <span class="fu">=</span> <span class="dv">40</span>; correction <span class="fu">=</span> <span class="dv">120</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span>
+        <span class="kw">let</span> delta <span class="fu">=</span> <span class="dv">8</span> <span class="kw">in</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction</code></pre></div>
+<p>В этом случае мы перечисляем их через точку с запятой. Лично мне такой стиль не нравится, но выбирать вам.</p>
+<h2 id="где">Где</h2>
+<p>Существует иной способ введения промежуточных выражений, взгляните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span>
+                    delta <span class="fu">+</span>
+                    correction
+  <span class="kw">where</span>
+    threshold  <span class="fu">=</span> <span class="dv">40</span>
+    correction <span class="fu">=</span> <span class="dv">120</span>
+    delta      <span class="fu">=</span> <span class="dv">8</span></code></pre></div>
+<p>Ключевое слово <code>where</code> делает примерно то же, что и <code>let</code>, но промежуточные выражения задаются в конце функции. Такая конструкция читается подобно научной формуле:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="dt">S</span> <span class="fu">=</span> <span class="dt">V</span> <span class="fu">*</span> t,      <span class="co">-- Выражение</span>
+где
+  <span class="co">-- Всё то, что</span>
+  <span class="co">-- используется</span>
+  <span class="co">-- в выражении.</span>
+  <span class="dt">S</span> <span class="fu">=</span> расстояние,
+  <span class="dt">V</span> <span class="fu">=</span> скорость,
+  t <span class="fu">=</span> время<span class="fu">.</span></code></pre></div>
+<p>В отличие от <code>let</code>, которое может быть использовано для введения супер-локального выражения (как в последнем примере с <code>delta</code>), все <code>where</code>-выражения доступны в любой части выражения, предшествующего ключевому слову <code>where</code>.</p>
+<h2 id="вместе">Вместе</h2>
+<p>Мы можем использовать <code>let-in</code> и <code>where</code> совместно, в рамках одной функции:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> threshold <span class="fu">=</span> <span class="dv">40</span> <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction
+  <span class="kw">where</span>
+    correction <span class="fu">=</span> <span class="dv">120</span>
+    delta      <span class="fu">=</span> <span class="dv">8</span></code></pre></div>
+<p>Часть промежуточных значений задана вверху, а часть — внизу. Общая рекомендация: не смешивайте <code>let-in</code> и <code>where</code> без особой надобности, такой код читается тяжело, избыточно.</p>
+<p>Отмечу, что в качестве промежуточных могут выступать и более сложные выражения. Например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> threshold <span class="fu">=</span> <span class="dv">40</span> <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction
+  <span class="kw">where</span>
+    <span class="co">-- Это промежуточное выражение зависит от аргумента...</span>
+    correction <span class="fu">=</span> timeInS <span class="fu">*</span> <span class="dv">2</span>
+    <span class="co">-- А это - от другого выражения...</span>
+    delta      <span class="fu">=</span> correction <span class="fu">-</span> <span class="dv">4</span></code></pre></div>
+<p>Выражение <code>correction</code> равно <code>timeInS * 2</code>, то есть теперь оно зависит от значения аргумента функции. А выражение <code>delta</code> зависит в свою очередь от <code>correction</code>. Причём мы можем менять порядок задания выражений:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="fu">...</span>
+  <span class="kw">let</span> threshold <span class="fu">=</span> <span class="dv">40</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction
+  <span class="kw">where</span>
+    delta      <span class="fu">=</span> correction <span class="fu">-</span> <span class="dv">4</span>
+    correction <span class="fu">=</span> timeInS <span class="fu">*</span> <span class="dv">2</span></code></pre></div>
+<p>Выражение <code>delta</code> теперь задано первым по счёту, но это не имеет никакого значения. Ведь мы всего лишь объявляем равенства, и результат этих объявлений не влияет на конечный результат вычислений. Конечно, порядок объявления равенств не важен и для <code>let</code>-выражений:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> delta     <span class="fu">=</span> correction <span class="fu">-</span> <span class="dv">4</span>
+      threshold <span class="fu">=</span> <span class="dv">40</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction
+  <span class="kw">where</span>
+    correction <span class="fu">=</span> timeInS <span class="fu">*</span> <span class="dv">2</span></code></pre></div>
+<p>Мало того, что мы задали <code>let</code>-выражения в другом порядке, так мы ещё и использовали в одном из них выражение <code>correction</code>! То есть в <code>let</code>-выражении использовалось <code>where</code>-выражение. А вот проделать обратное, увы, не получится:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">calculateTime ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+calculateTime timeInS <span class="fu">=</span>
+  <span class="kw">let</span> delta     <span class="fu">=</span> correction <span class="fu">-</span> <span class="dv">4</span>
+      threshold <span class="fu">=</span> <span class="dv">40</span>
+  <span class="kw">in</span>
+  <span class="kw">if</span> <span class="fu">|</span> timeInS <span class="fu">&lt;</span> threshold <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> correction
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> timeInS <span class="fu">+</span> delta <span class="fu">+</span> correction
+  <span class="kw">where</span>
+    correction <span class="fu">=</span> timeInS <span class="fu">*</span> <span class="dv">2</span> <span class="fu">*</span> threshold <span class="co">-- Из let??</span></code></pre></div>
+<p>При попытке скомпилировать такой код мы получим ошибку:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Not</span> in scope: ‘threshold’</code></pre></div>
+<p>Таково ограничение: использовать <code>let</code>-выражения внутри <code>where</code>-выражений невозможно, ведь последние уже не входят в выражение, следующее за словом <code>in</code>.</p>
+<p>Ну что ж, пора двигаться дальше, ведь внутренности наших функций не ограничены условными конструкциями.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/choose-n-patterns.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/operators.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

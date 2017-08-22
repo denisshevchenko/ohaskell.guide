@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Конструктор типа &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="конструктор-типа">Конструктор типа</h1>
+<p>В предыдущих главах мы познакомились с АТД, которые сами по себе уже весьма полезны. И всё же есть в них одно ограничение: они напрочь лишены гибкости. Вот тебе конкретные поля, а вот тебе конкретные типы, будь счастлив. Но существует способ наделить наши тип куда большей силой. Эта глава станет для нас переломной, ведь с неё начнётся наш путь в мир действительно мощных типов.</p>
+<h2 id="опциональный-тип">Опциональный тип</h2>
+<p>Допустим, у нас есть список пар следующего вида:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">Chapters</span> <span class="fu">=</span> [(FilePath, <span class="dt">String</span>)]
+
+<span class="ot">chapters ::</span> <span class="dt">Chapters</span>
+chapters <span class="fu">=</span> [ (<span class="st">&quot;/list.html&quot;</span>,  <span class="st">&quot;Список&quot;</span>)
+           , (<span class="st">&quot;/tuple.html&quot;</span>, <span class="st">&quot;Кортеж&quot;</span>)
+           , (<span class="st">&quot;/hof.html&quot;</span>,   <span class="st">&quot;ФВП&quot;</span>)
+           ]</code></pre></div>
+<p>Тип <code>FilePath</code> есть не более чем стандартный синоним для типа <code>String</code>, но он более информативен. Итак, этот список содержит названия трёх глав данной книги и пути к ним. И вот понадобилась нам функция, которая извлекает название главы по её пути:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">lookupChapterNameBy ::</span> FilePath <span class="ot">-&gt;</span> <span class="dt">Chapters</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+lookupChapterNameBy _ [] <span class="fu">=</span> <span class="st">&quot;&quot;</span>  <span class="co">-- Так ничего и не нашли...</span>
+lookupChapterNameBy path ((realPath, name) <span class="fu">:</span> others)
+  <span class="fu">|</span> path <span class="fu">==</span> realPath <span class="fu">=</span> name <span class="co">-- Пути совпадают, вот вам имя.</span>
+  <span class="fu">|</span> otherwise        <span class="fu">=</span> lookupChapterNameBy path others</code></pre></div>
+<p>Всё предельно просто: рекурсивно бежим по списку пар <code>chapters</code>, на каждом шаге извлекая через паттерн матчинг путь ко главе и её имя. Сравниваем пути и, ежели совпадают — на выходе получается имя, соответствующее заданному пути. Если же, пройдя весь список, мы так и не нашли соответствующего пути, на выходе будет пустая строка.</p>
+<p>Используем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span>
+  <span class="kw">if</span> <span class="fu">|</span> null name <span class="ot">-&gt;</span> <span class="st">&quot;No such chapter, sorry...&quot;</span>
+     <span class="fu">|</span> otherwise <span class="ot">-&gt;</span> <span class="st">&quot;This is chapter name: &quot;</span> <span class="fu">++</span> name
+  <span class="kw">where</span>
+    name <span class="fu">=</span> lookupChapterNameBy <span class="st">&quot;/tuple.html&quot;</span> chapters</code></pre></div>
+<p>Если на выходе функции <code>lookupChapterNameBy</code> пустая строка, значит мы ничего не нашли, в противном же случае показываем найденное имя.</p>
+<p>Ну и как вам такое решение? Вроде бы красивое, но почему, собственно, пустая строка? Я вполне мог написать заготовку для очередной главы и ещё не дать ей имя:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">chapters ::</span> <span class="dt">Chapters</span>
+chapters <span class="fu">=</span> [ (<span class="st">&quot;/list.html&quot;</span>,  <span class="st">&quot;Список&quot;</span>)
+           , (<span class="st">&quot;/tuple.html&quot;</span>, <span class="st">&quot;Кортеж&quot;</span>)
+           , (<span class="st">&quot;/hof.html&quot;</span>,   <span class="st">&quot;ФВП&quot;</span>)
+           , (<span class="st">&quot;/monad.html&quot;</span>, <span class="st">&quot;&quot;</span>)  <span class="co">-- Заготовка</span>
+           ]</code></pre></div>
+<p>В этом случае наше решение ломается: пустая строка на выходе функции <code>lookupChapterNameBy</code> может означать теперь как то, что мы не нашли главы с таким путём, так и то, что глава-то существует, просто её имя пока не задано. Следовательно, нам нужен другой механизм проверки результата поиска, более однозначный.</p>
+<p>Определим опциональный тип. Опциональным (англ. optional) называют такой тип, внутри которого либо есть нечто полезное, либо нет. Выглядеть он будет так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Optional</span> <span class="fu">=</span> <span class="dt">NoSuchChapter</span>
+              <span class="fu">|</span> <span class="dt">Chapter</span> <span class="dt">String</span></code></pre></div>
+<p>Если значение типа <code>Optional</code> создано с помощью нульарного конструктора <code>NoSuchChapter</code>, это означает, что внутри ничего нет, перед нами значение-пустышка. Это и будет соответствовать тому случаю, когда нужную главу мы не нашли. А вот если значение было создано с помощью унарного конструктора <code>Chapter</code>, это несомненно будет означать то, что мы нашли интересующую нас главу. Перепишем функцию <code>lookupChapterNameBy</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">lookupChapterNameBy ::</span> FilePath <span class="ot">-&gt;</span> <span class="dt">Chapters</span> <span class="ot">-&gt;</span> <span class="dt">Optional</span>
+lookupChapterNameBy _ [] <span class="fu">=</span> <span class="dt">NoSuchChapter</span> <span class="co">-- Пустышка</span>
+lookupChapterNameBy path ((realPath, name) <span class="fu">:</span> others)
+  <span class="fu">|</span> path <span class="fu">==</span> realPath <span class="fu">=</span> <span class="dt">Chapter</span> name      <span class="co">-- Реальное имя</span>
+  <span class="fu">|</span> otherwise        <span class="fu">=</span> lookupChapterNameBy path others</code></pre></div>
+<p>Код стал более понятным. И вот как мы будем работать с этой функцией:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span>
+  <span class="kw">case</span> result <span class="kw">of</span>
+    <span class="dt">NoSuchChapter</span> <span class="ot">-&gt;</span> <span class="st">&quot;No such chapter, sorry...&quot;</span>
+    <span class="dt">Chapter</span> name  <span class="ot">-&gt;</span> <span class="st">&quot;This is chapter name: &quot;</span> <span class="fu">++</span> name
+  <span class="kw">where</span>
+    result <span class="fu">=</span> lookupChapterNameBy <span class="st">&quot;/tuple.html&quot;</span> chapters</code></pre></div>
+<p>Отныне функция <code>lookupChapterNameBy</code> сигнализирует о неудачном поиске не посредством пустой строки, а посредством нульарного конструктора. Это и надёжнее, и читабельнее.</p>
+<p>Красиво, но в этом элегантном решении всё-таки остаётся один изъян: оно намертво привязано к типу <code>String</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Optional</span> <span class="fu">=</span> <span class="dt">NoSuchChapter</span>
+              <span class="fu">|</span> <span class="dt">Chapter</span> <span class="dt">String</span>
+
+                        Почему
+                        именно
+                        <span class="dt">String</span><span class="fu">?</span></code></pre></div>
+<p>В самом деле, почему? Например, в Haskell широкое применение получил тип <code>Text</code> из одноимённого пакета. Этот тип, кстати, значительно мощнее и эффективнее стандартной <code>String</code>. Значит, если мы захотим определить опциональный тип и для <code>Text</code>, придётся дублировать:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Optional</span> <span class="fu">=</span> <span class="dt">NoSuchChapter</span> <span class="fu">|</span> <span class="dt">Chapter</span> <span class="dt">String</span>
+
+<span class="kw">data</span> <span class="dt">Optional</span> <span class="fu">=</span> <span class="dt">NoSuchChapter</span> <span class="fu">|</span> <span class="dt">Chapter</span> <span class="dt">Text</span></code></pre></div>
+<p>Однако компилятор наотрез откажется принимать такой код:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Multiple</span> declarations of ‘Optional’</code></pre></div>
+<p>Имена-то типов одинаковые! Хорошо, уточним:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">OptionalString</span> <span class="fu">=</span> <span class="dt">NoSuchChapter</span> <span class="fu">|</span> <span class="dt">Chapter</span> <span class="dt">String</span>
+
+<span class="kw">data</span> <span class="dt">OptionalText</span>   <span class="fu">=</span> <span class="dt">NoSuchChapter</span> <span class="fu">|</span> <span class="dt">Chapter</span> <span class="dt">Text</span></code></pre></div>
+<p>Но и в этом случае компиляция не пройдёт:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Multiple</span> declarations of ‘NoSuchChapter’
+
+<span class="ex">...</span>
+
+<span class="ex">Multiple</span> declarations of ‘Chapter’</code></pre></div>
+<p>Конструкторы значений тоже одноимённые, опять уточняем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">OptionalString</span> <span class="fu">=</span> <span class="dt">NoSuchChapterString</span>
+                    <span class="fu">|</span> <span class="dt">ChapterString</span> <span class="dt">String</span>
+
+<span class="kw">data</span> <span class="dt">OptionalText</span>   <span class="fu">=</span> <span class="dt">NoSuchChapterText</span>
+                    <span class="fu">|</span> <span class="dt">ChapterText</span> <span class="dt">Text</span></code></pre></div>
+<p>Вот теперь это работает, но код стал избыточным. А вдруг мы пожелаем добавить к двум строковым типам ещё и третий? Или четвёртый? Что ж нам, для каждого типа вот так вот уточнять? Нет, умный в гору не пойдёт — есть лучший путь.</p>
+<h2 id="может-быть">Может быть</h2>
+<p>В стандартной библиотеке живёт тип по имени <code>Maybe</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Maybe</span> a <span class="fu">=</span> <span class="dt">Nothing</span> <span class="fu">|</span> <span class="dt">Just</span> a</code></pre></div>
+<p>Тип <code>Maybe</code> (от англ. maybe, «может быть») нужен для создания тех самых опциональных значений. Впрочем, я выразился неточно, ведь, несмотря на ключевое слово <code>data</code>, <code>Maybe</code> — это не совсем тип, это конструктор типа (англ. type constructor). Данная концепция используется в Haskell чрезвычайно часто, и, как и большинство концепций в этом языке, она столь полезна потому, что очень проста.</p>
+<p>Конструктор типа — это то, что создаёт новый тип (потенциально, бесконечное множество типов). Когда мы явно определяем тип, он прямолинеен и однозначен:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Optional</span> <span class="fu">=</span> <span class="dt">NoSuchChapter</span> <span class="fu">|</span> <span class="dt">Chapter</span>      <span class="dt">String</span>
+
+     имя типа   нульарный       унарный      поле
+                конструктор     конструктор  типа
+                значения        значения     <span class="dt">String</span></code></pre></div>
+<p>Когда же мы определяем конструктор типа, мы создаём концептуальный скелет для будущих типов. Взглянем ещё раз (к-тор — это конструктор, для краткости):</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">              ______________________________
+             <span class="fu">/</span>                              <span class="ot">`v</span>
+
+<span class="ot">data Maybe  a        = Nothing   | Just      a</span>
+
+<span class="ot">     к-тор  типовая    нульарный   унарный   поле</span>
+<span class="ot">     типа   заглушка   к-тор       к-тор     типа</span>
+<span class="ot">                       значения    значения  a</span></code></pre></div>
+<p>Здесь присутствует уже знакомая нам типовая заглушка <code>a</code>, она-то и делает <code>Maybe</code> конструктором типа. Как мы помним, на место типовой заглушки всегда встаёт какой-то тип. Перепишем функцию <code>lookupChapterNameBy</code> для работы с <code>Maybe</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">lookupChapterNameBy ::</span> FilePath <span class="ot">-&gt;</span> <span class="dt">Chapters</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> <span class="dt">String</span>
+lookupChapterNameBy _ [] <span class="fu">=</span> <span class="dt">Nothing</span>  <span class="co">-- Пустышка</span>
+lookupChapterNameBy path ((realPath, name) <span class="fu">:</span> others)
+  <span class="fu">|</span> path <span class="fu">==</span> realPath <span class="fu">=</span> <span class="dt">Just</span> name    <span class="co">-- Реальное имя</span>
+  <span class="fu">|</span> otherwise        <span class="fu">=</span> lookupChapterNameBy path others</code></pre></div>
+<p>Рассмотрим обновлённое объявление:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">lookupChapterNameBy ::</span> FilePath
+                    <span class="ot">-&gt;</span> <span class="dt">Chapters</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> <span class="dt">String</span>
+
+                                   это тип такой,
+                                   называется
+                                   <span class="dt">Maybe</span> <span class="dt">String</span></code></pre></div>
+<p>На выходе видим значение типа <code>Maybe String</code>. Этот тип был порождён конструктором <code>Maybe</code>, применённым к типу <code>String</code>. Стоп, я сказал «применённым»? Да, именно так: вы можете воспринимать конструктор типа как особую «функцию», назовём её «типовая функция». Нет, это не официальный термин из Haskell, это просто аналогия: обычная функция работает с данными, а типовая функция работает с типами. Сравните это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">length   [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>] <span class="fu">=</span> <span class="dv">3</span>
+
+функция  данное    <span class="fu">=</span> другое данное</code></pre></div>
+<p>и это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">Maybe</span>    <span class="dt">String</span>    <span class="fu">=</span> <span class="dt">Maybe</span> <span class="dt">String</span>
+
+типовая  тип       <span class="fu">=</span> другой тип
+функция</code></pre></div>
+<p>Применение конструктора типа к существующему типу порождает некий новый тип, и это очень мощная техника, используемая в Haskell почти на каждом шагу. Например, если нам нужно завернуть в опциональное значение уже не <code>String</code>, а ранее упомянутый <code>Text</code>, мы ничего не должны менять в конструкторе <code>Maybe</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">Maybe</span>    <span class="dt">Text</span> <span class="fu">=</span> <span class="dt">Maybe</span> <span class="dt">Text</span>
+
+типовая  тип  <span class="fu">=</span> другой тип
+функция</code></pre></div>
+<p>Какой тип подставляем на место <code>a</code>, такой тип и станет опциональным. В этом и заключается красота конструкторов типов, ведь они дают нам колоссальный простор для творчества.</p>
+<p>А теперь мы подошли к очень важной теме.</p>
+<h2 id="этажи">Этажи</h2>
+<p>Что такое тип <code>Maybe String</code>? Да, мы уже знаем, это АТД. Но что это такое по сути? Зачем мы конструируем сложные типы из простых? Я предлагаю вам аналогию, которая поможет нам взглянуть на этот вопрос несколько иначе. Эта аналогия отнюдь не аксиома, просто я нашёл её полезной для себя самого. Думаю, вам она тоже будет полезна. Конечно, предлагать аналогии — дело неблагодарное, ведь любая из них несовершенна и может быть так или иначе подвергнута критике. Поэтому не воспринимайте мою аналогию как единственно верную.</p>
+<p>С точки зрения типов любую Haskell-программу можно сравнить с многоэтажным домом. И вот представьте, мы смотрим на этот дом со стороны.</p>
+<p>На самом нижнем этаже расположены простейшие стандартные типы, такие как <code>Int</code>, <code>Double</code>, <code>Char</code> или список. Возьмём, например, тип <code>Int</code>. Что это такое? Целое число. Оно не несёт в себе никакого смысла, это всего лишь число в вакууме. Или вот строка — что она такое? Это просто набор каких-то символов в том же вакууме, и ничего более. И если бы мы были ограничены лишь этими типами, наша программистская жизнь была бы весьма грустной.</p>
+<p>А вот на втором и последующих этажах живут типы куда более интересные. Например, на одном из этажей живёт тип <code>Maybe String</code>. При создании типа <code>Maybe String</code> происходит важное событие: мы поднимаемся с первого на более высокий этаж. Считайте эти этажи уровнями абстракции. Если тип <code>String</code> — это всего лишь безликая строка, то тип <code>Maybe String</code> — это уже не просто строка, это опциональная строка, или, если хотите, строка, наделённая опциональностью. Подняться на тот или иной этаж в нашем типовом небоскрёбе — это значит взять более простой тип и наделить его новым смыслом, новыми возможностями.</p>
+<p>Или вот вспомним тип <code>IPAddress</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IPAddress</span> <span class="dt">String</span></code></pre></div>
+<p>Мы опять-таки взяли ничего не значащую строку и подняли её на этаж под названием <code>IPAddress</code>, и теперь это уже не просто какая-то строка, это IP-адрес. Новый тип наделил бессмысленную строку вполне определённым смыслом. А когда мы вытаскиваем внутреннюю строку из <code>IPAddress</code> с помощью паттерн матчинга, мы вновь оказываемся на первом этаже.</p>
+<p>А вот ещё наш тип, <code>EndPoint</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">EndPoint</span> <span class="fu">=</span> <span class="dt">EndPoint</span> <span class="dt">IPAddress</span> <span class="dt">Int</span></code></pre></div>
+<p>Тут мы поднялись ещё чуток: сначала подняли строку на этаж IP-адреса, а затем взяли его и тип <code>Int</code> и подняли их на следующий этаж под названием <code>EndPoint</code>, и на этом этаже перед нами уже не просто какой-то IP-адрес и какое-то число, перед нами уже связанные друг с другом адрес и порт.</p>
+<p>А вот ещё один пример, знакомство с которым я откладывал до сих пор. Вспомним определение главной функции <code>main</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()</code></pre></div>
+<p>Я обещал рассказать о том, что такое <code>IO</code>, и вот теперь рассказываю: <code>IO</code> — это тоже конструктор типа. Правда, конструктор особенный, непохожий на наши <code>IPAddress</code> или <code>EndPoint</code>, но об этом подробнее в следующих главах. Так вот поднявшись на этаж под названием <code>IO</code>, мы получаем очень важную способность — способность взаимодействовать с внешним миром: файл прочесть, на консоль текст вывести, и в том же духе. И потому тип <code>IO String</code> — это уже не просто невесть откуда взявшаяся строка, но строка, полученная из внешнего мира (например, из файла). И единственная возможность наделить наши функции способностью взаимодействовать с внешним миром — поднять (ну или опустить) их на <code>IO</code>-этаж. Вот так и получается: в процессе работы программы мы постоянно прыгаем в лифт и переезжаем с одного типового этажа на другой.</p>
+<p>Но запомните: не все этажи одинаковы! Не со всякого этажа можно напрямую попасть на любой другой. Более того, есть такие этажи, оказавшись на котором, мы в конечном итоге обязаны на него и вернуться. Понимаю, сейчас это порождает больше вопросов, нежели ответов, но не беспокойтесь: ответы ждут нас в последующих главах.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/newtype.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/work-in-progress.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

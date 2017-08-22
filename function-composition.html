@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Композиция функций &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="композиция-функций">Композиция функций</h1>
+<p>Эта глава рассказывает о том, как объединять функции в цепочки, а также о том, как избавиться от круглых скобок.</p>
+<h2 id="скобкам-бой">Скобкам — бой!</h2>
+<p>Да, я не люблю круглые скобки. Они делают код визуально избыточным, к тому же нужно следить за симметрией скобок открывающих и закрывающих. Вспомним пример из главы про кортежи:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  putStrLn (patientEmail ( <span class="st">&quot;63ab89d&quot;</span>
+           <span class="fu">^</span>             , <span class="st">&quot;John Smith&quot;</span>
+                         , <span class="st">&quot;johnsm@gmail.com&quot;</span>
+                         , <span class="dv">59</span>
+                         ))
+                          <span class="fu">^</span></code></pre></div>
+<p>Со скобками кортежа мы ничего сделать не можем, ведь они являются синтаксической частью кортежа. А вот скобки вокруг применения функции <code>patientEmail</code> мне абсолютно не нравятся. К счастью, мы можем избавиться от них. Но прежде чем искоренять скобки, задумаемся вот о чём.</p>
+<p>Если применение функции представляет собой выражение, не можем ли мы как-нибудь компоновать их друг с другом? Конечно можем, мы уже делали это много раз, вспомните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>)</code></pre></div>
+<p>Здесь компонуются две функции, <code>putStrLn</code> и <code>checkLocalhost</code>, потому что тип выражения на выходе функции <code>checkLocalhost</code> совпадает с типом выражения на входе функции <code>putStrLn</code>. Схематично это можно изобразить так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">         ┌──────────────┐            ┌────────┐
+<span class="dt">String</span> <span class="ot">-&gt;</span>│checkLocalhost│<span class="ot">-&gt;</span> <span class="dt">String</span> <span class="ot">-&gt;</span>│putStrLn│<span class="ot">-&gt;</span> <span class="fu">...</span>
+         └──────────────┘            └────────┘
+
+<span class="dt">IP</span><span class="fu">-</span>адрес                    сообщение             текст
+                            об этом               в нашем
+                            <span class="dt">IP</span><span class="fu">-</span>адресе             терминале</code></pre></div>
+<p>Получается эдакий конвейер: на входе строка с IP-адресом, на выходе — сообщение в нашем терминале. Существует иной способ соединения двух функций воедино.</p>
+<h2 id="композиция-и-применение">Композиция и применение</h2>
+<p>Взгляните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">.</span> checkLocalhost <span class="fu">$</span> <span class="st">&quot;173.194.22.100&quot;</span></code></pre></div>
+<p>Необычно? Перед нами два новых стандартных оператора, избавляющие нас от лишних скобок и делающие наш код проще. Оператор <code>.</code> — это оператор композиции функций (англ. function composition), а оператор <code>$</code> — это оператор применения (англ. application operator). Эти операторы часто используют совместно друг с другом. И отныне мы будем использовать их чуть ли не в каждой главе.</p>
+<p>Оператор композиции объединяет две функции воедино (или компонует их, англ. compose). Когда мы пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">putStrLn <span class="fu">.</span> checkLocalhost</code></pre></div>
+<p>происходит маленькая «магия»: две функции объединяются в новую функцию. Вспомним наш конвейер:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">         ┌──────────────┐            ┌────────┐
+<span class="dt">String</span> <span class="ot">-&gt;</span>│checkLocalhost│<span class="ot">-&gt;</span> <span class="dt">String</span> <span class="ot">-&gt;</span>│putStrLn│<span class="ot">-&gt;</span> <span class="fu">...</span>
+         └──────────────┘            └────────┘
+<span class="dt">A</span>                           <span class="dt">B</span>                     <span class="dt">C</span></code></pre></div>
+<p>Раз нам нужно попасть из точки <code>A</code> в точку <code>C</code>, нельзя ли сделать это сразу? Можно, и в этом заключается суть композиции: мы берём две функции и объединяем их в третью функцию. Раз <code>checkLocalhost</code> приводит нас из точки <code>A</code> в точку <code>B</code>, а функция <code>putStrLn</code> — из точки <code>B</code> в <code>C</code>, тогда композиция этих двух функций будет представлять собой функцию, приводящую нас сразу из точки <code>A</code> в точку <code>C</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">         ┌─────────────────────────┐
+<span class="dt">String</span> <span class="ot">-&gt;</span>│checkLocalhost <span class="fu">+</span> putStrLn│<span class="ot">-&gt;</span> <span class="fu">...</span>
+         └─────────────────────────┘
+<span class="dt">A</span>                                      <span class="dt">C</span></code></pre></div>
+<p>В данном случае знак <code>+</code> не относится к конкретному оператору, я лишь показываю факт «объединения» двух функций в третью. Теперь-то нам понятно, почему в типе функции, в качестве разделителя, используется стрелка:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkLocalhost ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span></code></pre></div>
+<p>в нашем примере это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkLocalhost ::</span> <span class="dt">A</span> <span class="ot">-&gt;</span> <span class="dt">B</span></code></pre></div>
+<p>Она показывает наше движение из точки <code>A</code> в точку <code>B</code>. Поэтому часто говорят о «функции из <code>A</code> в <code>B</code>». Так, о функции <code>checkLocalhost</code> можно сказать как о «функции из <code>String</code> в <code>String</code>».</p>
+<p>А оператор применения работает ещё проще. Без него код был бы таким:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  (putStrLn <span class="fu">.</span> checkLocalhost)  <span class="st">&quot;173.194.22.100&quot;</span>
+
+  объединённая функция         аргумент</code></pre></div>
+<p>Но мы ведь хотели избавиться от круглых скобок, а тут они опять. Вот для этого и нужен оператор применения. Его схема проста:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">FUNCTION</span>  <span class="fu">$</span>            <span class="dt">ARGUMENT</span>
+вот эта   применяется  вот этому
+функция   к            аргументу</code></pre></div>
+<p>Для нашей объединённой функции это выглядит так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  putStrLn <span class="fu">.</span> checkLocalhost  <span class="fu">$</span>            <span class="st">&quot;173.194.22.100&quot;</span>
+
+  объединённая функция       применяется
+                             к            этому аргументу</code></pre></div>
+<p>Теперь получился настоящий конвейер: справа в него «заезжает» строка и движется «сквозь» функции, а слева «выезжает» результат:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> putStrLn <span class="fu">.</span> checkLocalhost <span class="fu">$</span>  <span class="st">&quot;173.194.22.100&quot;</span>
+
+     <span class="ot">&lt;-</span>         <span class="ot">&lt;-</span>               <span class="ot">&lt;-</span> аргумент</code></pre></div>
+<p>Чтобы было легче читать композицию, вместо оператора <code>.</code> мысленно подставляем фразу «применяется после»:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">putStrLn  <span class="fu">.</span>            checkLocalhost
+
+эта       применяется  этой
+функция   после        функции</code></pre></div>
+<p>То есть композиция правоассоциативна (англ. right-associative): сначала применяется функция справа, а затем — слева.</p>
+<p>Ещё одно замечание про оператор применения функции. Он весьма гибок, и мы можем написать так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> putStrLn <span class="fu">.</span> checkLocalhost <span class="fu">$</span> <span class="st">&quot;173.194.22.100&quot;</span>
+
+       объединённая функция        └─ её аргумент ─┘</code></pre></div>
+<p>а можем и так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> putStrLn <span class="fu">$</span> checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>
+
+       обычная    └──────── её аргумент ────────┘
+       функция</code></pre></div>
+<p>Эти две формы, как вы уже поняли, эквивалентны. Я показываю это для того, чтобы вновь и вновь продемонстрировать вам, сколь гибко можно работать с данными и функциями в Haskell.</p>
+<h2 id="длинные-цепочки">Длинные цепочки</h2>
+<p>Красота композиции в том, что компоновать мы можем сколько угодно функций:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">logWarn ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+logWarn rawMessage <span class="fu">=</span>
+  warning <span class="fu">.</span> correctSpaces <span class="fu">.</span> asciiOnly <span class="fu">$</span> rawMessage
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span>
+  logWarn <span class="st">&quot;Province   'Gia Viễn' isn't on the map! &quot;</span></code></pre></div>
+<p>Функция <code>logWarn</code> готовит переданную ей строку для записи в журнал. Функция <code>asciiOnly</code> готовит строку к выводу в нелокализованном терминале (да, в 2016 году такие всё ещё имеются), функция <code>correctSpaces</code> убирает дублирующиеся пробелы, а функция <code>warning</code> делает строку предупреждением (например, добавляет строку <code>&quot;WARNING: &quot;</code> в начало сообщения). При запуске этой программы мы увидим:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">WARNING</span>: Province <span class="st">'Gia Vi?n'</span> isn<span class="st">'t on the map!</span></code></pre></div>
+<p>Здесь мы объединили в «функциональный конвейер» уже три функции, безо всяких скобок. Вот как это получилось:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">warning <span class="fu">.</span> correctSpaces <span class="fu">.</span> asciiOnly <span class="fu">$</span> rawMessage
+
+                        <span class="fu">^</span>
+          └── первая композиция ──┘
+
+        <span class="fu">^</span>
+└────── вторая композиция ────────┘
+                                      аргумент</code></pre></div>
+<p>Первая композиция объединяет две простые функции, <code>correctSpaces</code> и <code>asciiOnly</code>. Вторая объединяет тоже две функции, простую <code>warning</code> и объединённую, являющуюся результатом первой композиции.</p>
+<p>Более того, определение функции <code>logWarn</code> можно сделать ещё более простым:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">logWarn ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+logWarn <span class="fu">=</span> warning <span class="fu">.</span> correctSpaces <span class="fu">.</span> asciiOnly</code></pre></div>
+<p>Погодите, но где же имя аргумента? А его больше нет, оно нам не нужно. Ведь мы знаем, что применение функции можно легко заменить внутренним выражением функции. А раз так, выражение <code>logWarn</code> может быть заменено на выражение <code>warning . correctSpaces . asciiOnly</code>. Сделаем же это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  logWarn <span class="st">&quot;Province   'Gia Viễn' isn't on the map! &quot;</span>
+
+<span class="fu">=</span> (warning
+   <span class="fu">.</span> correctSpaces
+   <span class="fu">.</span> asciiOnly) <span class="st">&quot;Province   'Gia Viễn' isn't on the map! &quot;</span>
+
+<span class="fu">=</span>   warning
+  <span class="fu">.</span> correctSpaces
+  <span class="fu">.</span> asciiOnly <span class="fu">$</span> <span class="st">&quot;Province   'Gia Viễn' isn't on the map! &quot;</span></code></pre></div>
+<p>И всё работает! В мире Haskell принято именно так: если что-то может быть упрощено — мы это упрощаем.</p>
+<p>Справедливости ради следует заметить, что не все Haskell-разработчики любят избавляться от круглых скобок, некоторые предпочитают использовать именно их. Что ж, это лишь вопрос стиля и привычек.</p>
+<h2 id="как-работает-композиция">Как работает композиция</h2>
+<p>Если вдруг вы подумали, что оператор композиции уникален и встроен в Haskell — спешу вас разочаровать. Никакой магии, всё предельно просто. Этот стандартный оператор определён так же, как и любая другая функция. Вот его определение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="fu">.</span>) f g <span class="fu">=</span> \x <span class="ot">-&gt;</span> f (g x)</code></pre></div>
+<p>Опа! Да тут и вправду нет ничего особенного. Оператор композиции применяется к двум функциям. Стоп, скажете вы, как это? Применяется к функциям? Да, именно так. Ведь мы уже выяснили, что функциями можно оперировать как данными. А раз так, что нам мешает передать функцию в качестве аргумента другой функции? Что нам мешает вернуть функцию из другой функции? Ничего.</p>
+<p>Оператор композиции получает на вход две функции, а потом всего лишь даёт нам ЛФ, внутри которой происходит обыкновенный последовательный вызов этих двух функций через скобки. И никакой магии:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="fu">.</span>)    f        g        <span class="fu">=</span>  \x <span class="ot">-&gt;</span> f (g x)
+
+берём  эту      и эту       и возвращаем
+       функцию  функцию     ЛФ, внутри
+                            которой
+                            вызываем их</code></pre></div>
+<p>Подставим наши функции:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="fu">.</span>) putStrLn checkLocalhost <span class="fu">=</span> \x <span class="ot">-&gt;</span> putStrLn (checkLocalhost x)</code></pre></div>
+<p>Вот так и происходит «объединение» двух функций: мы просто возвращаем ЛФ от одного аргумента, внутри которой правоассоциативно вызываем обе функции. А аргументом в данном случае является та самая строка с IP-адресом:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(\x <span class="ot">-&gt;</span> putStrLn (checkLocalhost x)) <span class="st">&quot;173.194.22.100&quot;</span> <span class="fu">=</span>
+
+putStrLn (checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>))</code></pre></div>
+<p>Но если я вас ещё не убедил, давайте определим собственный оператор композиции функций! Помните, я говорил вам, что ASCII-символы можно гибко объединять в операторы? Давайте возьмём плюс со стрелками, он чем-то похож на объединение. Пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Наш собственный оператор композиции.</span>
+(<span class="fu">&lt;+&gt;</span>) f g <span class="fu">=</span> \x <span class="ot">-&gt;</span> f (g x)
+
+<span class="fu">...</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">&lt;+&gt;</span> checkLocalhost <span class="fu">$</span> <span class="st">&quot;173.194.22.100&quot;</span></code></pre></div>
+<p>Выглядит необычно, но работать будет так, как и ожидается: мы определили собственный оператор <code>&lt;+&gt;</code> с тем же функционалом, что и стандартный оператор композиции. Поэтому можно написать ещё проще:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="fu">&lt;+&gt;</span>) f g <span class="fu">=</span> f <span class="fu">.</span> g</code></pre></div>
+<p>Мы говорим: «Пусть оператор <code>&lt;+&gt;</code> будет эквивалентен стандартному оператору композиции функций.». И так оно и будет. А можно — не поверите — ещё проще:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">f <span class="fu">&lt;+&gt;</span> g <span class="fu">=</span> f <span class="fu">.</span> g</code></pre></div>
+<p>И это будет работать! Раз оператор предназначен для инфиксного применения, то мы, определяя его, можно сразу указать его в инфиксной форме:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">f <span class="fu">&lt;+&gt;</span> g    <span class="fu">=</span>      f <span class="fu">.</span> g
+
+           пусть
+
+такое
+выражение
+           будет
+           равно
+                  такому
+                  выражению</code></pre></div>
+<p>Теперь мы видим, что в композиции функций нет ничего сверхъестественного. Эту мысль я подчёркиваю на протяжении всей книги: в Haskell нет никакой магии, он логичен и последователен.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/lambda-function.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/hof.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

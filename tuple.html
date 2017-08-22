@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Кортеж &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="кортеж">Кортеж</h1>
+<p>В этой главе мы познакомимся с кортежем и ещё ближе подружимся с паттерн матчингом.</p>
+<p>Кортеж (англ. tuple) — ещё одна стандартная структура данных, но, в отличие от списка, она может содержать данные как одного типа, так и разных.</p>
+<p>Структуры, способные содержать данные разных типов, называют гетерогенными (в переводе с греческого: «разного рода»).</p>
+<p>Вот как выглядит кортеж:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="st">&quot;Haskell&quot;</span>, <span class="dv">2010</span>)</code></pre></div>
+<p>Круглые скобки и значения, разделённые запятыми. Этот кортеж содержит значение типа <code>String</code> и ещё одно, типа <code>Int</code>. Вот ещё пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="st">&quot;Haskell&quot;</span>, <span class="st">&quot;2010&quot;</span>, <span class="st">&quot;Standard&quot;</span>)</code></pre></div>
+<p>То есть ничто не мешает нам хранить в кортеже данные одного типа.</p>
+<h2 id="тип-кортежа">Тип кортежа</h2>
+<p>Тип списка строк, как вы помните, <code>[String]</code>. И не важно, сколько строк мы запихнули в список, одну или миллион — его тип останется неизменным. С кортежем же дело обстоит абсолютно иначе.</p>
+<p>Тип кортежа зависит от количества его элементов. Вот тип кортежа, содержащего две строки:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="dt">String</span>, <span class="dt">String</span>)</code></pre></div>
+<p>Вот ещё пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="dt">Double</span>, <span class="dt">Double</span>, <span class="dt">Int</span>)</code></pre></div>
+<p>И ещё:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="dt">Bool</span>, <span class="dt">Double</span>, <span class="dt">Int</span>, <span class="dt">String</span>)</code></pre></div>
+<p>Тип кортежа явно отражает его содержимое. Поэтому если функция применяется к кортежу из двух строк, применить её к кортежу из трёх никак не получится, ведь типы этих кортежей различаются:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Разные типы</span>
+(<span class="dt">String</span>, <span class="dt">String</span>)
+(<span class="dt">String</span>, <span class="dt">String</span>, <span class="dt">String</span>)</code></pre></div>
+<h2 id="действия-над-кортежами">Действия над кортежами</h2>
+<p>Со списками можно делать много всего, а вот с кортежами — не очень. Самые частые действия — собственно формирование кортежа и извлечение хранящихся в нём данных. Например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">makeAlias ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span> <span class="ot">-&gt;</span> (<span class="dt">String</span>, <span class="dt">String</span>)
+makeAlias host alias <span class="fu">=</span> (host, alias)</code></pre></div>
+<p>Пожалуй, ничего проще придумать нельзя: на входе два аргумента, на выходе — двухэлементный кортеж с этими аргументами. Двухэлементный кортеж называют ещё парой (англ. pair). И хотя кортеж может содержать сколько угодно элементов, на практике именно пары встречаются чаще всего.</p>
+<p>Обратите внимание, насколько легко создаётся кортеж. Причина тому — уже знакомый нам паттерн матчинг:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">makeAlias host alias <span class="fu">=</span> (host, alias)
+
+          ____          ____
+
+               <span class="fu">=====</span>          <span class="fu">=====</span></code></pre></div>
+<p>Мы просто указываем соответствие между левой и правой сторонами определения: «Пусть первый элемент пары будет равен аргументу <code>host</code>, а второй — аргументу <code>alias</code>». Ничего удобнее и проще и придумать нельзя. И если бы мы хотели получить кортеж из трёх элементов, это выглядело бы так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">makeAlias ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span> <span class="ot">-&gt;</span> (<span class="dt">String</span>, <span class="dt">String</span>, <span class="dt">String</span>)
+makeAlias host alias <span class="fu">=</span> (host, <span class="st">&quot;https://&quot;</span> <span class="fu">++</span> host, alias)
+
+          ____          ____                ____
+
+               <span class="fu">=====</span>                              <span class="fu">=====</span></code></pre></div>
+<p>Оператор <code>++</code> — это оператор конкатенации, склеивающий две строки в одну. Строго говоря, он склеивает два списка, но мы-то с вами уже знаем, что <code>String</code> есть ни что иное, как <code>[Char]</code>. Таким образом, <code>&quot;https://&quot;</code> ++ <code>&quot;www.google.com&quot;</code> даёт нам <code>&quot;https://www.google.com&quot;</code>.</p>
+<p>Извлечение элементов из кортежа также производится через паттерн матчинг:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> (host, alias) <span class="fu">=</span> makeAlias <span class="st">&quot;173.194.71.106&quot;</span>
+                                <span class="st">&quot;www.google.com&quot;</span>
+  <span class="kw">in</span> print (host <span class="fu">++</span> <span class="st">&quot;, &quot;</span> <span class="fu">++</span> alias)</code></pre></div>
+<p>Функция <code>makeAlias</code> даёт нам пару из хоста и имени. Но что это за странная запись возле уже знакомого нам слова <code>let</code>? Это промежуточное выражение, но выражение хитрое, образованное через паттерн матчинг. Чтобы было понятнее, сначала перепишем функцию без него:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> pair  <span class="fu">=</span> makeAlias <span class="st">&quot;173.194.71.106&quot;</span>
+                        <span class="st">&quot;www.google.com&quot;</span>
+      host  <span class="fu">=</span> fst pair  <span class="co">-- Берём первое...</span>
+      alias <span class="fu">=</span> snd pair  <span class="co">-- Берём второе...</span>
+  <span class="kw">in</span> print (host <span class="fu">++</span> <span class="st">&quot;, &quot;</span> <span class="fu">++</span> alias)</code></pre></div>
+<p>При запуске этой программы получим:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="st">&quot;173.194.71.106, www.google.com&quot;</span></code></pre></div>
+<p>Стандартные функции <code>fst</code> и <code>snd</code> возвращают первый и второй элемент кортежа соответственно. Выражение <code>pair</code> соответствует паре, выражение <code>host</code> — значению хоста, а <code>alias</code> — значению имени. Но не кажется ли вам такой способ избыточным? Мы в Haskell любим изящные решения, поэтому предпочитаем паттерн матчинг. Вот как получается вышеприведённый способ:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span> (host, alias) <span class="fu">=</span> makeAlias <span class="st">&quot;173.194.71.106&quot;</span> <span class="st">&quot;www.google.com&quot;</span>
+
+<span class="kw">let</span> (host, alias) <span class="fu">=</span> (<span class="st">&quot;173.194.71.106&quot;</span>, <span class="st">&quot;www.google.com&quot;</span>)
+
+                     данное значение
+     это
+     хост
+                                       а вот это значение
+           это
+           имя</code></pre></div>
+<p>Вот такая простая магия. Функция <code>makeAlias</code> даёт нам пару, и мы достоверно знаем это! А если знаем, нам не нужно вводить промежуточные выражения вроде <code>pair</code>. Мы сразу говорим:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span> (host, alias) <span class="fu">=</span> makeAlias <span class="st">&quot;173.194.71.106&quot;</span> <span class="st">&quot;www.google.com&quot;</span>
+
+                    мы точно знаем, что выражение,
+                    вычисленное этой функцией
+     это вот
+     такая пара</code></pre></div>
+<p>Это «зеркальная» модель: через паттерн матчинг формируем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Формируем правую сторону</span>
+<span class="co">-- на основе левой...</span>
+host alias <span class="fu">=</span> (host, alias)
+
+<span class="fu">&gt;&gt;&gt;&gt;</span>          <span class="fu">&gt;&gt;&gt;&gt;</span>
+
+     <span class="fu">&gt;&gt;&gt;&gt;&gt;</span>          <span class="fu">&gt;&gt;&gt;&gt;&gt;</span></code></pre></div>
+<p>и через него же извлекаем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Формируем левую сторону</span>
+<span class="co">-- на основе правой...</span>
+(host, alias) <span class="fu">=</span> (<span class="st">&quot;173.194.71.106&quot;</span>, <span class="st">&quot;www.google.com&quot;</span>)
+
+ <span class="fu">&lt;&lt;&lt;&lt;</span>            <span class="fu">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+
+       <span class="fu">&lt;&lt;&lt;&lt;&lt;</span>                       <span class="fu">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span></code></pre></div>
+<p>Вот ещё один пример работы с кортежем через паттерн матчинг:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">chessMove ::</span> <span class="dt">String</span>
+          <span class="ot">-&gt;</span> (<span class="dt">String</span>, <span class="dt">String</span>)
+          <span class="ot">-&gt;</span> (<span class="dt">String</span>, (<span class="dt">String</span>, <span class="dt">String</span>))
+chessMove color (from, to) <span class="fu">=</span> (color, (from, to))
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print (color <span class="fu">++</span> <span class="st">&quot;: &quot;</span> <span class="fu">++</span> from <span class="fu">++</span> <span class="st">&quot;-&quot;</span> <span class="fu">++</span> to)
+  <span class="kw">where</span>
+    (color, (from, to)) <span class="fu">=</span> chessMove <span class="st">&quot;white&quot;</span> (<span class="st">&quot;e2&quot;</span>, <span class="st">&quot;e4&quot;</span>)</code></pre></div>
+<p>И на выходе получаем:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="st">&quot;white: e2-e4&quot;</span></code></pre></div>
+<p>Обратите внимание, объявление функции отформатировано чуток иначе: типы выстроены друг под другом через выравнивание стрелок под двоеточием. Вы часто встретите такой стиль в Haskell-проектах.</p>
+<p>Функция <code>chessMove</code> даёт нам кортеж с кортежем, а раз мы точно знаем вид этого кортежа, сразу указываем <code>where</code>-выражение в виде образца:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(color, (from, to)) <span class="fu">=</span> chessMove <span class="st">&quot;white&quot;</span> (<span class="st">&quot;e2&quot;</span>, <span class="st">&quot;e4&quot;</span>)
+
+ _____                          _______
+
+         <span class="fu">====</span>                            <span class="fu">====</span>
+
+               <span class="fu">..</span>                              <span class="fu">....</span></code></pre></div>
+<h2 id="не-всё">Не всё</h2>
+<p>Мы можем вытаскивать по образцу лишь часть нужной нам информации. Помните универсальный образец <code>_</code>? Взгляните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Поясняющие псевдонимы</span>
+<span class="kw">type</span> <span class="dt">UUID</span>     <span class="fu">=</span> <span class="dt">String</span>
+<span class="kw">type</span> <span class="dt">FullName</span> <span class="fu">=</span> <span class="dt">String</span>
+<span class="kw">type</span> <span class="dt">Email</span>    <span class="fu">=</span> <span class="dt">String</span>
+<span class="kw">type</span> <span class="dt">Age</span>      <span class="fu">=</span> <span class="dt">Int</span>
+<span class="kw">type</span> <span class="dt">Patient</span> <span class="fu">=</span> (<span class="dt">UUID</span>, <span class="dt">FullName</span>, <span class="dt">Email</span>, <span class="dt">Age</span>)
+
+<span class="ot">patientEmail ::</span> <span class="dt">Patient</span> <span class="ot">-&gt;</span> <span class="dt">Email</span>
+patientEmail (_, _, email, _) <span class="fu">=</span> email
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  putStrLn (patientEmail ( <span class="st">&quot;63ab89d&quot;</span>
+                         , <span class="st">&quot;John Smith&quot;</span>
+                         , <span class="st">&quot;johnsm@gmail.com&quot;</span>
+                         , <span class="dv">59</span>
+                         ))</code></pre></div>
+<p>Функция <code>patientEmail</code> даёт нам почту пациента. Тип <code>Patient</code> — это псевдоним для кортежа из четырёх элементов: уникальный идентификатор, полное имя, адрес почты и возраст. Дополнительные псевдонимы делают наш код яснее: одно дело видеть безликую <code>String</code> и совсем другое — <code>Email</code>.</p>
+<p>Рассмотрим внутренность функции <code>patientEmail</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">patientEmail (_, _, email, _) <span class="fu">=</span> email</code></pre></div>
+<p>Функция говорит нам: «Да, я знаю, что мой аргумент — это четырёхэлементный кортеж, но меня в нём интересует исключительно третий по счёту элемент, соответствующий адресу почты, его я и верну». Универсальный образец <code>_</code> делает наш код лаконичнее и понятнее, ведь он помогает нам игнорировать то, что нам неинтересно. Строго говоря, мы не обязаны использовать <code>_</code>, но с ним будет лучше.</p>
+<h2 id="а-если-ошиблись">А если ошиблись?</h2>
+<p>При использовании паттерн матчинга в отношении пары следует быть внимательным. Представим себе, что вышеупомянутый тип <code>Patient</code> был расширен:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">UUID</span>      <span class="fu">=</span> <span class="dt">String</span>
+<span class="kw">type</span> <span class="dt">FullName</span>  <span class="fu">=</span> <span class="dt">String</span>
+<span class="kw">type</span> <span class="dt">Email</span>     <span class="fu">=</span> <span class="dt">String</span>
+<span class="kw">type</span> <span class="dt">Age</span>       <span class="fu">=</span> <span class="dt">Int</span>
+<span class="kw">type</span> <span class="dt">DiseaseId</span> <span class="fu">=</span> <span class="dt">Int</span>  <span class="co">-- Новый элемент.</span>
+<span class="kw">type</span> <span class="dt">Patient</span> <span class="fu">=</span> ( <span class="dt">UUID</span>
+               , <span class="dt">FullName</span>
+               , <span class="dt">Email</span>
+               , <span class="dt">Age</span>
+               , <span class="dt">DiseaseId</span>
+               )</code></pre></div>
+<p>Был добавлен идентификатор заболевания. И всё бы хорошо, но внести изменения в функцию <code>patientEmail</code> мы забыли:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">patientEmail ::</span> <span class="dt">Patient</span> <span class="ot">-&gt;</span> <span class="dt">Email</span>
+patientEmail (_, _, email, _) <span class="fu">=</span> email
+
+              <span class="fu">^</span>  <span class="fu">^</span>  <span class="fu">^</span>      <span class="fu">^</span>  <span class="co">-- А пятый где?</span></code></pre></div>
+<p>К счастью, в этом случае компилятор строго обратит наше внимание на ошибку:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Couldn</span><span class="st">'t match type ‘(t0, t1, String, t2)’</span>
+<span class="st">               with ‘(UUID, FullName, Email, Age, DiseaseId)’</span>
+<span class="st">Expected type: Patient</span>
+<span class="st">  Actual type: (t0, t1, String, t2)</span>
+<span class="st">In the pattern: (_, _, email, _)</span></code></pre></div>
+<p>Оно и понятно: функция <code>patientEmail</code> использует образец, который уже некорректен. Вот почему при использовании паттерн матчинга следует быть внимательным.</p>
+<p>На этом наше знакомство с кортежем считаю завершённым, в последующих главах мы будем использовать их периодически.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>Для работы с элементами многоэлементных кортежей можно использовать готовые библиотеки, во избежании длинных паттерн матчинговых цепочек. Например, пакет <a href="http://hackage.haskell.org/package/tuple">tuple</a>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">Data.Tuple.Select</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print (sel4 (<span class="dv">123</span>, <span class="dv">7</span>, <span class="st">&quot;hydra&quot;</span>, <span class="st">&quot;DC:4&quot;</span>, <span class="dv">44</span>, <span class="st">&quot;12.04&quot;</span>))</code></pre></div>
+<p>Функция <code>sel4</code> из модуля <code>Data.Tuple.Select</code> извлекает четвёртый по счёту элемент кортежа, в данном случае строку <code>&quot;DC:4&quot;</code>. Там есть функции вплоть до <code>sel32</code>, авторы вполне разумно сочли, что никто, находясь в здравом уме и твёрдой памяти, не станет оперировать кортежами, состоящими из более чем 32 элементов.</p>
+<p>Кроме того, мы и обновлять элементы кортежа можем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Tuple.Update</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print (upd2 <span class="dv">2</span> (<span class="st">&quot;si&quot;</span>, <span class="dv">45</span>))</code></pre></div>
+<p>Естественно, по причине неизменности кортежа, никакого обновления тут не происходит, но выглядит симпатично. При запуске получаем результат:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">(</span><span class="st">&quot;si&quot;</span>,<span class="ex">2</span><span class="kw">)</span></code></pre></div>
+<p>Второй элемент кортежа изменился с <code>45</code> на <code>2</code>.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/list.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/lambda-function.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

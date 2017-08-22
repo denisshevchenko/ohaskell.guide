@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            АТД &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="атд">АТД</h1>
+<p>АТД, или Алгебраические Типы Данных (англ. ADT, Algebraic Data Type), занимают почётное место в мире типов Haskell. Абсолютно подавляющее большинство ваших собственных типов будут алгебраическими, и то же можно сказать о типах из множества Haskell-пакетов. Алгебраическим типом данных называют такой тип, который составлен из других типов. Мы берём простые типы и строим из них, как из кирпичей, типы сложные, а из них — ещё более сложные. Это даёт нам невероятный простор для творчества.</p>
+<p>Оставим сетевые протоколы и дни недели, рассмотрим такой пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IPAddress</span> <span class="dt">String</span></code></pre></div>
+<p>Тип <code>IPAddress</code> использует один-единственный конструктор значения, но кое-что изменилось. Во-первых, имена типа и конструктора совпадают. Это вполне легально, вы встретите такое не раз. Во-вторых, конструктор уже не нульарный, а унарный (англ. unary), потому что теперь он связан с одним значением типа <code>String</code>. И вот как создаются значения типа <code>IPAddress</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> ip <span class="fu">=</span> <span class="dt">IPAddress</span> <span class="st">&quot;127.0.0.1&quot;</span></code></pre></div>
+<p>Значение <code>ip</code> типа <code>IPAddress</code> образовано конструктором и конкретным значением некоего типа:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> ip <span class="fu">=</span> <span class="dt">IPAddress</span>       <span class="st">&quot;127.0.0.1&quot;</span>
+
+           конструктор     значение
+           значения        типа
+           типа <span class="dt">IPAddress</span>  <span class="dt">String</span>
+
+           └ значение типа <span class="dt">IPAddress</span> ┘</code></pre></div>
+<p>Значение внутри нашего типа называют ещё полем (англ. field):</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IPAddress</span>    <span class="dt">String</span>
+
+     тип         конструктор  поле</code></pre></div>
+<p>Расширим тип <code>IPAddress</code>, сделав его более современным:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IPv4</span> <span class="dt">String</span> <span class="fu">|</span> <span class="dt">IPv6</span> <span class="dt">String</span></code></pre></div>
+<p>Теперь у нас два конструктора, соответствующих разным IP-версиям. Это позволит нам создавать значение типа <code>IPAddress</code> так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> ip <span class="fu">=</span> <span class="dt">IPv4</span> <span class="st">&quot;127.0.0.1&quot;</span></code></pre></div>
+<p>или так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> ip <span class="fu">=</span> <span class="dt">IPv6</span> <span class="st">&quot;2001:0db8:0000:0042:0000:8a2e:0370:7334&quot;</span></code></pre></div>
+<p>Сделаем тип ещё более удобным. Так, при работе с IP-адресом нам часто требуется <code>localhost</code>. И чтобы явно не писать <code>&quot;127.0.0.1&quot;</code> и <code>&quot;0:0:0:0:0:0:0:1&quot;</code>, введём ещё два конструктора:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">IPAddress</span> <span class="fu">=</span> <span class="dt">IPv4</span> <span class="dt">String</span>
+               <span class="fu">|</span> <span class="dt">IPv4Localhost</span>
+               <span class="fu">|</span> <span class="dt">IPv6</span> <span class="dt">String</span>
+               <span class="fu">|</span> <span class="dt">IPv6Localhost</span></code></pre></div>
+<p>Поскольку значения <code>localhost</code> нам заведомо известны, нет нужды указывать их явно. Вместо этого, когда нам понадобится <code>IPv4-localhost</code>, пишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">    <span class="kw">let</span> ip <span class="fu">=</span> <span class="dt">IPv4Localhost</span></code></pre></div>
+<h2 id="извлекаем-значение">Извлекаем значение</h2>
+<p>Допустим, мы создали значение <code>google</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> google <span class="fu">=</span> <span class="dt">IPv4</span> <span class="st">&quot;173.194.122.194&quot;</span></code></pre></div>
+<p>Как же нам потом извлечь конкретное строковое значение из <code>google</code>? С помощью нашего старого друга, паттерн матчинга:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkIP ::</span> <span class="dt">IPAddress</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+checkIP (<span class="dt">IPv4</span> address) <span class="fu">=</span> <span class="st">&quot;IP is '&quot;</span> <span class="fu">++</span> address <span class="fu">++</span> <span class="st">&quot;'.&quot;</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">.</span> checkIP <span class="fu">$</span> <span class="dt">IPv4</span> <span class="st">&quot;173.194.122.194&quot;</span></code></pre></div>
+<p>Результат:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">IP</span> is <span class="st">'173.194.122.194'</span>.</code></pre></div>
+<p>Взглянем на определение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">checkIP (<span class="dt">IPv4</span> address) <span class="fu">=</span> <span class="st">&quot;IP is '&quot;</span> <span class="fu">++</span> address <span class="fu">++</span> <span class="st">&quot;'.&quot;</span></code></pre></div>
+<p>Здесь мы говорим: «Мы знаем, что значение типа <code>IPAddress</code> сформировано с конструктором и строкой». Однако внимательный компилятор сделает нам замечание:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Pattern</span> match(es) <span class="ex">are</span> non-exhaustive
+<span class="ex">In</span> an equation for ‘checkIP’:
+    <span class="ex">Patterns</span> not matched:
+        <span class="ex">IPv4Localhost</span>
+        <span class="ex">IPv6</span> _
+        <span class="ex">IPv6Localhost</span></code></pre></div>
+<p>В самом деле, откуда мы знаем, что значение, к которому применили функцию <code>checkIP</code>, было сформировано именно с помощью конструктора <code>IPv4</code>? У нас же есть ещё три конструктора, и нам следует проверить их все:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkIP ::</span> <span class="dt">IPAddress</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+checkIP (<span class="dt">IPv4</span> address) <span class="fu">=</span> <span class="st">&quot;IPv4 is '&quot;</span> <span class="fu">++</span> address <span class="fu">++</span> <span class="st">&quot;'.&quot;</span>
+checkIP <span class="dt">IPv4Localhost</span>  <span class="fu">=</span> <span class="st">&quot;IPv4, localhost.&quot;</span>
+checkIP (<span class="dt">IPv6</span> address) <span class="fu">=</span> <span class="st">&quot;IPv6 is '&quot;</span> <span class="fu">++</span> address <span class="fu">++</span> <span class="st">&quot;'.&quot;</span>
+checkIP <span class="dt">IPv6Localhost</span>  <span class="fu">=</span> <span class="st">&quot;IPv6, localhost.&quot;</span></code></pre></div>
+<p>С каким конструктором совпало — с таким и было создано значение. Можно, конечно, и так проверить:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkIP ::</span> <span class="dt">IPAddress</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+checkIP addr <span class="fu">=</span> <span class="kw">case</span> addr <span class="kw">of</span>
+    <span class="dt">IPv4</span> address  <span class="ot">-&gt;</span> <span class="st">&quot;IPv4 is '&quot;</span> <span class="fu">++</span> address <span class="fu">++</span> <span class="st">&quot;'.&quot;</span>
+    <span class="dt">IPv4Localhost</span> <span class="ot">-&gt;</span> <span class="st">&quot;IPv4, localhost.&quot;</span>
+    <span class="dt">IPv6</span> address  <span class="ot">-&gt;</span> <span class="st">&quot;IPv6 is '&quot;</span> <span class="fu">++</span> address <span class="fu">++</span> <span class="st">&quot;'.&quot;</span>
+    <span class="dt">IPv6Localhost</span> <span class="ot">-&gt;</span> <span class="st">&quot;IPv6, localhost.&quot;</span></code></pre></div>
+<h2 id="строим">Строим</h2>
+<p>Определим тип для сетевой точки:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">EndPoint</span> <span class="fu">=</span> <span class="dt">EndPoint</span> <span class="dt">String</span> <span class="dt">Int</span></code></pre></div>
+<p>Конструктор <code>EndPoint</code> — бинарный, ведь здесь уже два значения. Создаём обычным образом:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> googlePoint <span class="fu">=</span> <span class="dt">EndPoint</span> <span class="st">&quot;173.194.122.194&quot;</span> <span class="dv">80</span></code></pre></div>
+<p>Конкретные значения извлекаем опять-таки через паттерн матчинг:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span> <span class="st">&quot;The host is: &quot;</span> <span class="fu">++</span> host
+  <span class="kw">where</span>
+    <span class="dt">EndPoint</span> host _ <span class="fu">=</span> <span class="dt">EndPoint</span> <span class="st">&quot;173.194.122.194&quot;</span> <span class="dv">80</span>
+
+    └── образец ──┘   └──────── значение ─────────┘</code></pre></div>
+<p>Обратите внимание, что второе поле, соответствующее порту, отражено универсальным образцом <code>_</code>, потому что в данном случае нас интересует только значение хоста, а порт просто игнорируется.</p>
+<p>И всё бы хорошо, но тип <code>EndPoint</code> мне не очень нравится. Есть в нём что-то некрасивое. Первым полем выступает строка, содержащая IP-адрес, но зачем нам строка? У нас же есть прекрасный тип <code>IPAddress</code>, он куда лучше безликой строки. Это общее правило для Haskell-разработчика: чем больше информации несёт в себе тип, тем он лучше. Давайте заменим определение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">EndPoint</span> <span class="fu">=</span> <span class="dt">EndPoint</span> <span class="dt">IPAddress</span> <span class="dt">Int</span></code></pre></div>
+<p>Тип стал понятнее, и вот как мы теперь будем создавать значения:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">let</span> google <span class="fu">=</span> <span class="dt">EndPoint</span> (<span class="dt">IPv4</span> <span class="st">&quot;173.194.122.194&quot;</span>) <span class="dv">80</span></code></pre></div>
+<p>Красиво. Извлекать конкретные значения будем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span> <span class="st">&quot;The host is: &quot;</span> <span class="fu">++</span> ip
+  <span class="kw">where</span>
+    <span class="dt">EndPoint</span> (<span class="dt">IPv4</span> ip) _ <span class="fu">=</span> <span class="dt">EndPoint</span> (<span class="dt">IPv4</span> <span class="st">&quot;173.194.122.194&quot;</span>) <span class="dv">80</span>
+              ____                   ____
+
+                   <span class="fu">==</span>                     <span class="fu">=================</span></code></pre></div>
+<p>Здесь мы опять-таки игнорируем порт, но значение IP-адреса извлекаем уже на основе образца с конструктором <code>IPv4</code>.</p>
+<p>Это простой пример того, как из простых типов строятся более сложные. Но сложный тип вовсе не означает сложную работу с ним, паттерн матчинг элегантен как всегда. А вскоре мы узнаем о другом способе работы с полями типов, без паттерн матчинга.</p>
+<p>Любопытно, что конструкторы типов тоже можно компоновать, взгляните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="fu">$</span> <span class="st">&quot;The host is: &quot;</span> <span class="fu">++</span> ip
+  <span class="kw">where</span>
+    <span class="dt">EndPoint</span> (<span class="dt">IPv4</span> ip) _ <span class="fu">=</span> (<span class="dt">EndPoint</span> <span class="fu">.</span> <span class="dt">IPv4</span> <span class="fu">$</span> <span class="st">&quot;173.194.122.194&quot;</span>) <span class="dv">80</span></code></pre></div>
+<p>Это похоже на маленькое волшебство, но конструкторы типов можно компоновать знакомым нам оператором композиции функций:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(<span class="dt">EndPoint</span> <span class="fu">.</span> <span class="dt">IPv4</span> <span class="fu">$</span> <span class="st">&quot;173.194.122.194&quot;</span>) <span class="dv">80</span>
+
+            │       значение типа      │
+            └──────── <span class="dt">IPAddress</span> ───────┘</code></pre></div>
+<p>Вам это ничего не напоминает? Это же в точности так, как мы работали с функциями! Из этого мы делаем вывод: конструктор значения можно рассматривать как особую функцию. В самом деле:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">EndPoint</span>   (<span class="dt">IPv4</span> <span class="st">&quot;173.194.122.194&quot;</span>)  <span class="dv">80</span>
+
+<span class="st">&quot;функция&quot;</span>  │        первый        │  второй
+           └────── аргумент ──────┘  аргумент</code></pre></div>
+<p>Мы как бы применяем конструктор к конкретным значениям как к аргументам, в результате чего получаем значение нашего типа. А раз так, мы можем компоновать конструкторы так же, как и обычные функции, лишь бы их типы были комбинируемыми. В данном случае всё в порядке: тип значения, возвращаемого конструктором <code>IPv4</code>, совпадает с типом первого аргумента конструктора <code>EndPoint</code>.</p>
+<p>Вот мы и познакомились с настоящими типами. Пришло время узнать о более удобной работе с полями типов.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/own-types.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/adt-field-labels.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

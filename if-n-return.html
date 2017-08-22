@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Выбираем и возвращаемся &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="выбираем-и-возвращаемся">Выбираем и возвращаемся</h1>
+<p>В этой главе мы встретимся с условными конструкциями, выглянем в терминал, а также узнаем, почему из Haskell-функций не возвращаются (впрочем, последнее — не более чем игра слов).</p>
+<h2 id="выглянем-во-внешний-мир">Выглянем во внешний мир</h2>
+<p>Мы начинаем писать настоящий код. А для этого нам понадобится окно во внешний мир. Откроем модуль <code>app/Main.hs</code>, найдём функцию <code>main</code> и напишем в ней следующее:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="st">&quot;Hi, real world!&quot;</span></code></pre></div>
+<p>Стандартная функция <code>putStrLn</code> выводит строку на консоль. А если говорить строже, функция <code>putStrLn</code> применяется к значению типа <code>String</code> и делает так, чтобы мы увидели это значение в нашем терминале.</p>
+<p>Да, я уже слышу вопрос внимательного читателя. Как же так, спросите вы, разве мы не говорили о чистых функциях в прошлой главе, неспособных взаимодействовать с внешним миром? Придётся признаться: функция <code>putStrLn</code> относится к особым функциям, которые могут-таки вылезти во внешний мир. Но об этом в следующих главах. Это прелюбопытнейшая тема, поверьте мне!</p>
+<p>И ещё нам следует познакомиться с Haskell-комментариями, они нам понадобятся:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">{-</span>
+<span class="co">    Я - сложный многострочный</span>
+<span class="co">     комментарий, содержащий</span>
+<span class="co">  нечто</span>
+<span class="co">        очень важное!</span>
+<span class="co">-}</span>
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="co">-- А я - скромный однострочный комментарий.</span>
+  putStrLn <span class="st">&quot;Hi, real world!&quot;</span></code></pre></div>
+<p>Символы <code>{-</code> и <code>-}</code> скрывают многострочный комментарий, а символ <code>--</code> начинает комментарий однострочный.</p>
+<p>На всякий случай напоминаю команду сборки, запускаемую из корня проекта:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">stack</span> build</code></pre></div>
+<p>После сборки запускаем:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="ex">stack</span> exec real-exe
+<span class="ex">Hi</span>, real world!</code></pre></div>
+<h2 id="выбор-и-выход">Выбор и выход</h2>
+<p>Выбирать внутри функции приходится очень часто. Существует несколько способов задания условной конструкции. Вот базовый вариант:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">if</span> <span class="dt">CONDITION</span> <span class="kw">then</span> <span class="dt">EXPR1</span> <span class="kw">else</span> <span class="dt">EXPR2</span></code></pre></div>
+<p>где <code>CONDITION</code> — логическое выражение, дающее ложь или истину, <code>EXPR1</code> — выражение, используемое в случае <code>True</code>, <code>EXPR2</code> — выражение, используемое в случае <code>False</code>. Пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">checkLocalhost ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+checkLocalhost ip <span class="fu">=</span>
+  <span class="co">-- True или False?</span>
+  <span class="kw">if</span> ip <span class="fu">==</span> <span class="st">&quot;127.0.0.1&quot;</span> <span class="fu">||</span> ip <span class="fu">==</span> <span class="st">&quot;0.0.0.0&quot;</span>
+    <span class="co">-- Если True - идёт туда...</span>
+    <span class="kw">then</span> <span class="st">&quot;It's a localhost!&quot;</span>
+    <span class="co">-- А если False - сюда...</span>
+    <span class="kw">else</span> <span class="st">&quot;No, it's not a localhost.&quot;</span></code></pre></div>
+<p>Функция <code>checkLocalhost</code> применяется к единственному аргументу типа <code>String</code> и возвращает другое значение типа <code>String</code>. В качестве аргумента выступает строка, содержащая IP-адрес, а функция проверяет, не лежит ли в ней localhost. Оператор <code>||</code> — стандартый оператор логического «ИЛИ», а оператор <code>==</code> — стандартный оператор проверки на равенство. Итак, если строка <code>ip</code> равна <code>127.0.0.1</code> или <code>0.0.0.0</code>, значит в ней localhost, и мы возвращаем первое выражение, то есть строку <code>It's a localhost!</code>, в противном случае возвращаем второе выражение, строку <code>No, it's not a localhost.</code>.</p>
+<p>А кстати, что значит «возвращаем»? Ведь, как мы узнали, функции в Haskell не вызывают (англ. call), а значит, из них и не возвращаются (англ. return). И это действительно так. Если напишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;127.0.0.1&quot;</span>)</code></pre></div>
+<p>при запуске увидим это:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">It</span><span class="st">'s a localhost!</span></code></pre></div>
+<p>а если так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>)</code></pre></div>
+<p>тогда увидим это:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">No</span>, it<span class="st">'s not a localhost.</span></code></pre></div>
+<p>Круглые скобки включают выражение типа <code>String</code> по схеме:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>)
+
+                 └─── выражение типа <span class="dt">String</span> ───┘</code></pre></div>
+<p>То есть функция <code>putStrLn</code> видит не применение функции <code>checkLocalhost</code> к строке, а просто выражение типа <code>String</code>. Если бы мы опустили скобки и написали так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span></code></pre></div>
+<p>произошла бы ошибка компиляции, и это вполне ожидаемо: функция <code>putStrLn</code> применяется к одному аргументу, а тут их получается два:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> putStrLn     checkLocalhost  <span class="st">&quot;173.194.22.100&quot;</span>
+
+       функция      к этому
+       применяется  аргументу<span class="fu">...</span>
+                                    и к этому<span class="fu">??</span></code></pre></div>
+<p>Не знаю как вы, а я не очень люблю круглые скобки, при всём уважении к Lisp-программистам. К счастью, в Haskell существует способ уменьшить число скобок. Об этом способе — в одной из последующих глав.</p>
+<p>Так что же с возвращением из функции? Вспомним о равенстве в определении:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">checkLocalhost ip <span class="fu">=</span>
+  <span class="kw">if</span> ip <span class="fu">==</span> <span class="st">&quot;127.0.0.1&quot;</span> <span class="fu">||</span> ip <span class="fu">==</span> <span class="st">&quot;0.0.0.0&quot;</span>
+    <span class="kw">then</span> <span class="st">&quot;It's a localhost!&quot;</span>
+    <span class="kw">else</span> <span class="st">&quot;No, it's not a localhost.&quot;</span></code></pre></div>
+<p>То, что слева от знака равенства, равно тому, что справа. А раз так, эти два кода эквивалентны:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  putStrLn (<span class="kw">if</span> <span class="st">&quot;173.194.22.100&quot;</span> <span class="fu">==</span> <span class="st">&quot;127.0.0.1&quot;</span> <span class="fu">||</span>
+               <span class="st">&quot;173.194.22.100&quot;</span> <span class="fu">==</span> <span class="st">&quot;0.0.0.0&quot;</span>
+              <span class="kw">then</span> <span class="st">&quot;It's a localhost!&quot;</span>
+              <span class="kw">else</span> <span class="st">&quot;No, it's not a localhost.&quot;</span>)</code></pre></div>
+<p>Мы просто заменили применение функции <code>checkLocalhost</code> её внутренним выражением, подставив вместо аргумента <code>ip</code> конкретную строку <code>173.194.22.100</code>. В итоге, в зависимости от истинности или ложности проверок на равенство, эта условная конструкция будет также заменена одним из двух выражений. В этом и заключается идея: возвращаемое функцией значение — это её последнее, итоговое выражение. То есть если выражение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="st">&quot;173.194.22.100&quot;</span> <span class="fu">==</span> <span class="st">&quot;127.0.0.1&quot;</span> <span class="fu">||</span>
+<span class="st">&quot;173.194.22.100&quot;</span> <span class="fu">==</span> <span class="st">&quot;0.0.0.0&quot;</span></code></pre></div>
+<p>даст нам результат <code>True</code>, то мы переходим к выражению из логической ветви <code>then</code>. Если же оно даст нам <code>False</code> — мы переходим к выражению из логической ветви <code>else</code>. Это даёт нам право утверждать, что условная конструкция вида:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">if</span> <span class="dt">True</span>
+  <span class="kw">then</span> <span class="st">&quot;It's a localhost!&quot;</span>
+  <span class="kw">else</span> <span class="st">&quot;No, it's not a localhost.&quot;</span></code></pre></div>
+<p>может быть заменена на первое нередуцируемое выражение, строку <code>It's a localhost!</code>, а условную конструкцию вида:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">if</span> <span class="dt">False</span>
+  <span class="kw">then</span> <span class="st">&quot;It's a localhost!&quot;</span>
+  <span class="kw">else</span> <span class="st">&quot;No, it's not a localhost.&quot;</span></code></pre></div>
+<p>можно спокойно заменить вторым нередуцируемым выражением, строкой <code>No, it's not a localhost.</code>. Поэтому код:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;0.0.0.0&quot;</span>)</code></pre></div>
+<p>эквивалентен коду:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="st">&quot;It's a localhost!&quot;</span></code></pre></div>
+<p>Аналогично, код:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (checkLocalhost <span class="st">&quot;173.194.22.100&quot;</span>)</code></pre></div>
+<p>есть ни что иное, как:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn <span class="st">&quot;No, it's not a localhost.&quot;</span></code></pre></div>
+<p>Каким бы сложным ни было логическое ветвление внутри функции <code>checkLocalhost</code>, в конечном итоге оно вернёт/вычислит какое-то одно итоговое выражение. Именно поэтому из функции в Haskell нельзя выйти в произвольном месте, как это принято в императивных языках, ведь она не является набором инструкций, она — выражение, состоящее из других выражений. Вот почему функции в Haskell так просто компоновать друг с другом, и позже мы встретим множество таких примеров.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>Внимательный читатель несомненно заметил необычное объявление главной функции нашего проекта, функции <code>main</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()   <span class="co">-- Объявление?</span>
+main <span class="fu">=</span> putStrLn <span class="fu">...</span></code></pre></div>
+<p>Если <code>IO</code> — это тип, то что такое <code>()</code>? И почему указан лишь один тип? Что такое <code>IO ()</code>: аргумент функции <code>main</code>, или же то, что она вычисляет? Сожалею, но пока я вынужден сохранить это в секрете. Когда мы поближе познакомимся со Вторым Китом Haskell, я непременно расскажу про этот странный <code>IO ()</code>.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/immutability-n-purity.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/choose-n-patterns.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Список &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="список">Список</h1>
+<p>Помните, в одной из предыдущих глав я говорил, что познакомлю вас ещё с несколькими стандартными типами данных в Haskell? Пришло время узнать о списках.</p>
+<p>Список (англ. list) — это стандартный тип, характеризующий уже не просто данные, но структуру данных (англ. data structure). Эта структура представляет собой набор данных одного типа, и едва ли хоть одна реальная Haskell-программа может обойтись без списков.</p>
+<p>Структуры, содержащие данные одного типа, называют ещё гомогенными (в переводе с греческого: «одного рода»).</p>
+<p>Вот список из трёх целых чисел:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</code></pre></div>
+<p>Квадратные скобки и значения, разделённые запятыми. Вот так выглядит список из двух значений типа <code>Double</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="fl">1.3</span>, <span class="fl">45.7899</span>]</code></pre></div>
+<p>а вот и список из одного-единственного символа:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="ch">'H'</span>]</code></pre></div>
+<p>или вот из четырёх строк, отражающих имена протоколов транспортного уровня OSI-модели:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="st">&quot;TCP&quot;</span>, <span class="st">&quot;UDP&quot;</span>, <span class="st">&quot;DCCP&quot;</span>, <span class="st">&quot;SCTP&quot;</span>]</code></pre></div>
+<p>Если у вас есть опыт разработки на языке C, вы можете подумать, что список похож на массив. Однако, хотя сходства имеются, я намеренно избегаю слова «массив», потому что в Haskell существуют массивы (англ. array), это несколько иная структура данных.</p>
+<p>Список — это тоже выражение, поэтому можно легко создать список списков произвольной вложенности. Вот так будет выглядеть список из ряда протоколов трёх уровней OSI-модели:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[ [<span class="st">&quot;DHCP&quot;</span>, <span class="st">&quot;FTP&quot;</span>, <span class="st">&quot;HTTP&quot;</span>]
+, [<span class="st">&quot;TCP&quot;</span>, <span class="st">&quot;UDP&quot;</span>, <span class="st">&quot;DCCP&quot;</span>, <span class="st">&quot;SCTP&quot;</span>]
+, [<span class="st">&quot;ARP&quot;</span>, <span class="st">&quot;NDP&quot;</span>, <span class="st">&quot;OSPF&quot;</span>]
+]</code></pre></div>
+<p>Это список списков строк. Форматирование в отношении квадратных скобок весьма вольное, при желании можно и так написать:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[[<span class="st">&quot;DHCP&quot;</span>, <span class="st">&quot;FTP&quot;</span>, <span class="st">&quot;HTTP&quot;</span>        ],
+ [<span class="st">&quot;TCP&quot;</span>,  <span class="st">&quot;UDP&quot;</span>, <span class="st">&quot;DCCP&quot;</span>, <span class="st">&quot;SCTP&quot;</span>],
+ [<span class="st">&quot;ARP&quot;</span>,  <span class="st">&quot;NDP&quot;</span>, <span class="st">&quot;OSPF&quot;</span>        ]]</code></pre></div>
+<p>Список может быть и пустым, то есть не содержать в себе никаких данных:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[]</code></pre></div>
+<h2 id="тип-списка">Тип списка</h2>
+<p>Раз список представляет собой структуру, содержащую данные некоторого типа, каков же тип самого списка? Вот:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dt">Int</span>]     <span class="co">-- Список целых чисел</span>
+[<span class="dt">Char</span>]    <span class="co">-- Список символов</span>
+[<span class="dt">String</span>]  <span class="co">-- Список строк</span></code></pre></div>
+<p>То есть тип списка так и указывается, в квадратных скобках. Упомянутый ранее список списков строк имеет такой тип:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[[<span class="dt">String</span>]]  <span class="co">-- Список списков строк</span></code></pre></div>
+<p>Модель очень проста:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[   [<span class="dt">String</span>]    ]
+
+   │  Тип   │
+   └ данных ┘
+
+│     Тип       │
+│    списка     │
+└─ этих данных ─┘</code></pre></div>
+<p>Хранить данные разных типов в стандартном списке невозможно. Однако вскоре мы познакомимся с другой стандартной структурой данных, которая позволяет это.</p>
+<h2 id="действия-над-списками">Действия над списками</h2>
+<p>Если списки создаются — значит это кому-нибудь нужно. Со списком можно делать очень много всего. В стандартной Haskell-библиотеке существует отдельный модуль <code>Data.List</code>, включающий широкий набор функций, работающих со списком. Откроем модуль <code>Main</code> и импортируем в него модуль <code>Data.List</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span>
+
+<span class="co">-- Стандартный модуль для работы со списками.</span>
+<span class="kw">import </span><span class="dt">Data.List</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (head [<span class="st">&quot;Vim&quot;</span>, <span class="st">&quot;Emacs&quot;</span>, <span class="st">&quot;Atom&quot;</span>])</code></pre></div>
+<p>Функция <code>head</code> возвращает голову списка, то есть его первый элемент. При запуске этой программы на выходе получим:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Vim</span></code></pre></div>
+<p>Модель такая:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="st">&quot;Vim&quot;</span>  ,  <span class="st">&quot;Emacs&quot;</span>, <span class="st">&quot;Atom&quot;</span>]
+
+ голова    └─── хвост ───┘</code></pre></div>
+<p>Эдакая гусеница получается: первый элемент — голова, а всё остальное — хвост. Функция <code>tail</code> возвращает хвост:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print (tail [<span class="st">&quot;Vim&quot;</span>, <span class="st">&quot;Emacs&quot;</span>, <span class="st">&quot;Atom&quot;</span>])</code></pre></div>
+<p>Вот результат:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">[<span class="st">&quot;Emacs&quot;</span>, <span class="st">&quot;Atom&quot;</span>]</code></pre></div>
+<p>Функция <code>tail</code> формирует другой список, представляющий собою всё от первоначального списка, кроме головы. Обратите внимание на новую функцию <code>print</code>. В данном случае мы не могли бы использовать нашу знакомую <code>putStrLn</code>, ведь она применяется к значению типа <code>String</code>, в то время как функция <code>tail</code> вернёт нам значение типа <code>[String]</code>. Мы ведь помним про строгость компилятора: что ожидаем, то и получить должны. Функция <code>print</code> предназначена для «стрингификации» значения: она берёт значение некоторого типа и выводит это значение на консоль уже в виде строки.</p>
+<p>Внимательный читатель спросит, каким же образом функция <code>print</code> узнаёт, как именно отобразить конкретное значение в виде строки? О, это интереснейшая тема, но она относится к Третьему Киту Haskell, до знакомства с которым нам ещё далеко.</p>
+<p>Можно получить длину списка:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">handleTableRow ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+handleTableRow row
+  <span class="fu">|</span> length row <span class="fu">==</span> <span class="dv">2</span> <span class="fu">=</span> composeTwoOptionsFrom row
+  <span class="fu">|</span> length row <span class="fu">==</span> <span class="dv">3</span> <span class="fu">=</span> composeThreeOptionsFrom row
+  <span class="fu">|</span> otherwise       <span class="fu">=</span> invalidRow row</code></pre></div>
+<p>Это чуток видоизменённый кусочек одной моей программы, функция <code>handleTableRow</code> обрабатывает строку таблицы. Стандартная функция <code>length</code> даёт нам длину списка (число элементов в нём). В данном случае мы узнаём число элементов в строке таблицы <code>row</code>, и в зависимости от этой длины применяем к этой строке функцию <code>composeTwoOptionsFrom</code> или <code>composeThreeOptionsFrom</code>.</p>
+<p>Но постойте, а где же тут список? Функция <code>handleTableRow</code> применяется к строке и вычисляет строку. А всё дело в том, что строка есть ни что иное, как список символов. То есть тип <code>String</code> эквивалентен типу <code>[Char]</code>. Скажу более: <code>String</code> — это даже не самостоятельный тип, это всего лишь псевдоним для типа <code>[Char]</code>, и вот как он задан:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">String</span> <span class="fu">=</span> [<span class="dt">Char</span>]</code></pre></div>
+<p>Ключевое слово <code>type</code> вводит синоним для уже существующего типа (англ. type synonym). Иногда его называют «псевдонимом типа». Читается это так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span>  <span class="dt">String</span>  <span class="fu">=</span>      [<span class="dt">Char</span>]
+
+тип   этот    равен  тому</code></pre></div>
+<p>Таким образом, объявление функции <code>handleTableRow</code> можно было бы переписать так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">handleTableRow ::</span> [<span class="dt">Char</span>] <span class="ot">-&gt;</span> [<span class="dt">Char</span>]</code></pre></div>
+<p>При работе со списками мы можем использовать уже знакомые промежуточные выражения, например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">handleTableRow ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+handleTableRow row
+  <span class="fu">|</span> size <span class="fu">==</span> <span class="dv">2</span> <span class="fu">=</span> composeTwoOptionsFrom row
+  <span class="fu">|</span> size <span class="fu">==</span> <span class="dv">3</span> <span class="fu">=</span> composeThreeOptionsFrom row
+  <span class="fu">|</span> otherwise <span class="fu">=</span> invalidRow row
+  <span class="kw">where</span> size <span class="fu">=</span> length row</code></pre></div>
+<p>А можно и так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">handleTableRow ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">String</span>
+handleTableRow row
+  <span class="fu">|</span> twoOptions   <span class="fu">=</span> composeTwoOptionsFrom row
+  <span class="fu">|</span> threeOptions <span class="fu">=</span> composeThreeOptionsFrom row
+  <span class="fu">|</span> otherwise    <span class="fu">=</span> invalidRow row
+  <span class="kw">where</span>
+    size         <span class="fu">=</span> length row  <span class="co">-- Узнаём длину</span>
+    twoOptions   <span class="fu">=</span> size <span class="fu">==</span> <span class="dv">2</span>   <span class="co">-- ... сравниваем</span>
+    threeOptions <span class="fu">=</span> size <span class="fu">==</span> <span class="dv">3</span>   <span class="co">-- ... и ещё раз</span></code></pre></div>
+<p>Здесь выражения <code>twoOptions</code> и <code>threeOptions</code> имеют уже знакомый нам стандартный тип <code>Bool</code>, ведь они равны результату сравнения значения <code>size</code> с числом.</p>
+<h2 id="неизменность-списка">Неизменность списка</h2>
+<p>Как вы уже знаете, все данные в Haskell неизменны, как Египетские пирамиды. Списки — не исключение: мы не можем изменить существующий список, мы можем лишь создать на его основе новый список. Например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">addTo ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> [<span class="dt">String</span>] <span class="ot">-&gt;</span> [<span class="dt">String</span>]
+addTo newHost hosts <span class="fu">=</span> newHost <span class="fu">:</span> hosts
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print (<span class="st">&quot;124.67.54.90&quot;</span> <span class="ot">`addTo`</span> hosts)
+  where hosts <span class="fu">=</span> [<span class="st">&quot;45.67.78.89&quot;</span>, <span class="st">&quot;123.45.65.54&quot;</span>]</code></pre></div>
+<p>Результат этой программы таков:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">[<span class="st">&quot;124.67.54.90&quot;</span>,<span class="st">&quot;45.67.78.89&quot;</span>,<span class="st">&quot;123.45.65.54&quot;</span>]</code></pre></div>
+<p>Рассмотрим определение функции <code>addTo</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">addTo newHost hosts <span class="fu">=</span> newHost <span class="fu">:</span> hosts</code></pre></div>
+<p>Стандартный оператор <code>:</code> добавляет значение, являющееся левым операндом, в начало списка, являющегося правым операндом. Читается это так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">newHost   <span class="fu">:</span>         hosts
+
+          этот
+          оператор
+
+берёт
+это
+значение
+                    и добавляет
+                    его в начало
+                    этого списка</code></pre></div>
+<p>Естественно, тип значения слева обязан совпадать с типом значений, содержащихся в списке справа.</p>
+<p>С концептуальной точки зрения функция <code>addTo</code> добавила новый IP-адрес в начало списка <code>hosts</code>. В действительности же никакого добавления не произошло, ибо списки неизменны. Оператор <code>:</code> взял значение <code>newHost</code> и список <code>hosts</code> и создал на их основе новый список, содержащий в себе уже три IP-адреса вместо двух.</p>
+<h2 id="перечисление">Перечисление</h2>
+<p>Допустим, понадобился нам список целых чисел от одного до десяти. Пишем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print tenNumbers
+  <span class="kw">where</span> tenNumbers <span class="fu">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>]</code></pre></div>
+<p>Неплохо, но избыточно, ведь чисел могло быть и сто, и тысяча. Есть лучший путь:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print tenNumbers
+  <span class="kw">where</span> tenNumbers <span class="fu">=</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">10</span>]</code></pre></div>
+<p>Красиво, не правда ли? Выражение в квадратных скобках называется перечислением (англ. enumeration или сокращённо enum). Иногда её именуют также арифметической последовательностью. Идея предельно проста: зачем указывать содержимое списка целиком в той ситуации, когда можно указать лишь диапазон значений? Это мы и сделали:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">1</span><span class="fu">..</span><span class="dv">10</span>] <span class="fu">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>]</code></pre></div>
+<p>Значение слева от <code>..</code> — это начало диапазона, а значение справа — его конец. Компилятор сам догадается, что шаг между числами в данной последовательности равен 1. Вот ещё пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">3</span><span class="fu">..</span><span class="dv">17</span>] <span class="fu">=</span> [<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">14</span>,<span class="dv">15</span>,<span class="dv">16</span>,<span class="dv">17</span>]
+
+ _         _
+
+    <span class="fu">==</span>                                        <span class="fu">==</span></code></pre></div>
+<p>Мы можем задать шаг и явно:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">2</span>,<span class="dv">4</span><span class="fu">..</span><span class="dv">10</span>] <span class="fu">=</span> [<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>]</code></pre></div>
+<p>Получили только чётные значения. Схема проста:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">2</span>,      <span class="dv">4</span>      <span class="fu">..</span> <span class="dv">10</span>]
+
+ первый            конец
+         второй
+
+ │  разница   │
+ └─ даёт шаг ─┘</code></pre></div>
+<p>Вот ещё пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">3</span>,<span class="dv">9</span><span class="fu">..</span><span class="dv">28</span>] <span class="fu">=</span> [<span class="dv">3</span>,<span class="dv">9</span>,<span class="dv">15</span>,<span class="dv">21</span>,<span class="dv">27</span>]</code></pre></div>
+<p>Можно задать и нисходящий диапазон:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">9</span>,<span class="dv">8</span><span class="fu">..</span><span class="dv">1</span>] <span class="fu">=</span> [<span class="dv">9</span>,<span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">6</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">1</span>]</code></pre></div>
+<p>Или так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="fu">-</span><span class="dv">9</span>, <span class="fu">-</span><span class="dv">8</span><span class="fu">..</span> <span class="fu">-</span><span class="dv">1</span>] <span class="fu">=</span> [<span class="fu">-</span><span class="dv">9</span>,<span class="fu">-</span><span class="dv">8</span>,<span class="fu">-</span><span class="dv">7</span>,<span class="fu">-</span><span class="dv">6</span>,<span class="fu">-</span><span class="dv">5</span>,<span class="fu">-</span><span class="dv">4</span>,<span class="fu">-</span><span class="dv">3</span>,<span class="fu">-</span><span class="dv">2</span>,<span class="fu">-</span><span class="dv">1</span>]</code></pre></div>
+<p>Да, отрицательные числа тоже работают. Можно взять также и числа с плавающей точкой:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="fl">1.02</span>,<span class="fl">1.04</span><span class="fu">..</span><span class="fl">1.16</span>] <span class="fu">=</span> [<span class="fl">1.02</span>,<span class="fl">1.04</span>,<span class="fl">1.06</span>,<span class="fl">1.08</span>,<span class="fl">1.1</span>,<span class="fl">1.12</span>,<span class="fl">1.14</span>,<span class="fl">1.16</span>]</code></pre></div>
+<p>В общем, идея ясна. Но что это мы всё с числами да с числами! Возьмём символы:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="ch">'a'</span><span class="fu">..</span><span class="ch">'z'</span>] <span class="fu">=</span> <span class="st">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span></code></pre></div>
+<p>Диапазон от <code>'a'</code> до <code>'z'</code> — получили английский алфавит в виде <code>[Char]</code> или, как мы уже знаем, просто <code>String</code>. При большом желании явно задать шаг можно и здесь:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="ch">'a'</span>,<span class="ch">'c'</span><span class="fu">..</span><span class="ch">'z'</span>] <span class="fu">=</span> <span class="st">&quot;acegikmoqsuwy&quot;</span></code></pre></div>
+<p>Вот такая красота.</p>
+<p>Теперь, после знакомства со списком, мы будем использовать их постоянно.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>В разделе про диапазоны для списка мы оперировали значениями типа <code>Int</code>, <code>Double</code> и <code>Char</code>. Возникает вопрос: а можно ли использовать значения каких-нибудь других типов? Отвечаю: можно, но с оговоркой. Попробуем проделать это со строкой:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print [<span class="st">&quot;a&quot;</span>,<span class="st">&quot;aa&quot;</span><span class="fu">..</span><span class="st">&quot;aaaaaa&quot;</span>]  <span class="co">-- Ну-ну...</span></code></pre></div>
+<p>При попытке скомпилировать такой код увидим ошибку:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">No</span> instance for (Enum [Char])
+  <span class="ex">arising</span> from the arithmetic sequence ‘<span class="st">&quot;a&quot;</span>, <span class="st">&quot;aa&quot;</span> .. <span class="st">&quot;aaaaaa&quot;</span>’</code></pre></div>
+<p>И удивляться тут нечему: шаг между строками абсурден, и компилятор в замешательстве. Не все типы подходят для перечислений в силу своей природы, однако в будущем, когда мы научимся создавать наши собственные типы, мы узнаем, что их вполне можно использовать в диапазонах. Наберитесь терпения.</p>
+<p>Приоткрою секрет: этот странный пример с шагом между строками теоретически можно-таки заставить работать, но о том, как это сделать, мы узнаем во время знакомства с Третьим Китом Haskell.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/operators.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/tuple.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

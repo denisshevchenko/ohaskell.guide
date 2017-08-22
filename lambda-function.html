@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Лямбда-функция &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="лямбда-функция">Лямбда-функция</h1>
+<p>Пришло время познакомиться с важной концепцией — лямбда-функцией. Именно с неё всё и началось. Приготовьтесь: в этой главе нас ждут новые открытия.</p>
+<h2 id="истоки">Истоки</h2>
+<p>В далёких 1930-х молодой американский математик <a href="https://en.wikipedia.org/wiki/Alonzo_Church">Алонзо Чёрч</a> задался вопросом о том, что значит «вычислить» что-либо. Плодом его размышлений явилась система для формализации понятия «вычисление», и назвал он эту систему «лямбда-исчислением» (англ. lambda calculus, по имени греческой буквы <code>λ</code>). В основе этой системы лежит лямбда-функция, которую в некотором смысле можно считать «матерью функционального программирования» в целом и Haskell в частности. Далее буду называть её ЛФ.</p>
+<p>В отношении ЛФ можно смело сказать: «Всё гениальное просто». Идея ЛФ столь полезна именно потому, что она предельно проста. ЛФ — это анонимная функция. Вот как она выглядит в Haskell:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">\x <span class="ot">-&gt;</span> x <span class="fu">*</span> x</code></pre></div>
+<p>Обратный слэш в начале — признак ЛФ. Сравните с математической формой записи:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">λx <span class="fu">.</span> x <span class="fu">*</span> x</code></pre></div>
+<p>Похоже, не правда ли? Воспринимайте обратный слэш в определении ЛФ как спинку буквы <code>λ</code>.</p>
+<p>ЛФ представляет собой простейший вид функции, эдакая функция, раздетая догола. У неё забрали не только объявление, но и имя, оставив лишь необходимый минимум в виде имён аргументов и внутреннего выражения. Алонзо Чёрч понял: чтобы применить функцию, вовсе необязательно её именовать. И если у обычной функции сначала идёт объявление/определение, а затем (где-то) применение с использованием имени, то у ЛФ всё куда проще: мы её определяем и тут же применяем, на месте. Вот так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(\x <span class="ot">-&gt;</span> x <span class="fu">*</span> x) <span class="dv">5</span></code></pre></div>
+<p>Помните функцию <code>square</code>? Вот это её лямбда-аналог:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(\x <span class="ot">-&gt;</span> x <span class="fu">*</span> x)      <span class="dv">5</span>
+
+лямбда<span class="fu">-</span>абстракция  аргумент</code></pre></div>
+<p>Лямбда-абстракция (англ. lambda abstraction) — это особое выражение, порождающее функцию, которую мы сразу же применяем к аргументу <code>5</code>. ЛФ с одним аргументом, как и простую функцию, называют ещё «ЛФ от одного аргумента» или «ЛФ одного аргумента». Также можно сказать и о «лямбда-абстракции от одного аргумента».</p>
+<h2 id="строение">Строение</h2>
+<p>Строение лямбда-абстракции предельно простое:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">\        x          <span class="ot">-&gt;</span>  x <span class="fu">*</span> x
+признак  имя            выражение
+ЛФ       аргумента</code></pre></div>
+<p>Соответственно, если ЛФ применяется к двум аргументам — пишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">\        x          y          <span class="ot">-&gt;</span>  x <span class="fu">*</span> y
+признак  имя <span class="dv">1</span>      имя <span class="dv">2</span>          выражение
+ЛФ       аргумента  аргумента</code></pre></div>
+<p>И когда мы применяем такую функцию:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(\x y <span class="ot">-&gt;</span> x <span class="fu">*</span> y) <span class="dv">10</span> <span class="dv">4</span></code></pre></div>
+<p>то просто подставляем <code>10</code> на место <code>x</code>, а <code>4</code> — на место <code>y</code>, и получаем выражение <code>10 * 4</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  (\x y <span class="ot">-&gt;</span> x <span class="fu">*</span> y) <span class="dv">10</span> <span class="dv">4</span>
+<span class="fu">=</span> <span class="dv">10</span> <span class="fu">*</span> <span class="dv">4</span>
+<span class="fu">=</span> <span class="dv">40</span></code></pre></div>
+<p>В общем, всё как с обычной функцией, даже проще.</p>
+<p>Мы можем ввести промежуточное значение для лямбда-абстракции:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print (mul <span class="dv">10</span> <span class="dv">4</span>)
+  <span class="kw">where</span> mul <span class="fu">=</span> \x y <span class="ot">-&gt;</span> x <span class="fu">*</span> y</code></pre></div>
+<p>Теперь мы можем применять <code>mul</code> так же, как если бы это была сама лямбда-абстракция:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  mul <span class="dv">10</span> <span class="dv">4</span>
+<span class="fu">=</span> (\x y <span class="ot">-&gt;</span> x <span class="fu">*</span> y) <span class="dv">10</span> <span class="dv">4</span>
+<span class="fu">=</span> <span class="dv">10</span> <span class="fu">*</span> <span class="dv">4</span></code></pre></div>
+<p>И здесь мы приблизились к одному важному открытию.</p>
+<h2 id="тип-функции">Тип функции</h2>
+<p>Мы знаем, что у всех данных в Haskell-программе обязательно есть какой-то тип, внимательно проверяемый на этапе компиляции. Вопрос: какой тип у выражения <code>mul</code> из предыдущего примера?</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="kw">where</span> mul <span class="fu">=</span> \x y <span class="ot">-&gt;</span> x <span class="fu">*</span> y  <span class="co">-- Какой тип?</span></code></pre></div>
+<p>Ответ прост: тип <code>mul</code> такой же, как и у этой лямбда-абстракции. Из этого мы делаем важный вывод: ЛФ имеет тип, как и обычные данные. Но поскольку ЛФ является частным случаем функции — значит и у обыкновенной функции тоже есть тип!</p>
+<p>В нефункциональных языках между функциями и данными проведена чёткая граница: вот это функции, а вон то — данные. Однако в Haskell между данными и функциями разницы нет, ведь и то и другое покоится на одной и той же Черепахе. Вот тип функции <code>mul</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">mul ::</span> a <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</code></pre></div>
+<p>Погодите, скажете вы, но ведь это же объявление функции! Совершенно верно: объявление функции — это и есть указание её типа. Помните, когда мы впервые познакомились с функцией, я уточнил, что её объявление разделено двойным двоеточием? Так вот это двойное двоеточие и представляет собой указание типа:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">mul  ::</span>     a <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a
+
+вот  имеет  │   вот   │
+это  тип    └─ такой ─┘</code></pre></div>
+<p>Точно так же мы можем указать тип любых других данных:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span> coeff <span class="fu">=</span> <span class="dv">12</span><span class="ot"> ::</span> <span class="dt">Double</span></code></pre></div>
+<p>Хотя мы знаем, что в Haskell типы выводятся автоматически, иногда мы хотим взять эту заботу на себя. В данном случае мы явно говорим: «Пусть выражение <code>coeff</code> будет равно <code>12</code>, но тип его пусть будет <code>Double</code>, а не <code>Int</code>». Так же и с функцией: когда мы объявляем её — мы тем самым указываем её тип.</p>
+<p>Но вы спросите, можем ли мы не указывать тип функции явно? Можем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square x <span class="fu">=</span> x <span class="fu">*</span> x</code></pre></div>
+<p>Это наша старая знакомая, функция <code>square</code>. Когда она будет применена к значению типа <code>Int</code>, тип аргумента будет выведен автоматически как <code>Int</code>.</p>
+<p>И раз функция характеризуется типом так же, как и прочие данные, мы делаем ещё одно важное открытие: функциями можно оперировать как данными. Например, можно создать список функций:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn ((head functions) <span class="st">&quot;Hi&quot;</span>)
+  <span class="kw">where</span>
+    functions <span class="fu">=</span> [ \x <span class="ot">-&gt;</span> x <span class="fu">++</span> <span class="st">&quot; val1&quot;</span>
+                , \x <span class="ot">-&gt;</span> x <span class="fu">++</span> <span class="st">&quot; val2&quot;</span>
+                ]</code></pre></div>
+<p>Выражение <code>functions</code> — это список из двух функций. Два лямбда-выражения порождают эти две функции, но до момента применения они ничего не делают, они безжизненны и бесполезны. Но когда мы применяем функцию <code>head</code> к этому списку, мы получаем первый элемент списка, то есть первую функцию. И получив, тут же применяем эту функцию к строке <code>&quot;Hi&quot;</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">putStrLn ((head functions)  <span class="st">&quot;Hi&quot;</span>)
+
+          │    первая    │  её
+          │   функция    │  аргумент
+          └─ из списка ──┘</code></pre></div>
+<p>Это равносильно коду:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">putStrLn ((\x <span class="ot">-&gt;</span> x <span class="fu">++</span> <span class="st">&quot; val1&quot;</span>) <span class="st">&quot;Hi&quot;</span>)</code></pre></div>
+<p>При запуске программы мы получим:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Hi</span> val1</code></pre></div>
+<p>Кстати, а каков тип списка <code>functions</code>? Его тип таков: <code>[String -&gt; String]</code>. То есть список функций с одним аргументом типа <code>String</code>, возвращающих значение типа <code>String</code>.</p>
+<h2 id="локальные-функции">Локальные функции</h2>
+<p>Раз уж между ЛФ и простыми функциями фактически нет различий, а функции есть частный случай данных, мы можем создавать функции локально для других функций:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Здесь определены функции</span>
+<span class="co">-- isInfixOf и isSuffixOf.</span>
+<span class="kw">import </span><span class="dt">Data.List</span>
+
+<span class="ot">validComEmail ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+validComEmail email <span class="fu">=</span>
+    containsAtSign email <span class="fu">&amp;&amp;</span> endsWithCom email
+  <span class="kw">where</span>
+    containsAtSign e <span class="fu">=</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf`</span> e
+    endsWithCom e <span class="fu">=</span> <span class="st">&quot;.com&quot;</span> <span class="ot">`isSuffixOf`</span> e
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> putStrLn (<span class="kw">if</span> validComEmail my
+                   <span class="kw">then</span> <span class="st">&quot;It's ok!&quot;</span>
+                   <span class="kw">else</span> <span class="st">&quot;Non-com email!&quot;</span>)
+  <span class="kw">where</span>
+    my <span class="fu">=</span> <span class="st">&quot;haskeller@gmail.com&quot;</span></code></pre></div>
+<p>Несколько наивная функция <code>validComEmail</code> проверяет <code>.com</code>-адрес. Её выражение образовано оператором <code>&amp;&amp;</code> и двумя выражениями типа <code>Bool</code>. Вот как образованы эти выражения:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">containsAtSign e <span class="fu">=</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf`</span> e
+endsWithCom e <span class="fu">=</span> <span class="st">&quot;.com&quot;</span> <span class="ot">`isSuffixOf`</span> e</code></pre></div>
+<p>Это — две функции, которые мы определили прямо в <code>where</code>-секции, поэтому они существуют только для основного выражения функции <code>validComEmail</code>. С простыми функциями так поступают очень часто: где она нужна, там её и определяют. Мы могли бы написать и более явно:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">validComEmail ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+validComEmail email <span class="fu">=</span>
+    containsAtSign email <span class="fu">&amp;&amp;</span> endsWithCom email
+  <span class="kw">where</span>
+    <span class="co">-- Объявляем локальную функцию явно.</span>
+<span class="ot">    containsAtSign ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+    containsAtSign e <span class="fu">=</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf`</span> e
+
+    <span class="co">-- И эту тоже.</span>
+<span class="ot">    endsWithCom ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+    endsWithCom e <span class="fu">=</span> <span class="st">&quot;.com&quot;</span> <span class="ot">`isSuffixOf`</span> e</code></pre></div>
+<p>Впрочем, указывать тип столь простых функций, как правило, необязательно.</p>
+<p>Вот как этот код выглядит с лямбда-абстракциями:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">validComEmail ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+validComEmail email <span class="fu">=</span>
+    containsAtSign email <span class="fu">&amp;&amp;</span> endsWithCom email
+  <span class="kw">where</span>
+    containsAtSign <span class="fu">=</span> \e <span class="ot">-&gt;</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf`</span> e
+    endsWithCom <span class="fu">=</span> \e <span class="ot">-&gt;</span> <span class="st">&quot;.com&quot;</span> <span class="ot">`isSuffixOf`</span> e</code></pre></div>
+<p>Теперь выражения <code>containsAtSign</code> и <code>endsWithCom</code> приравнены к ЛФ от одного аргумента. В этом случае мы не указываем тип этих выражений. Впрочем, если очень хочется, можно и указать:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">containsAtSign <span class="fu">=</span>
+    (\e <span class="ot">-&gt;</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf`</span> e)<span class="ot"> ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+
+    лямбда<span class="fu">-</span>абстракция            тип этой абстракции</code></pre></div>
+<p>Лямбда-абстракция взята в скобки, чтобы указание типа относилось к функции в целом, а не только к аргументу <code>e</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">containsAtSign <span class="fu">=</span>
+    \e <span class="ot">-&gt;</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf` e ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+
+                               в этом случае это
+                               тип аргумента e,
+                               а вовсе не всей
+                               функции<span class="fu">!</span></code></pre></div>
+<p>Для типа функции тоже можно ввести псевдоним:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Псевдоним для типа функции.</span>
+<span class="kw">type</span> <span class="dt">Func</span> <span class="fu">=</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+
+<span class="ot">validComEmail ::</span> <span class="dt">String</span> <span class="ot">-&gt;</span> <span class="dt">Bool</span>
+validComEmail email <span class="fu">=</span>
+    containsAtSign email <span class="fu">&amp;&amp;</span> endsWithCom email
+  <span class="kw">where</span>
+    containsAtSign <span class="fu">=</span> (\e <span class="ot">-&gt;</span> <span class="st">&quot;@&quot;</span> <span class="ot">`isInfixOf`</span> e)<span class="ot"> ::</span> <span class="dt">Func</span>
+    endsWithCom <span class="fu">=</span> (\e <span class="ot">-&gt;</span> <span class="st">&quot;.com&quot;</span> <span class="ot">`isSuffixOf`</span> e)<span class="ot"> ::</span> <span class="dt">Func</span></code></pre></div>
+<p>Впрочем, на практике указание типа для лямбда-абстракций встречается исключительно редко, ибо незачем.</p>
+<p>Отныне, познакомившись с ЛФ, мы будем использовать их периодически.</p>
+<p>И напоследок, вопрос. Помните тип функции <code>mul</code>?</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">mul ::</span> a <span class="ot">-&gt;</span> a <span class="ot">-&gt;</span> a</code></pre></div>
+<p>Что это за буква <code>a</code>? Во-первых, мы не встречали такой тип ранее, а во-вторых, разве имя типа в Haskell не обязано начинаться с большой буквы? Обязано. А всё дело в том, что буква <code>a</code> в данном случае — это не совсем имя типа. А вот что это такое, мы узнаем в одной из ближайших глав.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>А почему, собственно, лямбда? Почему Чёрч выбрал именно эту греческую букву? По одной из версий, произошло это чисто случайно.</p>
+<p>Шли 30-е годы прошлого века, компьютеров не было, и все научные работы набирались на печатных машинках. В первоначальном варианте, дабы выделять имя аргумента ЛФ, Чёрч ставил над именем аргумента символ, похожий на <code>^</code>. Но когда он сдавал работу наборщику, то вспомнил, что печатная машинка не сможет воспроизвести такой символ над буквой. Тогда он вынес эту «крышу» перед именем аргумента, и получилось что-то наподобие:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">^</span>x <span class="fu">.</span> x <span class="fu">*</span> <span class="dv">10</span></code></pre></div>
+<p>А наборщик, увидев такой символ, использовал заглавную греческую букву <code>Λ</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">Λx <span class="fu">.</span> x <span class="fu">*</span> <span class="dv">10</span></code></pre></div>
+<p>Вот так и получилось, лямбда-исчисление.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/tuple.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/function-composition.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

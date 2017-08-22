@@ -1,0 +1,912 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Предметный указатель &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1>
+                Предметный указатель
+            </h1>
+            <div class="subject-index-wrapper">
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            case
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./choose-n-patterns.html#case">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            Hackage
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./hackage.html#hackage">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            if
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./if-n-return.html#выбор-и-выход">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./choose-n-patterns.html#не-только-из-двух">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            let
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./let-n-where.html#пусть">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            Miranda
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#для-любопытных">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            newtype
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./newtype.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            space leak
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#space-leak">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            stack
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./setup.html#устанавливаем">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            thunk
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#как-можно-меньше">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./laziness.html#space-leak">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            undefined
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#лень-и-строгость-вместе">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            where
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./let-n-where.html#где">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            WHNF
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#как-можно-меньше">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            арифметическая последовательность
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./list.html#перечисление">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            АТД
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./adt.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            выведение типа
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./whales-n-turtle.html#выведение">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            выражение
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./whales-n-turtle.html#черепаха">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            жадные/строгие вычисления
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#две-модели-вычислений">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            история Haskell
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./haskell-faq.html#это-что-какой-то-новый-язык">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            класс типов
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./whales-n-turtle.html#третий-кит">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            конструктор значения
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./own-types.html#знакомство">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            конструктор типа
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./type-constructor.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            кортеж
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./tuple.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            ленивые вычисления
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#две-модели-вычислений">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            лямбда-функция
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./lambda-function.html#истоки">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./hof.html#частичное-применение">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./function-composition.html#как-работает-композиция">
+                            III
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            модуль
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./setup.html#модули:-знакомство">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./hackage.html#">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            нормальная форма
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#как-можно-меньше">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            нульарный конструктор
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./own-types.html#значение-пустышка">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            объявление функции
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./immutability-n-purity.html#объявляем-и-определяем">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            оператор
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./operators.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            оператор присваивания
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./immutability-n-purity.html#чисто-функциональный">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            определение функции
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./immutability-n-purity.html#объявляем-и-определяем">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            оптимизация
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./laziness.html#оптимизация">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            паттерн матчинг
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./choose-n-patterns.html#сравнение-с-образцом">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./tuple.html#действия-над-кортежами">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./recursion.html#правда-о-списке">
+                            III
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./adt.html#извлекаем-значение">
+                            IV
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./adt-field-labels.html#без-меток">
+                            V
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            рекурсия
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./recursion.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            сильная типизация
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./whales-n-turtle.html#сила">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            сравнение с образцом
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./choose-n-patterns.html#сравнение-с-образцом">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./tuple.html#действия-над-кортежами">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./adt.html#извлекаем-значение">
+                            III
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./adt-field-labels.html#без-меток">
+                            IV
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            список
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./list.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            списочный диапазон
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./list.html#перечисление">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            статическая типизация
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./whales-n-turtle.html#статическая-проверка">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            тип
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./whales-n-turtle.html#второй-кит">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                        <a class="mono" href="./own-types.html#знакомство">
+                            II
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            функция высшего порядка
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./hof.html#">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <span class>
+                            частичное применение
+                        </span>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="mono" href="./hof.html#частичное-применение">
+                            I
+                        </a>
+                        <span>
+                            &nbsp;&nbsp;
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 30px;">
+            
+        </div>
+    </body>
+</html>

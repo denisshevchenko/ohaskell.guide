@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            АТД: поля с метками &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="атд-поля-с-метками">АТД: поля с метками</h1>
+<p>Многие типы в реальных проектах довольно велики. Взгляните:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Arguments</span> <span class="fu">=</span> <span class="dt">Arguments</span> <span class="dt">Port</span>
+                           <span class="dt">Endpoint</span>
+                           <span class="dt">RedirectData</span>
+                           FilePath
+                           FilePath
+                           <span class="dt">Bool</span>
+                           FilePath</code></pre></div>
+<p>Значение типа <code>Arguments</code> хранит в своих полях некоторые значения, извлечённые из параметров командной строки, с которыми запущена одна из моих программ. И всё бы хорошо, но работать с таким типом абсолютно неудобно. Он содержит семь полей, и паттерн матчинг был бы слишком громоздким, представьте себе:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">...</span>
+  <span class="kw">where</span>
+    <span class="dt">Arguments</span> _ _ _ redirectLib _ _ xpi <span class="fu">=</span> arguments</code></pre></div>
+<p>Более того, когда мы смотрим на определение типа, назначение его полей остаётся тайной за семью печатями. Видите предпоследнее поле? Оно имеет тип <code>Bool</code> и, понятное дело, отражает какой-то флаг. Но что это за флаг, читатель не представляет. К счастью, существует способ, спасающих нас от обеих этих проблем.</p>
+<h2 id="метки">Метки</h2>
+<p>Мы можем снабдить наши поля метками (англ. label). Вот как это выглядит:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Arguments</span> <span class="fu">=</span> <span class="dt">Arguments</span> {<span class="ot"> runWDServer    ::</span> <span class="dt">Port</span>
+                           ,<span class="ot"> withWDServer   ::</span> <span class="dt">Endpoint</span>
+                           ,<span class="ot"> redirect       ::</span> <span class="dt">RedirectData</span>
+                           ,<span class="ot"> redirectLib    ::</span> FilePath
+                           ,<span class="ot"> screenshotsDir ::</span> FilePath
+                           ,<span class="ot"> noScreenshots  ::</span> <span class="dt">Bool</span>
+                           ,<span class="ot"> harWithXPI     ::</span> FilePath
+                           }</code></pre></div>
+<p>Теперь назначение меток куда понятнее. Схема определения такова:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Arguments</span> <span class="fu">=</span> <span class="dt">Arguments</span>   {<span class="ot"> runWDServer ::</span> <span class="dt">Port</span> }
+
+тип  такой<span class="fu">-</span>то    конструктор   метка поля     тип
+                                              поля</code></pre></div>
+<p>Теперь поле имеет не только тип, но и название, что и делает наше определение значительно более читабельным. Поля в этом случае разделены запятыми и заключены в фигурные скобки.</p>
+<p>Если подряд идут два или более поля одного типа, его можно указать лишь для последней из меток. Так, если у нас есть вот такой тип:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Patient</span> <span class="fu">=</span> <span class="dt">Patient</span> {<span class="ot"> firstName ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> lastName  ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> email     ::</span> <span class="dt">String</span>
+                       }</code></pre></div>
+<p>его определение можно чуток упростить и написать так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Patient</span> <span class="fu">=</span> <span class="dt">Patient</span> { firstName
+                       , lastName
+                       ,<span class="ot"> email     ::</span> <span class="dt">String</span>
+                       }</code></pre></div>
+<p>Раз тип всех трёх полей одинаков, мы указываем его лишь для последней из меток. Ещё пример полной формы:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Patient</span> <span class="fu">=</span> <span class="dt">Patient</span> {<span class="ot"> firstName    ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> lastName     ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> email        ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> age          ::</span> <span class="dt">Int</span>
+                       ,<span class="ot"> diseaseId    ::</span> <span class="dt">Int</span>
+                       ,<span class="ot"> isIndoor     ::</span> <span class="dt">Bool</span>
+                       ,<span class="ot"> hasInsurance ::</span> <span class="dt">Bool</span>
+                       }</code></pre></div>
+<p>и тут же упрощаем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Patient</span> <span class="fu">=</span> <span class="dt">Patient</span> { firstName
+                       , lastName
+                       ,<span class="ot"> email        ::</span> <span class="dt">String</span>
+                       , age
+                       ,<span class="ot"> diseaseId    ::</span> <span class="dt">Int</span>
+                       , isIndoor
+                       ,<span class="ot"> hasInsurance ::</span> <span class="dt">Bool</span>
+                       }</code></pre></div>
+<p>Поля <code>firstName</code>, <code>lastName</code> и <code>email</code> имеют тип <code>String</code>, поля <code>age</code> и <code>diseaseId</code> — тип <code>Int</code>, и оставшиеся два поля — тип <code>Bool</code>.</p>
+<h2 id="getter-и-setter">Getter и Setter?</h2>
+<p>Что же представляют собой метки? Фактически, это особые функции, сгенерированные автоматически. Эти функции имеют три предназначения: создавать, извлекать и изменять. Да, я не оговорился, изменять. Но об этом чуть позже, пусть будет маленькая интрига.</p>
+<p>Вот как мы создаём значение типа <code>Patient</code></p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> diseaseId patient
+  <span class="kw">where</span>
+    patient <span class="fu">=</span> <span class="dt">Patient</span> {
+        firstName    <span class="fu">=</span> <span class="st">&quot;John&quot;</span>
+      , lastName     <span class="fu">=</span> <span class="st">&quot;Doe&quot;</span>
+      , email        <span class="fu">=</span> <span class="st">&quot;john.doe@gmail.com&quot;</span>
+      , age          <span class="fu">=</span> <span class="dv">24</span>
+      , diseaseId    <span class="fu">=</span> <span class="dv">431</span>
+      , isIndoor     <span class="fu">=</span> <span class="dt">True</span>
+      , hasInsurance <span class="fu">=</span> <span class="dt">True</span>
+    }</code></pre></div>
+<p>Метки полей используются как своего рода setter (от англ. set, «устанавливать»):</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">patient <span class="fu">=</span> <span class="dt">Patient</span> { firstName    <span class="fu">=</span>      <span class="st">&quot;John&quot;</span>
+в этом    типа      поле с
+значении  <span class="dt">Patient</span>   этой меткой  равно  этой строке</code></pre></div>
+<p>Кроме того, метку можно использовать и как getter (от англ. get, «получать»):</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> print <span class="fu">$</span> diseaseId  patient
+
+               метка как  аргумент
+               функции</code></pre></div>
+<p>Мы применяем метку к значению типа <code>Patient</code> и получаем значение соответствующего данной метке поля. Поэтому для получения значений полей нам уже не нужен паттерн матчинг.</p>
+<p>Но что же за интригу я приготовил под конец? Выше я упомянул, что метки используются не только для задания значений полей и для их извлечения, но и для изменения. Вот что я имел в виду:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> email patientWithChangedEmail
+  <span class="kw">where</span>
+    patientWithChangedEmail <span class="fu">=</span> patient {
+      email <span class="fu">=</span> <span class="st">&quot;j.d@gmail.com&quot;</span>  <span class="co">-- Изменяем???</span>
+    }
+
+    patient <span class="fu">=</span> <span class="dt">Patient</span> {
+        firstName    <span class="fu">=</span> <span class="st">&quot;John&quot;</span>
+      , lastName     <span class="fu">=</span> <span class="st">&quot;Doe&quot;</span>
+      , email        <span class="fu">=</span> <span class="st">&quot;john.doe@gmail.com&quot;</span>
+      , age          <span class="fu">=</span> <span class="dv">24</span>
+      , diseaseId    <span class="fu">=</span> <span class="dv">431</span>
+      , isIndoor     <span class="fu">=</span> <span class="dt">True</span>
+      , hasInsurance <span class="fu">=</span> <span class="dt">True</span>
+    }</code></pre></div>
+<p>При запуске программы получим:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">j<span class="fu">.</span>d<span class="fu">@</span>gmail<span class="fu">.</span>com</code></pre></div>
+<p>Но постойте, что же тут произошло? Ведь в Haskell, как мы знаем, нет оператора присваивания, однако значение поля с меткой <code>email</code> поменялось. Помню, когда я впервые увидел подобный пример, то очень удивился, мол, уж не ввели ли меня в заблуждение по поводу неизменности значений в Haskell?!</p>
+<p>Нет, не ввели. Подобная запись:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">patientWithChangedEmail <span class="fu">=</span> patient {
+  email <span class="fu">=</span> <span class="st">&quot;j.d@gmail.com&quot;</span>
+}</code></pre></div>
+<p>действительно похожа на изменение поля через присваивание ему нового значения, но в действительности никакого изменения не произошло. Когда я назвал метку setter-ом, я немного слукавил, ведь классический setter из мира ООП был бы невозможен в Haskell. Посмотрим ещё раз внимательнее:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">...</span>
+  <span class="kw">where</span>
+    patientWithChangedEmail <span class="fu">=</span> patient {
+      email <span class="fu">=</span> <span class="st">&quot;j.d@gmail.com&quot;</span>  <span class="co">-- Изменяем???</span>
+    }
+
+    patient <span class="fu">=</span> <span class="dt">Patient</span> {
+        firstName    <span class="fu">=</span> <span class="st">&quot;John&quot;</span>
+      , lastName     <span class="fu">=</span> <span class="st">&quot;Doe&quot;</span>
+      , email        <span class="fu">=</span> <span class="st">&quot;john.doe@gmail.com&quot;</span>
+      , age          <span class="fu">=</span> <span class="dv">24</span>
+      , diseaseId    <span class="fu">=</span> <span class="dv">431</span>
+      , isIndoor     <span class="fu">=</span> <span class="dt">True</span>
+      , hasInsurance <span class="fu">=</span> <span class="dt">True</span>
+    }</code></pre></div>
+<p>Взгляните, ведь у нас теперь два значения типа <code>Patient</code>, <code>patient</code> и <code>patientWithChangedEmail</code>. Эти значения не имеют друг ко другу ни малейшего отношения. Вспомните, как я говорил, что в Haskell нельзя изменить имеющееся значение, а можно лишь создать на основе имеющегося новое значение. Это именно то, что здесь произошло: мы взяли имеющееся значение <code>patient</code> и на его основе создали уже новое значение <code>patientWithChangedEmail</code>, значение поля <code>email</code> в котором теперь другое. Понятно, что поле <code>email</code> в значении <code>patient</code> осталось неизменным.</p>
+<p>Будьте внимательны при инициализации значения с полями: вы обязаны предоставить значения для всех полей. Если вы напишете так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> email patientWithChangedEmail
+  <span class="kw">where</span>
+    patientWithChangedEmail <span class="fu">=</span> patient {
+      email <span class="fu">=</span> <span class="st">&quot;j.d@gmail.com&quot;</span>  <span class="co">-- Изменяем???</span>
+    }
+
+    patient <span class="fu">=</span> <span class="dt">Patient</span> {
+        firstName    <span class="fu">=</span> <span class="st">&quot;John&quot;</span>
+      , lastName     <span class="fu">=</span> <span class="st">&quot;Doe&quot;</span>
+      , email        <span class="fu">=</span> <span class="st">&quot;john.doe@gmail.com&quot;</span>
+      , age          <span class="fu">=</span> <span class="dv">24</span>
+      , diseaseId    <span class="fu">=</span> <span class="dv">431</span>
+      , isIndoor     <span class="fu">=</span> <span class="dt">True</span>
+    }
+
+    <span class="co">-- Поле hasInsurance забыли!</span></code></pre></div>
+<p>код скомпилируется, но внимательный компилятор предупредит вас о проблеме:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">Fields</span> <span class="kw">of</span> ‘<span class="dt">Patient</span>’ not initialised<span class="fu">:</span> hasInsurance</code></pre></div>
+<p>Пожалуйста, не пренебрегайте подобным предупреждением, ведь если вы проигнорируете его и затем попытаетесь обратиться к неинициализированному полю:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> print <span class="fu">$</span> hasInsurance patient
+  <span class="fu">...</span></code></pre></div>
+<p>ваша программа аварийно завершится на этапе выполнения с ожидаемой ошибкой:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Missing</span> field in record construction hasInsurance</code></pre></div>
+<p>Не забывайте: компилятор — ваш добрый друг.</p>
+<h2 id="без-меток">Без меток</h2>
+<p>Помните, что метки полей — это синтаксический сахар, без которого мы вполне можем обойтись. Даже если тип был определён с метками, как наш <code>Patient</code>, мы можем работать с ним по-старинке:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Patient</span> <span class="fu">=</span> <span class="dt">Patient</span> {<span class="ot"> firstName    ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> lastName     ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> email        ::</span> <span class="dt">String</span>
+                       ,<span class="ot"> age          ::</span> <span class="dt">Int</span>
+                       ,<span class="ot"> diseaseId    ::</span> <span class="dt">Int</span>
+                       ,<span class="ot"> isIndoor     ::</span> <span class="dt">Bool</span>
+                       ,<span class="ot"> hasInsurance ::</span> <span class="dt">Bool</span>
+                       }
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> hasInsurance patient
+  <span class="kw">where</span>
+    <span class="co">-- Создаём по-старинке...</span>
+    patient <span class="fu">=</span> <span class="dt">Patient</span> <span class="st">&quot;John&quot;</span>
+                      <span class="st">&quot;Doe&quot;</span>
+                      <span class="st">&quot;john.doe@gmail.com&quot;</span>
+                      <span class="dv">24</span>
+                      <span class="dv">431</span>
+                      <span class="dt">True</span>
+                      <span class="dt">True</span></code></pre></div>
+<p>Соответственно, извлекать значения полей тоже можно по-старинке, через паттерн матчинг:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print insurance
+  <span class="kw">where</span>
+    <span class="co">-- Жутко неудобно, но если желаете...</span>
+    <span class="dt">Patient</span> _ _ _ _ _ _ insurance <span class="fu">=</span> patient
+    patient <span class="fu">=</span> <span class="dt">Patient</span> <span class="st">&quot;John&quot;</span>
+                      <span class="st">&quot;Doe&quot;</span>
+                      <span class="st">&quot;john.doe@gmail.com&quot;</span>
+                      <span class="dv">24</span>
+                      <span class="dv">431</span>
+                      <span class="dt">True</span>
+                      <span class="dt">True</span></code></pre></div>
+<p>С другими видами синтаксического сахара мы встретимся ещё не раз, на куда более продвинутых примерах.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/adt.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/newtype.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

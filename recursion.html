@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Рекурсия &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="рекурсия">Рекурсия</h1>
+<blockquote>
+<p>Чтобы понять рекурсию, нужно сначала понять рекурсию.</p>
+</blockquote>
+<p>Эта старая шутка про рекурсию иногда пугает новичков, как в своё время напугала и меня. В действительности в рекурсии нет ничего страшного, и в этой главе мы познакомимся с этим важным механизмом.</p>
+<h2 id="цикл">Цикл</h2>
+<p>Удивительно, но в Haskell нет встроенных циклических конструкций, столь привычных для других языков. Ни тебе <code>for</code>, ни тебе <code>while</code>. Однако обойтись без циклов в нашем коде мы не сможем. Как же нам их организовывать?</p>
+<p>К счастью, чаще всего нам это и не нужно. Вспомним нашу знакомую, функцию <code>map</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map toUpper someList</code></pre></div>
+<p>Ну и чем же не цикл? На том же C это выглядело бы как-то так:</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> length = ...
+<span class="cf">for</span>(<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; length; ++i) {
+  <span class="dt">char</span> result = toUpper(someList[i]);
+  ...
+}</code></pre></div>
+<p>Функции наподобие <code>map</code> в подавляющем большинстве случаев избавляют нас от написания явных циклических конструкций, и это не может не радовать. Однако изредка нам всё-так придётся писать циклы явно. В Haskell, из-за отсутствия <code>for</code>-конструкции, сделать это можно только одним способом — через рекурсию (англ. recursion).</p>
+<p>Идея рекурсии предельно проста:</p>
+<blockquote>
+<p>Если нам нужно повторить вычисление, производимое некой функцией, мы должны применить эту функцию внутри себя самой. И получится зацикливание.</p>
+</blockquote>
+<p>Взглянем на определение функции <code>map</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map _ []     <span class="fu">=</span> []
+map f (x<span class="fu">:</span>xs) <span class="fu">=</span> f x <span class="fu">:</span> map f xs</code></pre></div>
+<p>А теперь разберём это интереснейшее определение по косточкам.</p>
+<h2 id="правда-о-списке">Правда о списке</h2>
+<p>Первым аргументом, как мы помним, выступает некая функция, а вторым — список, к элементам которого применяется эта функция. Но что это за странного вида конструкция в круглых скобках?</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(x<span class="fu">:</span>xs)</code></pre></div>
+<p>Это — особый образец, используемый для работы со списками. И чтобы он стал понятен, я должен рассказать вам правду о формировании списка.</p>
+<p>Как мы помним, формируется список предельно просто:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]  <span class="co">-- Список из трёх целых чисел.</span></code></pre></div>
+<p>Однако в действительности он формируется несколько иначе. Привычная нам конструкция в квадратных скобках есть ни что иное, как синтаксический сахар (англ. syntactic sugar). Синтаксическим сахаром называют некое упрощение кода, делающее его слаще, приятнее для нас. Если же мы уберём сахар (или, как ещё говорят, рассахарим код), то увидим вот что:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dv">1</span> <span class="fu">:</span> <span class="dv">2</span> <span class="fu">:</span> <span class="dv">3</span> <span class="fu">:</span> []</code></pre></div>
+<p>Именно так список из трёх целых чисел формируется на самом деле. Стандартный оператор <code>:</code> нам уже знаком, мы встретились с ним в главе о списках:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">newHost   <span class="fu">:</span>         hosts
+
+          этот
+          оператор
+
+берёт
+это
+значение
+                    и добавляет
+                    его в начало
+                    этого списка</code></pre></div>
+<p>То есть список строится путём добавления элемента в его «голову», начиная с пустого списка:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  <span class="dv">1</span> <span class="fu">:</span> <span class="dv">2</span> <span class="fu">:</span> <span class="dv">3</span> <span class="fu">:</span> []
+
+<span class="fu">=</span> <span class="dv">1</span> <span class="fu">:</span> <span class="dv">2</span> <span class="fu">:</span> [<span class="dv">3</span>]
+
+<span class="fu">=</span> <span class="dv">1</span> <span class="fu">:</span> [<span class="dv">2</span>, <span class="dv">3</span>]
+
+<span class="fu">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</code></pre></div>
+<p>Начиная с правого края, мы сначала применяем оператор <code>:</code> к <code>3</code> и пустому списку, в результате чего получаем список с единственным элементом <code>[3]</code>. Затем, применяя второй оператор <code>:</code> к <code>2</code> и к только что полученному списку <code>[3]</code>, мы получаем новый список <code>[2, 3]</code>. И в конце, вновь применив оператор <code>:</code> к <code>1</code> и к списку <code>[2, 3]</code>, мы получаем итоговый список <code>[1, 2, 3]</code>. Вот почему столь удобно оперировать «головой» и «хвостом» списка. И именно поэтому был создан особый образец для паттерн-матчинговой работы со списком:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">(head <span class="fu">:</span> tail)</code></pre></div>
+<p>В данном случае слова <code>head</code> и <code>tail</code> не относятся к стандартным функциям, я лишь показываю назначение элементов данного образца. Вот более живой пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print first
+  <span class="kw">where</span>
+    (first<span class="fu">:</span>others) <span class="fu">=</span> [<span class="st">&quot;He&quot;</span>, <span class="st">&quot;Li&quot;</span>, <span class="st">&quot;Be&quot;</span>]
+
+     _____            ____
+
+           <span class="fu">======</span>           <span class="fu">==========</span></code></pre></div>
+<p>Поскольку мы точно знаем, что справа у нас список, слева мы пишем образец для списка, в котором <code>first</code> ассоциирован с первым элементом, с «головой», а шаблон <code>others</code> — с оставшимися элементами, с «хвостом».</p>
+<p>Но вы спросите, зачем нам это нужно? Если уж мы так хотим работать со списком через паттерн матчинг, можно ведь воспользоваться явным образцом:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print first
+  <span class="kw">where</span>
+    [first, second, third] <span class="fu">=</span> [<span class="st">&quot;He&quot;</span>, <span class="st">&quot;Li&quot;</span>, <span class="st">&quot;Be&quot;</span>]
+
+     _____                    ____
+
+            <span class="fu">======</span>                  <span class="fu">====</span>
+
+                    <span class="fu">+++++</span>                 <span class="fu">++++</span></code></pre></div>
+<p>Всё верно, однако образец с круглыми скобками чрезвычайно удобен именно для рекурсивной работы со списком, и вот почему. Вспомним определение функции <code>map</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map f (x<span class="fu">:</span>xs) <span class="fu">=</span> f x <span class="fu">:</span> map f xs
+
+       _         _
+
+         <span class="fu">==</span>                <span class="fu">==</span></code></pre></div>
+<p>Подставим реальные значения на основе примера про перевод символов строки в верхний регистр:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map f       (x<span class="fu">:</span>xs) <span class="fu">=</span> f       x   <span class="fu">:</span> map f       xs
+
+map toUpper <span class="st">&quot;neon&quot;</span> <span class="fu">=</span> toUpper <span class="ch">'n'</span> <span class="fu">:</span> map toUpper <span class="st">&quot;eon&quot;</span>
+
+             _                _
+
+              <span class="fu">===</span>                               <span class="fu">===</span></code></pre></div>
+<p>Вот теперь-то мы видим, каким образом функция <code>map</code> пробегается по всему списку. Пройдёмся по итерациям, чтобы всё окончательно встало на свои места. У нас же цикл, верно? А где цикл — там итерации.</p>
+<p>На первой из них оператор <code>:</code> применяется к выражениям <code>toUpper 'n'</code> и <code>map toUpper &quot;eon&quot;</code>. Выражение слева вычисляется и даёт нам символ <code>'N'</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">toUpper <span class="ch">'n'</span> <span class="fu">:</span> map toUpper <span class="st">&quot;eon&quot;</span>
+
+<span class="ch">'N'</span>         <span class="fu">:</span> map toUpper <span class="st">&quot;eon&quot;</span></code></pre></div>
+<p>Выражение справа содержит применение той же функции <code>map</code>, то есть мы входим в цикл, во вторую его итерацию:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map toUpper <span class="st">&quot;eon&quot;</span> <span class="fu">=</span> toUpper <span class="ch">'e'</span> <span class="fu">:</span> map toUpper <span class="st">&quot;on&quot;</span></code></pre></div>
+<p>Выражение слева вычисляется и даёт нам <code>'E'</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">toUpper <span class="ch">'e'</span> <span class="fu">:</span> map toUpper <span class="st">&quot;on&quot;</span>
+
+<span class="ch">'E'</span>         <span class="fu">:</span> map toUpper <span class="st">&quot;on&quot;</span></code></pre></div>
+<p>Вычисляем выражение справа — и входим в следующую итерацию:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map toUpper <span class="st">&quot;on&quot;</span> <span class="fu">=</span> toUpper <span class="ch">'o'</span> <span class="fu">:</span> map toUpper <span class="st">&quot;n&quot;</span></code></pre></div>
+<p>Выражение слева даёт нам <code>'O'</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">toUpper <span class="ch">'o'</span> <span class="fu">:</span> map toUpper <span class="st">&quot;n&quot;</span>
+
+<span class="ch">'O'</span>         <span class="fu">:</span> map toUpper <span class="st">&quot;n&quot;</span></code></pre></div>
+<p>Справа вновь применение <code>map</code> — и наша последняя итерация:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map toUpper <span class="st">&quot;n&quot;</span> <span class="fu">=</span> toUpper <span class="ch">'n'</span> <span class="fu">:</span> map toUpper []</code></pre></div>
+<p>Выражение слева даёт нам <code>'N'</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">toUpper <span class="ch">'n'</span> <span class="fu">:</span> map toUpper []
+
+<span class="ch">'N'</span>         <span class="fu">:</span> map toUpper []</code></pre></div>
+<p>Мы вытащили из списка последний из четырёх символов, и список остался пустым. Что же мы будем делать дальше? А дальше мы вспоминаем первый вариант определения функции <code>map</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map _ [] <span class="fu">=</span> []</code></pre></div>
+<p>Здесь функция говорит: «Как только я вторым аргументом получу пустой список, я, игнорируя первый аргумент, немедленно дам тот же самый пустой список». Поэтому оставшееся на последней итерации выражение справа:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map toUpper []</code></pre></div>
+<p>подойдёт под данный случай и просто даст нам пустой список. Всё, готово, работа функции завершена. На каждой итерации мы откусываем «голову» списка и передаём её функции <code>toUpper</code>, «хвост» же передаём вновь функции <code>map</code>. На четвёртой итерации упираемся в пустой список и возвращаем его же. Совместив все итерации воедино, получаем вот что:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ch">'N'</span> <span class="fu">:</span> <span class="ch">'E'</span> <span class="fu">:</span> <span class="ch">'O'</span> <span class="fu">:</span> <span class="ch">'N'</span> <span class="fu">:</span> []</code></pre></div>
+<p>Узнаёте? Это же наш рассахаренный список, соединяющийся воедино:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="ch">'N'</span>, <span class="ch">'E'</span>, <span class="ch">'O'</span>, <span class="ch">'N'</span>]</code></pre></div>
+<p>Вот мы и пришли к нашему равенству:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  map toUpper <span class="st">&quot;neon&quot;</span>
+
+<span class="fu">=</span> map toUpper [<span class="ch">'n'</span>, <span class="ch">'e'</span>, <span class="ch">'o'</span>, <span class="ch">'n'</span>]
+
+<span class="fu">=</span> [<span class="ch">'N'</span>, <span class="ch">'E'</span>, <span class="ch">'O'</span>, <span class="ch">'N'</span>]
+
+<span class="fu">=</span> <span class="st">&quot;NEON&quot;</span></code></pre></div>
+<h2 id="туда-и-обратно">Туда и обратно</h2>
+<p>Определяя рекурсивную функцию, важно помнить о том, что в ней должно быть как правило зацикливания, так и правило выхода из цикла:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">map _ []     <span class="fu">=</span> []              <span class="co">-- Выходим из цикла.</span>
+map f (x<span class="fu">:</span>xs) <span class="fu">=</span> f x <span class="fu">:</span> map f xs  <span class="co">-- Зацикливаемся,</span>
+                               <span class="co">-- применяя саму себя.</span></code></pre></div>
+<p>Если бы мы опустили первое определение, компилятор предусмотрительно сообщил бы нам о проблеме:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Pattern</span> match(es) <span class="ex">are</span> non-exhaustive</code></pre></div>
+<p>И это совершенно правильно: если на каждой итерации мы уменьшаем список, то рано или поздно список точно останется пустым, а следовательно, мы обязаны объяснить, что же делать в этом случае.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>Открою секрет: рекурсивными в Haskell бывают не только функции, но и типы. Но об этом в последующих главах.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/hackage.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/laziness.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>

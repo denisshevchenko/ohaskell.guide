@@ -1,0 +1,514 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="О Haskell по-человечески. Ваша первая книга о прекрасном и удивительном языке программирования.">
+        <meta name="author" content="Денис Шевченко">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <title>
+            Лень &lt;- О Haskell по-человечески
+        </title>
+        <link rel="icon" href="./static/images/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js">
+            
+        </script>
+        <link rel="stylesheet" href="./static/css/default.css">
+        <script src="./static/js/default.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center sans" href="./">
+                        #ohaskell
+                        <span style="font-size: 19px; color: yellow;">
+                            &beta;
+                        </span>
+                    </a>
+                    <ul id="nav-mobile" class="left">
+                        <li>
+                            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large">
+                                <span class="fa fa-list-ul" style="font-size: 26px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./subject-index.html">
+                                <span class="fa fa-tags" style="font-size: 22px;">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav sans" id="mobile-demo">
+                        <li>
+                            <a href="./init.html">
+                                Приветствую!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./haskell-faq.html">
+                                Первые вопросы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./this-book.html">
+                                Об этой книге
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./setup.html">
+                                Приготовимся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./whales-n-turtle.html">
+                                Киты и Черепаха
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./immutability-n-purity.html">
+                                Неизменность и чистота
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./if-n-return.html">
+                                Выбираем и возвращаемся
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./choose-n-patterns.html">
+                                Выбор и образцы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./let-n-where.html">
+                                Пусть будет там, Где...
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./operators.html">
+                                Мир операторов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./list.html">
+                                Список
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tuple.html">
+                                Кортеж
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./lambda-function.html">
+                                Лямбда-функция
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./function-composition.html">
+                                Композиция функций
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hof.html">
+                                ФВП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hackage.html">
+                                Hackage и библиотеки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./recursion.html">
+                                Рекурсия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./laziness.html">
+                                Лень
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./own-types.html">
+                                Наши типы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt.html">
+                                АТД
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./adt-field-labels.html">
+                                АТД: поля с метками
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./newtype.html">
+                                Новый тип
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./type-constructor.html">
+                                Конструктор типа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work-in-progress.html">
+                                Продолжение следует...
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right">
+                        <li>
+                            <a href="https://github.com/denisshevchenko/ohaskell.guide" target="_blank">
+                                <span class="fa fa-github">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге" title="Написать автору">
+                                <span class="fa fa-envelope-o">
+                                    
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 id="лень">Лень</h1>
+<p>Помните, в главе с первыми вопросами о Haskell я упомянул, что этот язык является ленивым? Сейчас мы наконец-то узнаем о ленивых вычислениях и познакомимся с их светлой и тёмной сторонами.</p>
+<h2 id="две-модели-вычислений">Две модели вычислений</h2>
+<p>Как мы уже знаем, Haskell-программа состоит из выражений, а запуск программы суть начало длинной цепочки вычислений. Вспомним функцию <code>square</code>, возводящую свой единственный аргумент в квадрат:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">.</span> square <span class="fu">$</span> <span class="dv">4</span></code></pre></div>
+<p>Здесь всё просто: функция <code>square</code> применяется к нередуцируемому выражению <code>4</code> и даёт нам <code>16</code>. А если так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">.</span> square <span class="fu">$</span> <span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span></code></pre></div>
+<p>Теперь функция <code>square</code> применяется уже к редуцируемому выражению:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square   <span class="fu">$</span>            <span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span>
+
+функция  применяется  редуцируемому
+         к            выражению</code></pre></div>
+<p>Как вы думаете, что произойдёт раньше? Применение оператора сложения или же применение функции <code>square</code>? Вопрос хитрый, ведь правильного ответа на него нет, поскольку существует две модели вычисления аргументов, а именно энергичная (англ. eager) и ленивая (англ. lazy).</p>
+<p>При энергичной модели (называемой ещё «жадной» или «строгой») выражение, являющееся аргументом функции, будет вычислено ещё до того, как попадёт в тело функции. На фоне определения функции <code>square</code> будет яснее:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square     x   <span class="fu">=</span> x <span class="fu">*</span> x
+         <span class="fu">/</span>   \
+square <span class="fu">$</span> <span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span>
+         \   <span class="fu">/</span>
+           <span class="dv">4</span>   <span class="fu">=</span> <span class="dv">4</span> <span class="fu">*</span> <span class="dv">4</span> <span class="fu">=</span> <span class="dv">16</span></code></pre></div>
+<p>То есть видим выражение <code>2 + 2</code>, жадно на него набрасываемся, полностью вычисляем, а уже потом результат этого вычисления передаём в функцию <code>square</code>.</p>
+<p>При ленивой же модели всё наоборот: выражение, являющееся аргументом функции, передаётся в функцию прямо так, без вычисления. Изобразить это можно следующим образом:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square     x   <span class="fu">=</span>    x    <span class="fu">*</span>    x
+         <span class="fu">/</span>   \    <span class="fu">/</span>   \     <span class="fu">/</span>   \
+square <span class="fu">$</span> <span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span> <span class="fu">=</span> (<span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span>) <span class="fu">*</span> (<span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span>) <span class="fu">=</span> <span class="dv">16</span></code></pre></div>
+<p>Но какая разница, спросите вы? Всё равно в итоге получим <code>16</code>, хоть там сложили, хоть тут. Так и есть: модель вычисления не влияет на результат этого вычисления, но она влияет на путь к этому результату.</p>
+<p>Жадная модель нашла своё воплощение практически во всех современных языках программирования. Напишем на C:</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="dt">int</span> strange(<span class="dt">int</span> i) {
+  <span class="cf">return</span> <span class="dv">22</span>;
+}
+
+<span class="dt">int</span> main() {
+  printf(<span class="st">&quot;%d</span><span class="sc">\n</span><span class="st">&quot;</span>, strange(<span class="dv">2</span> / <span class="dv">0</span>));
+}</code></pre></div>
+<p>Функция <code>strange</code> действительно странная, ведь она игнорирует свой аргумент и просто возвращает число <code>22</code>. И всё же при запуске этой программы вы гарантированно получите ошибку <code>Floating point exception</code>, ибо компилятор языка C категорически не терпит деления на ноль. А всё потому, что язык C придерживается энергичной модели вычислений: оператор деления <code>2</code> на <code>0</code> будет вызван ещё до того, как мы войдём в тело функции <code>strange</code>, поэтому программа упадёт.</p>
+<p>Такой подход прямолинеен и строг: сказали нам сначала разделить на ноль — разделим, не задумываясь. Ленивая же модель придерживается иного подхода. Взгляните на Haskell-вариант:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">strange ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+strange i <span class="fu">=</span> <span class="dv">22</span>
+
+<span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">.</span> strange <span class="fu">$</span> <span class="dv">2</span> <span class="ot">`div`</span> <span class="dv">0</span></code></pre></div>
+<p>Удивительно, но при запуске этой программы мы увидим:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">22</span></code></pre></div>
+<p>Впрочем, почему удивительно? Функция <code>strange</code>, проигнорировав свой аргумент, дала нам значение <code>22</code>, которое, попав на вход функции <code>print</code>, вылетело в наш терминал. Но где же ошибка деления <code>2</code> на <code>0</code>, спросите вы? Её нет.</p>
+<p>Ленивый подход вполне гармонирует со своим названием: нам лень делать работу сразу же. Вместо этого мы, подобно ребёнку, которого заставили убрать разбросанные по комнате игрушки, откладываем работу до последнего. Ленивая модель гарантирует, что работа будет выполнена лишь тогда, когда результат этой работы кому-то понадобится. Если же он никому не понадобится, тогда работа не будет выполнена вовсе.</p>
+<p>Функция <code>strange</code> ленива и потому рациональна. Она смотрит на свой аргумент <code>i</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">strange i <span class="fu">=</span> <span class="dv">22</span></code></pre></div>
+<p>и понимает, что он нигде не используется в её теле. Значит, он не нужен. А раз так, то и вычислен он не будет. Кстати, если аргумент функции игнорируется, определение принято писать с универсальным образцом:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">strange _     <span class="fu">=</span> <span class="dv">22</span>
+
+        <span class="fu">^</span>
+        нам
+        всё
+        равно</code></pre></div>
+<p>Так и получается:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">strange       _     <span class="fu">=</span> <span class="dv">22</span>
+          <span class="fu">/</span>       \
+strange <span class="fu">$</span> <span class="dv">2</span> <span class="ot">`div`</span> <span class="dv">0</span> <span class="fu">=</span> <span class="dv">22</span></code></pre></div>
+<p>Выражение, содержащее деление на ноль, попадает внутрь функции, будучи ещё невычисленным, но поскольку в теле функции оно нигде не используется, оно так и останется невычисленным. Девиз лени: если результат работы никому не нужен — зачем же её делать? Вот почему фактического деления на ноль здесь не произойдёт и программа не рухнет.</p>
+<p>Разумеется, если бы мы определили функцию <code>strange</code> иначе:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">strange ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+strange i <span class="fu">=</span> i <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>тогда другое дело: значение аргумента уже используется в теле функции, а значит вычисление аргумента непременно произойдёт:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">strange       i     <span class="fu">=</span>      i      <span class="fu">+</span> <span class="dv">1</span>
+          <span class="fu">/</span>       \    <span class="fu">/</span>       \
+strange <span class="fu">$</span> <span class="dv">2</span> <span class="ot">`div`</span> <span class="dv">0</span> <span class="fu">=</span> (<span class="dv">2</span> <span class="ot">`div`</span> <span class="dv">0</span>) <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>Оператору сложения требуется значение обоих своих аргументов, в том числе левого, а потому получите ошибку деления на ноль.</p>
+<h2 id="как-можно-меньше">Как можно меньше</h2>
+<p>До тех пор, пока результат вычисления никому не нужен, оно не производится. Однако даже тогда, когда результат кому-то понадобился, вычисление происходит не до конца. Помните, выше я сказал, что при жадной модели вычисления выражение, являющееся аргументом, вычисляется «полностью»? А вот при ленивой модели мы вычисляем выражение лишь настолько, насколько это необходимо. Как вышеупомянутый ребёнок, убирающий игрушки в комнате, убирает их вовсе не до конца, а лишь до такой степени, чтобы его не ругали родители.</p>
+<p>С точки зрения вычисления любое выражение в Haskell проходит через три стадии:</p>
+<ol style="list-style-type: decimal">
+<li>невычисленное,</li>
+<li>вычисленное не до конца,</li>
+<li>вычисленное до конца.</li>
+</ol>
+<p>Невычисленным называется такое выражение, которое вообще не трогали. Вспомним вышеупомянутое деление на ноль:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dv">2</span> <span class="ot">`div`</span> <span class="dv">0</span></code></pre></div>
+<p>Мы увидели, что программа не упала, и это говорит нам о том, что деления не было. То есть функция <code>div</code> так и не была применена к своим аргументам. Вообще. Такое выражение называют thunk (можно перевести как «задумка»). То есть мы задумали применить функцию <code>div</code> к <code>2</code> и к <code>0</code>, приготовились сделать это — но в итоге так и не сделали.</p>
+<p>Вычисленным до конца называют такое выражение, которое вычислено до своей окончательной, нередуцируемой формы. О таком выражении говорят как о выражении в «нормальной форме» (англ. normal form).</p>
+<p>А вот вычисленным не до конца называют такое выражение, которое начали было вычислять, но сделали это не до конца, то есть не до нормальной формы, а до так называемой «слабой головной формы» (англ. Weak Head Normal Form, WHNF). Вы спросите, как же это можно вычислить выражение не до конца? Рассмотрим пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> cx     <span class="fu">=</span> <span class="dv">2</span> <span class="fu">/</span> <span class="fl">6.054</span>   <span class="co">-- thunk</span>
+      nk     <span class="fu">=</span> <span class="dv">4</span> <span class="fu">*</span> <span class="fl">12.003</span>  <span class="co">-- thunk</span>
+      coeffs <span class="fu">=</span> [cx, nk]    <span class="co">-- thunk</span>
+  <span class="kw">in</span> putStrLn <span class="st">&quot;Nothing...&quot;</span></code></pre></div>
+<p>Есть у нас два коэффициента, <code>cx</code> и <code>nk</code>, и ещё список <code>coeffs</code>, в который мы поместили эти коэффициенты. Но, как мы видим, в итоге ни эти коэффициенты, ни этот список нам не понадобились: мы просто вывели строку и тихо вышли. В этом случае ни одно из этих выражений так и не было вычислено, оставшись в виде thunk. То есть оператор деления так и не был применён к <code>2</code> и <code>6.054</code>, оператор умножения не прикоснулся ни к <code>4</code>, ни к <code>12.003</code>, а список остался лишь в наших умах. Ленивая стратегия рациональна: зачем тратить компьютерные ресурсы на создание того, что в итоге никому не понадобится?</p>
+<p>Изменим код:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> cx     <span class="fu">=</span> <span class="dv">2</span> <span class="fu">/</span> <span class="fl">6.054</span>   <span class="co">-- thunk</span>
+      nk     <span class="fu">=</span> <span class="dv">4</span> <span class="fu">*</span> <span class="fl">12.003</span>  <span class="co">-- thunk</span>
+      coeffs <span class="fu">=</span> [cx, nk]    <span class="co">-- WHNF</span>
+  <span class="kw">in</span> print <span class="fu">$</span> length coeffs</code></pre></div>
+<p>Ага, уже интереснее. В этот раз захотелось нам узнать длину списка <code>coeffs</code>. В этом случае нам уже не обойтись без списка, иначе как же мы узнаем его длину? Однако фокус в том, что выражение <code>[cx, nk]</code> вычисляется не до конца, а лишь до той своей формы, которая удовлетворит функцию <code>length</code>.</p>
+<p>Задумаемся: функция <code>length</code> возвращает число элементов списка, но какое ей дело до содержимого этих элементов? Ровным счётом никакого. Поэтому в данном случае список формируется из thunk-ов:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">coeffs <span class="fu">=</span> [thunk, thunk]</code></pre></div>
+<p>Первым элементом этого списка является thunk, ассоциированный с невычисленным выражением <code>2 / 6.054</code>, а вторым элементом списка является thunk, ассоциированный с невычисленным выражением <code>4 * 12.003</code>. Фактически, список <code>coeffs</code> получился как бы не совсем настоящим, пустышечным: он был сформирован в памяти как корректный список, однако внутри обоих его элементов — вакуум. И всё же даже такая его форма вполне подходит для функции <code>length</code>, которая и так прекрасно поймёт, что в списке два элемента. О таком списке говорят как о выражении в слабой головной форме.</p>
+<p>Ещё чуток изменим код:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> cx     <span class="fu">=</span> <span class="dv">2</span> <span class="fu">/</span> <span class="fl">6.054</span>   <span class="co">-- thunk</span>
+      nk     <span class="fu">=</span> <span class="dv">4</span> <span class="fu">*</span> <span class="fl">12.003</span>  <span class="co">-- normal</span>
+      coeffs <span class="fu">=</span> [cx, nk]    <span class="co">-- WHNF</span>
+  <span class="kw">in</span> print <span class="fu">$</span> coeffs <span class="fu">!!</span> <span class="dv">1</span></code></pre></div>
+<p>Необычного вида оператор <code>!!</code> извлекает из списка элемент по индексу, в данном случае нас интересует второй по счёту элемент. Теперь нам уже недостаточно просто сформировать список, нам действительно нужен его второй элемент, иначе как бы мы смогли вывести его на консоль? В этом случае выражение <code>4 * 12.003</code> будет вычислено до своей окончательной, нормальной формы, а результат этого вычисления ляжет вторым элементом списка, вот так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">coeffs <span class="fu">=</span> [thunk, <span class="fl">48.012</span>]</code></pre></div>
+<p>Однако первый элемент списка так и остался невостребованным, поэтому выражение <code>2 / 6.054</code> по-прежнему остаётся лишь нашей мыслью, не более чем. В этом случае список <code>coeffs</code> всё равно остаётся в слабой головной форме, ведь внутри первого его элемента всё ещё вакуум.</p>
+<p>И теперь напишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> cx     <span class="fu">=</span> <span class="dv">2</span> <span class="fu">/</span> <span class="fl">6.054</span>   <span class="co">-- normal</span>
+      nk     <span class="fu">=</span> <span class="dv">4</span> <span class="fu">*</span> <span class="fl">12.003</span>  <span class="co">-- normal</span>
+      coeffs <span class="fu">=</span> [cx, nk]    <span class="co">-- normal</span>
+  <span class="kw">in</span> print coeffs</code></pre></div>
+<p>Вот, теперь никакой лени. Список <code>coeffs</code> должен быть выведен на консоль полностью, а следовательно, оба его элемента должны быть вычислены до своей нормальной формы, в противном случае мы не смогли бы показать их в консоли.</p>
+<p>Вот философия ленивой стратегии: даже если нам нужно вычислить выражение, мы вычисляем его лишь до той формы, достаточной в конкретных условиях, и не более того.</p>
+<h2 id="рациональность">Рациональность</h2>
+<p>Как уже было упомянуто, ленивая стратегия помогает программе быть рациональной и не делать лишнюю работу. Рассмотрим пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> take <span class="dv">5</span> evens
+  <span class="kw">where</span> evens <span class="fu">=</span> [<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span> <span class="dv">100</span>]</code></pre></div>
+<p>Список <code>evens</code>, формируемый через арифметическую последовательность, содержит в себе чётные числа от <code>2</code> до <code>100</code> включительно. Используется этот список в качестве второго аргумента стандартной функции <code>take</code>, которая даёт нам N первых элементов из переданного ей списка:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">take    <span class="dv">5</span>          evens
+
+возьми  лишь
+        пять
+        элементов  из этого
+                   списка</code></pre></div>
+<p>При запуске этой программы мы получим ожидаемый результат:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">[<span class="ex">2</span>,4,6,8,10]</code></pre></div>
+<p>В чём же здесь рациональность, спросите вы? А в том, что список <code>evens</code> в итоге содержал в себе лишь 5 элементов. Да, но ведь чётных чисел от <code>2</code> до <code>100</code> куда больше, нежели пять! Совершенно верно, но лень позволяет нам сделать лишь столько работы, сколько реально требуется. Раз уж список <code>evens</code> нужен лишь функции <code>take</code>, которая, в свою очередь, хочет только пять первых его элементов — зачем же создавать оставшиеся элементы? Нужно первые пять — получи пять. Если же напишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> take <span class="dv">50</span> evens
+  <span class="kw">where</span> evens <span class="fu">=</span> [<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span> <span class="dv">100</span>]</code></pre></div>
+<p>тогда в списке <code>evens</code> окажется уже пятьдесят элементов, потому что именно столько запросила функция <code>take</code>. Повторю философию ленивого рационализма: сделаем не столько, сколько нам сказали, а лишь столько, сколько действительно понадобится.</p>
+<h2 id="бесконечность">Бесконечность</h2>
+<p>А что будет, если мы запросим из списка <code>evens</code> 500 элементов? Вот так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> take <span class="dv">500</span> evens
+  <span class="kw">where</span> evens <span class="fu">=</span> [<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span> <span class="dv">100</span>]</code></pre></div>
+<p>Ничего страшного не случится, функция <code>take</code> проверяет выход за границы и в случае, если её первый аргумент превышает длину списка, она просто даёт нам тот же список. Да, но ведь мы хотим увидеть пятьсот чётных чисел, а не пятьдесят! Можно было бы увеличить список:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> take <span class="dv">500</span> evens
+  <span class="kw">where</span> evens <span class="fu">=</span> [<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span> <span class="dv">100000</span>]</code></pre></div>
+<p>но это ненадёжно, ведь потом опять может потребоваться ещё больше. Нужно что-нибудь универсальное, и в Haskell есть подходящее решение:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> take <span class="dv">500</span> evens
+  <span class="kw">where</span> evens <span class="fu">=</span> [<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span>]  <span class="co">-- Что это?</span></code></pre></div>
+<p>Теперь не сомневайтесь: в списке <code>evens</code> будет не менее пятисот чётных чисел. Но что это за конструкция такая? Начало дано, шаг дан, а где же конец? Познакомьтесь, это бесконечный список:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">[<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span>]</code></pre></div>
+<p>Ленивая модель вычислений позволяет нам работать с бесконечными структурами данных. Вот прямо так, начиная с двойки и, с шагом через один, уходим в бесконечные дали… Шучу. На самом деле, список получится вовсе не бесконечным, а настолько большим, насколько нам это понадобится.</p>
+<p>В самом деле, если функция <code>take</code> требует от нас N элементов — зачем нам вообще задавать окончание диапазона списка? Всё равно в нём будет не более чем N. Бесконечная структура данных тем и полезна, что из неё всегда можно взять столько, сколько требуется.</p>
+<p>Конечно, если бы мы решили похулиганить:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print evens  <span class="co">-- Дай нам всё!</span>
+  <span class="kw">where</span> evens <span class="fu">=</span> [<span class="dv">2</span>, <span class="dv">4</span> <span class="fu">..</span>]</code></pre></div>
+<p>в этом случае в нашу консоль быстро посыпалось бы очень много чисел…</p>
+<h2 id="space-leak">Space leak</h2>
+<p>Да, я должен рассказать вам правду: есть у ленивой стратегии вычислений тёмная сторона, получившая название space leak (букв. «утечка пространства»). И вот в чём её суть.</p>
+<p>Вспомним пример с делением:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">.</span> strange <span class="fu">$</span> <span class="dv">2</span> <span class="ot">`div`</span> <span class="dv">0</span></code></pre></div>
+<p>Как мы помним, деления на ноль так и не произошло за ненадобностью его результата. В этом случае выражение осталось в виде thunk. Возникает вопрос: что же с ним стало? У нас есть функция <code>div</code> и есть два значения типа <code>Int</code>, <code>2</code> и <code>0</code>. Если функция <code>div</code> так и не была применена к ним, где же всё это хозяйство находилось в процессе работы нашей программы? Оно находилось в памяти, в виде особого графа, который можно изобразить так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"> ┌─────────────┐
+ │ div │   │   │
+ └─────────────┘
+         │   │
+         v   v
+      ┌───┐ ┌───┐
+      │ <span class="dv">2</span> │ │ <span class="dv">0</span> │
+      └───┘ └───┘</code></pre></div>
+<p>То есть сама функция и два значения, которые должны были занять место двух её аргументов. И вот этот граф в памяти так и остался невостребованным. Казалось бы, ну и в чём проблема? А проблема в количестве. Если мы смогли написать код, при работе которого в память отложился один thunk, значит теоретически мы можем написать и такой код, количество thunk-ов при работе которого будет исчисляться миллионами. А учитывая тот факт, что каждый thunk занимает в памяти хотя бы несколько байт, вы можете себе представить масштаб проблемы.</p>
+<p>Причём возникнуть эта проблема может из весьма невинного на первый взгляд кода:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">bad ::</span> [<span class="dt">Int</span>] <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+bad []         c <span class="fu">=</span> c
+bad (_<span class="fu">:</span>others) c <span class="fu">=</span> bad others <span class="fu">$</span> c <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>Простенькая рекурсивная функция, пробегающаяся по ненужному ей списку и увеличивающаяся свой второй аргумент на единицу. Но я не просто так назвал её <code>bad</code>. Давайте применим её:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>] <span class="dv">0</span></code></pre></div>
+<p>Подставим в определение, содержащее зацикливание:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad (_<span class="fu">:</span> others) c <span class="fu">=</span> bad others <span class="fu">$</span> c <span class="fu">+</span> <span class="dv">1</span>
+
+bad [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]   <span class="dv">0</span> <span class="fu">=</span> bad [<span class="dv">2</span>, <span class="dv">3</span>] <span class="fu">$</span> <span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span>
+
+        ____            ______
+
+                <span class="fu">=</span>                <span class="fu">=</span></code></pre></div>
+<p>«Голова» списка откусывается и игнорируется, а к <code>0</code> прибавляется <code>1</code>. Но поскольку результат сложения пока что никому не нужен, сложение не производится. Вместо этого, на второй итерации, мы видим следующее:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad [<span class="dv">2</span>, <span class="dv">3</span>] <span class="fu">$</span> <span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span> <span class="fu">=</span> bad [<span class="dv">3</span>] <span class="fu">$</span> (<span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>К предыдущему выражению вновь прибавляется единица — и мы опять входим в очередную итерацию, так и не выполнив сложения:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad [<span class="dv">3</span>] <span class="fu">$</span> (<span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span> <span class="fu">=</span> bad [] <span class="fu">$</span> ((<span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>Опа! Упёрлись в пустой список, вспоминаем правило выхода из рекурсии:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad [] c <span class="fu">=</span> c</code></pre></div>
+<p>Итак, в этом случае мы просто возвращаем значение второго аргумента. Сделаем же это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad [] <span class="fu">$</span> ((<span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span> <span class="fu">=</span> ((<span class="dv">0</span> <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span>) <span class="fu">+</span> <span class="dv">1</span> <span class="fu">=</span> <span class="dv">3</span></code></pre></div>
+<p>И вот только здесь мы реально вычисляем второй аргумент, складывая три единицы. Вы спросите, почему же мы накапливали эти сложения вместо того, чтобы делать их сразу? Потому что мы ленивы: раз результат сложения понадобился нам лишь на последней итерации, значит до этой итерации никакого сложения не будет, ведь лень вынуждает нас откладывать работу до конца.</p>
+<p>Вот в этом-то накоплении вся беда. Представим, что мы написали так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> bad [<span class="dv">1</span><span class="fu">..</span><span class="dv">50000000</span>] <span class="dv">0</span></code></pre></div>
+<p>50 миллионов элементов, а значит, 50 миллионов раз сложение второго аргумента с единицей будет откладываться, накапливая гигантский «хвост» из (пока что) невычисленных выражений. Хотите знать, что произойдёт при запуске такой программы? Её выполнение, на MacBook Pro 2014 года, займёт приблизительно 63 секунды и скушает, ни много ни мало, 6,4 ГБ памяти! А теперь представьте, что случилось бы, если бы элементов в списке было не 50 миллионов, а 50 миллиардов…</p>
+<p>Иногда space leak ошибочно путают с другой проблемой, называемой memory leak (англ. «утечка памяти»), однако это вовсе не одно и то же. Утечка памяти — это ошибка, характерная для языков с ручным управлением памятью, например, C. Если мы выделим память в куче (англ. heap), а затем потеряем указатель, связывающий нас с этой памятью — всё, выделенная память утекла, она потеряна для нас навеки. Но в случае space leak мы не теряем память: когда весь этот «хвост» из сложений в конце концов вычислится, память, занимаемая миллионами thunk-ов, освободится. Мы не теряем память, мы просто используем её слишком много.</p>
+<h2 id="борьба">Борьба</h2>
+<p>Проблема space leak вытекает из самой природы ленивых вычислений. Многие программисты, узнав об этой проблеме, отворачиваются от Haskell. Мол, если в этом языке можно легко написать код, сжирающий уймищу памяти, значит этот язык точно не подходит для серьёзного использования. Но не так страшен чёрт, как его малюют. Я расскажу о двух способах борьбы со space leak.</p>
+<p>Впрочем, с концептуальной точки зрения способ всего один. Задумаемся: если в примере выше лень явилась причиной откладывания сложений на потом, что же можно сделать? Ответ прост: мы должны убрать излишнюю ленивость и заменить её строгостью. В этом случае применение оператора сложения уже не будет откладываться до последнего, а будет производиться тут же, как в языках со строгой моделью вычислений.</p>
+<p>И как же мы можем разбавить лень строгостью? Вот два способа.</p>
+<h3 id="оптимизация">Оптимизация</h3>
+<p>Первый способа самый простой — оптимизация. Когда компилятор превращает наш код в программу, его можно попросить оптимизировать наш код, сделав его более эффективным, по тем или иным критериям. Чтобы попросить компилятор провести оптимизацию, мы должны использовать специальный флаг. Откроем сборочный файл нашего проекта <code>real.cabal</code>, найдём секцию <code>executable real-exe</code>, в которой есть строка:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">  ghc<span class="fu">-</span>options<span class="fu">:</span>         <span class="fu">...</span></code></pre></div>
+<p>Эта строка содержит различные опции компилятора GHC, и оптимизационный флаг дописывается именно сюда. Попробуем подставить туда сначала флаг <code>-O0</code>, а затем <code>-O2</code>. Результаты запуска программы будут такими:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">Оптимизация    Время    Память
+
+<span class="ex">-O0</span>            63 c     6,4 ГБ
+
+<span class="ex">-O2</span>            3,2 с    104 кБ</code></pre></div>
+<p>Впечатляющая разница, не правда ли? Флаг <code>-O0</code> говорит компилятору о том, чтобы тот не производил никакую оптимизацию, в этом случае говорят о нулевом уровне оптимизации. Флаг <code>-O2</code>, напротив, устанавливает стандартный для production-проектов уровень оптимизации. Так вот при стандартном уровне компилятор способен распознать излишнюю ленивость в нашем коде и добавить чуток жадности. В примере выше компилятор увидит накопление thunk-ов сложения и пресечёт оное. Согласитесь, с гигабайтов прыгнуть сразу на килобайты — это круто.</p>
+<p>Так что же, проблемы нет? Ну, если оптимизация <code>-O2</code> и так стандартна — так давайте ставить её в наши проекты и забудем про space leak! К сожалению, не всё так просто.</p>
+<p>Во-первых, компиляторная оптимизация сродни чёрной магии, на неё трудно полагаться. Мы очень благодарны компилятору GHC за попытку помочь нам, но эта помощь не всегда соответствует нашим ожиданиям. И во-вторых, к сожалению, компилятор не всегда способен распознать излишнюю лень в нашем коде, и в этом случае нам приходится-таки прибегнуть ко второму способу борьбы со space leak.</p>
+<h3 id="вручную">Вручную</h3>
+<p>Вернёмся к определению функции <code>bad</code>:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">bad ::</span> [<span class="dt">Int</span>] <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+bad []         c <span class="fu">=</span> c
+bad (_<span class="fu">:</span>others) c <span class="fu">=</span> bad others <span class="fu">$</span> c <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>Проблема, как мы уже поняли, во втором аргументе:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">bad others <span class="fu">$</span> c <span class="fu">+</span> <span class="dv">1</span>
+
+             накопление
+             thunk<span class="fu">-</span>ов<span class="fu">...</span></code></pre></div>
+<p>Превратим же злую функцию в добрую:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">good ::</span> [<span class="dt">Int</span>] <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+good []         c <span class="fu">=</span> c
+good (_<span class="fu">:</span>others) c <span class="fu">=</span> good others <span class="fu">$!</span> c <span class="fu">+</span> <span class="dv">1</span></code></pre></div>
+<p>Этот код даст нам приблизительно такой же выигрыш, что и оптимизация уровня <code>-O2</code>: секунды вместо минуты и килобайты вместо гигабайтов. Что же изменилось? Смотрим внимательно:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">good others <span class="fu">$!</span> c <span class="fu">+</span> <span class="dv">1</span>
+
+             <span class="fu">^</span></code></pre></div>
+<p>Вместо привычного оператора применения <code>$</code> мы видим оператор строго применения <code>$!</code> (англ. strict application operator). Этот оператор говорит аргументу: «Забудь о лени, я приказываю тебе немедленно вычислиться до слабой головной формы»:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">good others <span class="fu">$!</span>       c <span class="fu">+</span> <span class="dv">1</span>
+
+            вычисли  этот
+                     аргумент
+
+            строго,
+            а не
+            лениво<span class="fu">!</span></code></pre></div>
+<p>Вот потому-то наш «хвост» из thunk-ов и не будет накапливаться, ведь на каждой из 50 миллионов итераций будет происходить незамедлительное применение оператора сложения. Таким образом, заставить аргумент тут же вычислиться до слабой головной или нормальной формы можно как посредством того, что этот аргумент прямо сейчас кому-то понадобился, так и посредством строгого применения.</p>
+<h2 id="лень-и-строгость-вместе">Лень и строгость вместе</h2>
+<p>Функцию называют ленивой по тем аргументам, которые не вычисляются, и строгой по тем аргументам, которые вычисляются. Примитивный пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">fakeSum ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+fakeSum x _ <span class="fu">=</span> x <span class="fu">+</span> <span class="dv">100</span></code></pre></div>
+<p>Функция <code>fakeSum</code> строга по своему первому аргументу и ленива по своему второму аргументу. Первый аргумент <code>x</code> непременно будет вычислен, ведь он передаётся оператору сложения. Второй же аргумент игнорируется, оставшись невычисленным. И кстати, существует простой способ проверить, строга ли функция по некоторому аргументу или ленива.</p>
+<p>В стандартной библиотеке Haskell определена особая функция <code>undefined</code>. Это — чёрная дыра: при попытке прикоснуться к ней программа гарантированно падает с ошибкой. Проверяем:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> fakeSum <span class="dv">1</span> undefined</code></pre></div>
+<p>В этом случае мы получим результат:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">101</span></code></pre></div>
+<p>Чёрная дыра была проигнорирована, ведь функция <code>fakeSum</code> ленива по второму аргументу. Если же мы напишем так:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">$</span> fakeSum undefined <span class="dv">45</span></code></pre></div>
+<p>программа, попытавшись передать <code>undefined</code> оператору сложения, аварийно остановится. Или вот другой пример:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> print <span class="fu">.</span> head <span class="fu">$</span> [<span class="dv">23</span>, undefined, undefined]</code></pre></div>
+<p>Не сомневайтесь: программа спокойно вернёт нам <code>23</code>, ведь функция <code>head</code> строга лишь по первому элементу переданного ей списка, остальное содержимое оного её абсолютно не интересует. Но если попробуете вытащить второй или третий элемент из подобного списка — крах неминуем.</p>
+<h2 id="для-любопытных">Для любопытных</h2>
+<p>Haskell — не первый язык с ленивой стратегией вычислений. Открою вам исторический факт: у языка Haskell был предшественник, язык программирования с красивым женским именем <a href="https://en.wikipedia.org/wiki/Miranda_(programming_language)">Miranda</a>. Лень и чистая функциональность пришли в Haskell именно из Miranda, и лишь в этих двух языках ленивая стратегия вычисления аргументов используется по умолчанию. На сегодняшний день, насколько мне известно, язык Miranda мёртв. Впрочем, как сугубо исследовательский язык он, может быть, кем-то и используется.</p>
+<p>Что же касается проблемы space leak, то к счастью, существуют способы обнаружения функций, шибко прожорливых до памяти. В самом деле, представьте себе большой проект, тысячи функций, и что-то кушает гигабайты памяти. Как найти виновного? Этот процесс называют ещё «space leak профилированием». Рассказывать об этом здесь я не стану, материал довольно объёмный. Но для особо любопытных привожу ссылку на неплохую англоязычную статью по теме: <a href="http://neilmitchell.blogspot.am/2013/02/chasing-space-leak-in-shake.html">Chasing a Space Leak in Shake</a>.</p>
+<p>И ещё вспомним вот это:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">square     x   <span class="fu">=</span>    x      <span class="fu">*</span>    x
+         <span class="fu">/</span>   \    <span class="fu">/</span>   \       <span class="fu">/</span>   \
+square <span class="fu">$</span> <span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span> <span class="fu">=</span> (<span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span>)   <span class="fu">*</span> (<span class="dv">2</span> <span class="fu">+</span> <span class="dv">2</span>)    <span class="fu">=</span> <span class="dv">16</span>
+
+                 вычисляем   и что,
+                             опять
+                             вычисляем<span class="fu">?!</span></code></pre></div>
+<p>Внимательный читатель удивится, мол, неужели выражение <code>2 + 2</code> вычисляется дважды?! Ведь это нерационально. Конечно нерационально, поэтому в действительности оно будет вычислено единожды. В Haskell есть особый механизм «шаринга» (англ. sharing), позволяющий избежать напрасной работы. И если у нас есть несколько одинаковых выражений, вычисление оного происходит один раз, результат же сохраняется и потом просто подставляется в нужные места. Например:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span>
+  <span class="kw">let</span> x <span class="fu">=</span> sin <span class="dv">2</span> <span class="kw">in</span> print x <span class="fu">*</span> x</code></pre></div>
+<p>Если бы не sharing-механизм, функция <code>sin</code> была бы применена к <code>2</code> дважды. К счастью, значение синуса будет вычислено единожды и тут же сохранено, чтобы потом просто встать на места тех двух <code>x</code>.</p>
+<div style="padding-top: 45px;">
+    
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="left">
+            <a href="/recursion.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-left">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="center-align">
+            <button class="waves-effect waves-light btn blue lighten-2 show-comments sans">
+                Обсудим?
+            </button>
+        </div>
+    </div>
+    <div class="col s3">
+        <div class="right">
+            <a href="/own-types.html" class="btn waves-effect waves-light chapter-arrow">
+                <span class="fa fa-angle-double-right">
+                    
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="padding-top: 20px;">
+    
+</div>
+<div id="disqus_thread" style="padding-top: 30px;">
+    
+</div>
+
+        </div>
+    </body>
+</html>
