@@ -5,11 +5,11 @@ module CreateHtmlTemplates (
     createHtmlTemplates
 ) where
 
-import           Prelude                            hiding (div, span)
-import           Text.Blaze.Html5                   as H
-import           Text.Blaze.Html5.Attributes        as A
-import           Text.Blaze.Html.Renderer.Pretty    (renderHtml)
-import qualified Data.Text                          as T
+import qualified Data.Text                       as T
+import           Prelude                         hiding (div, span)
+import           Text.Blaze.Html.Renderer.Pretty (renderHtml)
+import           Text.Blaze.Html5                as H
+import           Text.Blaze.Html5.Attributes     as A
 import           Text.RawString.QQ
 
 import           SingleMarkdown
@@ -248,14 +248,6 @@ contacts donate =
             a ! href "mailto:me@dshevchenko.biz?Subject=#ohaskell,%20О%20книге"
               ! A.title "Написать автору" $
                 H.span ! class_ "fa fa-envelope-o" $ ""
-        addDonate
-  where
-    addDonate = case donate of
-        ShowDonate -> li $
-                          a ! href "/donate.html"
-                            ! A.title "Поддержать" $
-                              H.span ! class_ "fa fa-rub" ! A.style "font-size: 23px;" $ ""
-        HideDonate -> return ()
 
 hashtag :: Html
 hashtag =
