@@ -4,8 +4,7 @@ module CreateEpub (
     createEpub
 ) where
 
-import           System.Process     (callCommand)
-import           System.Directory   (getHomeDirectory)
+import           System.Process (callCommand)
 
 import           CreateEpubCss
 

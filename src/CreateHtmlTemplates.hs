@@ -35,7 +35,7 @@ createCover = docTypeHtml ! lang "ru" $ do
         nav $
             div ! class_ "nav-wrapper" $ do
                 div ! class_ "left author sans" $ do
-                    preEscapedToHtml ("&copy; 2016-2019&nbsp;" :: String)
+                    preEscapedToHtml ("&copy; 2016—2019&nbsp;" :: String)
                     a ! href "https://dshevchenko.biz" ! target "_blank" $
                         "Д. Шевченко"
 
@@ -48,11 +48,8 @@ createCover = docTypeHtml ! lang "ru" $ do
                     H.span ! A.style "font-size: 28px; color: orangered;" $
                         preEscapedToHtml ("&nbsp;&beta;" :: String)
 
-                div ! class_ "row" $ do
+                div ! class_ "row" $
                     div ! class_ "col s12 m12 l12" $ do
-                        div ! class_ "book-icon" $
-                            H.i ! class_ "fa fa-book" $ ""
-
                         div ! class_ "read-button" $ do
                             a ! class_ "dropdown-button waves-effect waves-light btn btn-large blue accent-2 get-button sans"
                               ! href "#"
