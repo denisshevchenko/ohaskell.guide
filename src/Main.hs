@@ -1,16 +1,16 @@
 module Main where
 
-import           SingleMarkdown
-import           CreatePdf
 import           CreateEpub
 import           CreateHtml
 import           CreateHtmlTemplates
+import           CreatePdf
+import           SingleMarkdown
 
-import           Data.List                  (intercalate)
-import           Control.Monad              (when)
-import           Control.Concurrent.Async   (async, wait)
-import           System.Environment         (getArgs, withArgs)
-import           System.Exit                (exitFailure)
+import           Control.Concurrent.Async (async, wait)
+import           Control.Monad            (when)
+import           Data.List                (intercalate)
+import           System.Environment       (getArgs, withArgs)
+import           System.Exit              (exitFailure)
 
 main :: IO ()
 main = do
@@ -19,10 +19,10 @@ main = do
     args <- getArgs
     check args
 
-    buildEpubIfNecessary            args pathToSingleMarkdown
-    buildPdfIfNecessary             args pathToSingleMarkdown
-    buildPdfPrintableIfNecessary    args pathToSingleMarkdown
-    buildHtmlIfNecessary            args chapterPoints practicePoints
+    buildEpubIfNecessary         args pathToSingleMarkdown
+    buildPdfIfNecessary          args pathToSingleMarkdown
+    buildPdfPrintableIfNecessary args pathToSingleMarkdown
+    buildHtmlIfNecessary         args chapterPoints practicePoints
 
 buildEpubIfNecessary :: [String] -> FilePath -> IO ()
 buildEpubIfNecessary args pathToSingleMarkdown =
