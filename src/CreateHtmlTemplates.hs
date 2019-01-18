@@ -35,7 +35,7 @@ createCover = docTypeHtml ! lang "ru" $ do
         nav $
             div ! class_ "nav-wrapper" $ do
                 div ! class_ "left author sans" $ do
-                    preEscapedToHtml ("&copy; 2016&nbsp;" :: String)
+                    preEscapedToHtml ("&copy; 2016-2019&nbsp;" :: String)
                     a ! href "https://dshevchenko.biz" ! target "_blank" $
                         "Д. Шевченко"
 
@@ -49,7 +49,7 @@ createCover = docTypeHtml ! lang "ru" $ do
                         preEscapedToHtml ("&nbsp;&beta;" :: String)
 
                 div ! class_ "row" $ do
-                    div ! class_ "col s12 m6 l6" $ do
+                    div ! class_ "col s12 m12 l12" $ do
                         div ! class_ "book-icon" $
                             H.i ! class_ "fa fa-book" $ ""
 
@@ -89,15 +89,6 @@ createCover = docTypeHtml ! lang "ru" $ do
 
                         div ! class_ "publish-version" $
                             "издание 2.0"
-
-                    div ! class_ "col s12 m6 l6" $ do
-                        div ! class_ "keyboard-icon" $
-                            H.i ! class_ "fa fa-keyboard-o" $ ""
-
-                        div ! class_ "practice-button" $
-                            a ! class_ "waves-effect waves-light btn btn-large amber darken-2 get-button sans"
-                              ! href "/practice/init.html" $
-                                "Практика"
 
 createDefault :: [ChapterPoint] -> Html
 createDefault chapterPoints = docTypeHtml ! lang "ru" $ do
