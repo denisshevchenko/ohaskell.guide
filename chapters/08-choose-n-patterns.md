@@ -156,7 +156,7 @@ analyzeGold _   = "I don't know such a standard..."
                    к этому      она
                    аргументу    равна
 
-      analyzeGold  750          =      "Wow! 999 standard!"
+      analyzeGold  750          =      "Great! 750 standard."
 
 если  эта функция  применяется  тогда  другому выражению
                    к другому    она
