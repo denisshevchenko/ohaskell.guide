@@ -212,7 +212,7 @@ newtype Offset = Offset Int
   let project = "ohaskell.guide"
       limit   = Limit 4
       offset  = Offset 1
-      info    = getArtifacts offset limit
+      info    = getArtifacts project offset limit
 ```
 
 Типы аргументов теперь разные, а значит, путаница между ними гарантированно прервёт компиляцию.
